@@ -68,18 +68,22 @@ if ! command -v pg_isready &>/dev/null; then
     apt-get update -qq && apt-get install -y -qq postgresql postgresql-client >/dev/null 2>&1
 fi
 
-PG_DATA="/workspace/pgdata"
+# Find PostgreSQL version directory
+PG_BIN=$(dirname $(find /usr/lib/postgresql -name "pg_ctl" 2>/dev/null | head -1) 2>/dev/null)
+PG_DATA="/var/lib/postgresql/data"
+
+# Fix permissions — let postgres user own its data dir
 mkdir -p "$PG_DATA"
-chown postgres:postgres "$PG_DATA"
+chown -R postgres:postgres /var/lib/postgresql
+chown -R postgres:postgres /var/run/postgresql 2>/dev/null || mkdir -p /var/run/postgresql && chown postgres:postgres /var/run/postgresql
 
 # Initialize DB cluster if needed
 if [ ! -f "$PG_DATA/PG_VERSION" ]; then
-    su - postgres -c "initdb -D $PG_DATA" 2>/dev/null || \
-        su - postgres -c "/usr/lib/postgresql/*/bin/initdb -D $PG_DATA" 2>/dev/null
+    su - postgres -c "$PG_BIN/initdb -D $PG_DATA"
 fi
 
 # Start PostgreSQL
-su - postgres -c "pg_ctl -D $PG_DATA -l $LOG_DIR/postgresql.log start" 2>/dev/null || true
+su - postgres -c "$PG_BIN/pg_ctl -D $PG_DATA -l $LOG_DIR/postgresql.log start" 2>/dev/null || true
 sleep 2
 
 # Create user and database if they don't exist
@@ -90,7 +94,7 @@ su - postgres -c "psql -tc \"SELECT 1 FROM pg_database WHERE datname='linguar'\"
 
 echo "  -> Waiting for PostgreSQL..."
 for i in $(seq 1 15); do
-    if pg_isready -U linguar -q 2>/dev/null; then
+    if pg_isready -q 2>/dev/null; then
         echo "  -> PostgreSQL ready."
         break
     fi
