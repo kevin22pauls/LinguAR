@@ -1,0 +1,939 @@
+/* ── LinguAR — Base Styles ───────────────────────────────────────────── */
+
+:root {
+    --primary: #00c385;
+    --primary-light: #4dd9a8;
+    --primary-dark: #009b6a;
+    --success: #00c385;
+    --warning: #f9f871;
+    --danger: #ef4444;
+    --bg: #c3fcf2;
+    --surface: #ffffff;
+    --text: #344b47;
+    --text-muted: #6b8f87;
+    --border: #a3d4cb;
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Navigation ──────────────────────────────────────────────────────── */
+
+nav {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .nav-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+}
+
+nav .logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 0.25rem;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.15s, color 0.15s;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* ── Nav User Info ───────────────────────────────────────────────────── */
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.75rem;
+}
+
+.nav-user-name {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.nav-user-room {
+    color: var(--text-muted);
+}
+
+.nav-logout {
+    color: var(--danger);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--danger);
+}
+
+.nav-logout:hover {
+    background: var(--danger);
+    color: white;
+}
+
+/* ── Main Content ────────────────────────────────────────────────────── */
+
+main {
+    flex: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+
+/* ── Cards ────────────────────────────────────────────────────────────── */
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* ── Buttons ──────────────────────────────────────────────────────────── */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: white;
+}
+
+.btn-lg {
+    padding: 0.875rem 1.75rem;
+    font-size: 1.05rem;
+    border-radius: var(--radius);
+}
+
+/* ── Home Page Feature Grid ──────────────────────────────────────────── */
+
+.hero {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.feature-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.feature-card:hover {
+    border-color: var(--primary-light);
+    box-shadow: 0 4px 12px rgba(0, 195, 133, 0.15);
+}
+
+.feature-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 0.375rem;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ── Camera / Canvas ─────────────────────────────────────────────────── */
+
+.camera-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #000;
+}
+
+.camera-container video,
+.camera-container canvas {
+    display: block;
+    width: 100%;
+}
+
+.camera-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.detection-label {
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+}
+
+/* ── AR Overlay (scan page) ─────────────────────────────────────────── */
+
+.ar-wrapper {
+    margin-bottom: 1rem;
+}
+
+.ar-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: white;
+    z-index: 10;
+}
+
+.ar-detected {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ar-sentence {
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0.25rem 0.5rem;
+    max-width: 90%;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.ar-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.ar-btn {
+    padding: 0.4rem 0.9rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.ar-btn:active { transform: scale(0.95); }
+
+.ar-btn-listen {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.ar-btn-record {
+    background: var(--danger);
+    color: white;
+    min-width: 80px;
+}
+
+.ar-btn-record.ar-recording {
+    background: #b91c1c;
+    animation: pulse-record 1s infinite;
+}
+
+@keyframes pulse-record {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.5); }
+    50% { box-shadow: 0 0 0 8px rgba(239,68,68,0); }
+}
+
+.ar-btn-next {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.ar-status {
+    font-size: 0.8rem;
+    margin-top: 0.35rem;
+    opacity: 0.9;
+    min-height: 1.2em;
+}
+
+/* ── Phoneme Analysis Chips ─────────────────────────────────────────── */
+
+.phoneme-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.ph-stat {
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: var(--bg);
+}
+
+.ph-correct { color: #005c40; background: #e6fbf3; }
+.ph-sub { color: #991b1b; background: #fee2e2; }
+.ph-del { color: #92400e; background: #fef3c7; }
+.ph-ins { color: #1e40af; background: #dbeafe; }
+
+.phoneme-analysis-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.ph-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    min-width: 48px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.ph-chip.ph-correct {
+    background: #e6fbf3;
+    border-color: #4dd9a8;
+}
+
+.ph-chip.ph-substitution {
+    background: #fef2f2;
+    border-color: #fca5a5;
+}
+
+.ph-chip.ph-deletion {
+    background: #fffbeb;
+    border-color: #fde68a;
+}
+
+.ph-chip.ph-insertion {
+    background: #eff6ff;
+    border-color: #93c5fd;
+}
+
+.ph-phone {
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.ph-chip.ph-correct .ph-phone { color: #005c40; }
+.ph-chip.ph-substitution .ph-phone { color: #991b1b; }
+.ph-chip.ph-deletion .ph-phone { color: #92400e; }
+.ph-chip.ph-insertion .ph-phone { color: #1e40af; }
+
+.ph-detail {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: 0.1rem;
+}
+
+/* L1-expected substitution — dashed border + muted orange (accent feature, not error) */
+.ph-chip.ph-l1-expected {
+    background: #fef9ee;
+    border-color: #f59e0b;
+    border-style: dashed;
+}
+.ph-chip.ph-l1-expected .ph-phone { color: #92400e; }
+.ph-l1-tag {
+    font-size: 0.55rem;
+    color: #b45309;
+    font-style: italic;
+    margin-top: 0.1rem;
+}
+
+/* PER metric in summary */
+.ph-stat.ph-per {
+    color: #6b21a8;
+    background: #f3e8ff;
+}
+
+/* ── Recording UI ────────────────────────────────────────────────────── */
+
+.recording-area {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.reference-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 1rem;
+    background: var(--bg);
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.record-btn {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 4px solid var(--danger);
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s;
+}
+
+.record-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
+    background: var(--danger);
+    border-radius: 50%;
+    transition: border-radius 0.2s, width 0.2s, height 0.2s;
+}
+
+.record-btn.recording::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.status-text {
+    margin-top: 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ── Score Display ───────────────────────────────────────────────────── */
+
+.scores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.score-item {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg);
+    border-radius: 8px;
+}
+
+.score-item .score-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.score-item .score-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+/* ── Word feedback colors ────────────────────────────────────────────── */
+
+.word-correct { color: var(--success); font-weight: 500; }
+.word-error { color: var(--danger); font-weight: 500; }
+.word-partial { color: var(--warning); font-weight: 500; }
+
+/* ── Verdict Banner ─────────────────────────────────────────────────── */
+
+.verdict-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: var(--radius);
+    background: var(--bg);
+}
+
+.verdict-banner.verdict-good { background: #e6fbf3; }
+.verdict-banner.verdict-ok { background: #fefce8; }
+.verdict-banner.verdict-low { background: #fee2e2; }
+
+.verdict-score {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.verdict-good .verdict-score { color: #005c40; }
+.verdict-ok .verdict-score { color: #854d0e; }
+.verdict-low .verdict-score { color: #991b1b; }
+
+.verdict-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+/* ── Classification Badge ───────────────────────────────────────────── */
+
+.classification-badge {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge-correct { background: #e6fbf3; color: #005c40; }
+.badge-partial { background: #fefce8; color: #854d0e; }
+.badge-retry { background: #fee2e2; color: #991b1b; }
+
+/* ── Detail Grid (fluency/prosody/pronunciation metrics) ────────────── */
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.detail-item {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    background: var(--bg);
+    border-radius: 8px;
+}
+
+.detail-val {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.detail-lbl {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+}
+
+/* ── Teacher Dashboard ───────────────────────────────────────────────── */
+
+.stats-row {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-box {
+    flex: 1;
+    text-align: center;
+    padding: 1.25rem;
+    background: var(--bg);
+    border-radius: var(--radius);
+}
+
+.stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.form-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.input-field {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 120px;
+}
+
+.phoneme-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+}
+
+.phoneme-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    min-width: 60px;
+}
+
+.phoneme-chip.struggling {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: var(--danger);
+}
+
+.phoneme-chip.learning {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
+}
+
+.phoneme-chip .small {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.65rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+}
+
+.data-table th {
+    font-weight: 700;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.assignment-card {
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.assignment-card .small {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+/* ── Dashboard ───────────────────────────────────────────────────────── */
+
+.metric-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.metric-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    text-align: center;
+}
+
+.metric-value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 220px;
+}
+
+.chart-container-sq {
+    position: relative;
+    height: 240px;
+}
+
+.card-subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.empty-msg {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 1.5rem 0;
+}
+
+/* Vocabulary mastery heatmap grid */
+.vocab-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.vocab-tile {
+    padding: 0.45rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    border: 1px solid var(--border);
+}
+
+.vocab-tile.mastered { background: #e6fbf3; border-color: #4dd9a8; color: #005c40; }
+.vocab-tile.learning { background: #fefce8; border-color: #f9f871; color: #78350f; }
+.vocab-tile.struggling { background: #fee2e2; border-color: #fca5a5; color: #991b1b; }
+.vocab-tile.new { background: var(--bg); color: var(--text-muted); }
+
+/* Achievements badges */
+.badges-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    font-size: 0.85rem;
+}
+
+.badge-item.earned {
+    background: #e6fbf3;
+    border-color: var(--primary-light);
+}
+
+.badge-icon {
+    font-size: 1.25rem;
+}
+
+.badge-label {
+    font-weight: 500;
+}
+
+.badge-desc {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Clickable session rows */
+.session-row:hover {
+    background: var(--bg);
+}
+.session-row:hover td {
+    color: var(--primary);
+}
+
+/* Score cell colors in table */
+.score-high { color: #009b6a; font-weight: 600; }
+.score-mid { color: #c4a800; font-weight: 600; }
+.score-low { color: var(--danger); font-weight: 600; }
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+    .hero h1 { font-size: 1.5rem; }
+    .features { grid-template-columns: 1fr; }
+    .scores-grid { grid-template-columns: 1fr; }
+    .metric-cards { grid-template-columns: repeat(3, 1fr); }
+    .dash-grid { grid-template-columns: 1fr; }
+    .detail-grid { grid-template-columns: repeat(2, 1fr); }
+    nav .nav-links a { padding: 0.5rem; font-size: 0.8rem; }
+    .skill-label { width: 100px; font-size: 0.82rem; }
+    .skill-stars { min-width: 80px; font-size: 0.9rem; }
+}
+
+/* ── Insights ────────────────────────────────────────────────────────── */
+.insight-item {
+    display: flex; align-items: flex-start; gap: 0.6rem;
+    padding: 0.75rem 1rem; border-radius: 8px;
+    margin-bottom: 0.5rem; font-size: 1.02rem; line-height: 1.55;
+}
+.insight-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 0.1rem; }
+.insight-text { flex: 1; font-weight: 500; }
+.insight-success { background: #e6fbf3; color: #005c40; }
+.insight-encouragement { background: #e6fbf3; color: #344b47; }
+.insight-pronunciation { background: #fef9ee; color: #92400e; }
+.insight-accent { background: #fef9ee; color: #92400e; border: 1px dashed #c4a800; }
+.insight-fluency { background: #eafff9; color: #344b47; }
+.insight-prosody { background: #f4fef1; color: #344b47; }
+.insight-tip { background: #fefce8; color: #78350f; }
+.insight-words { background: #eafff9; color: #344b47; }
+.insight-completeness { background: #fff1f2; color: #9f1239; }
+.insight-diagnostic { background: #eafff9; color: #344b47; border-left: 3px solid var(--primary); }
+.insight-progress { background: #e6fbf3; color: #005c40; border-left: 3px solid #00c385; }
+.insight-l1_transfer { background: #fef9ee; color: #92400e; border-left: 3px solid #c4a800; }
+.insight-class_pattern { background: #eafff9; color: #344b47; border-left: 3px solid #00c385; }
+.insight-attention { background: #fff1f2; color: #9f1239; border-left: 3px solid #ef4444; }
+.insight-engagement { background: #eafff9; color: #344b47; border-left: 3px solid #96b1ac; }
+.insight-confidence { background: #e6fbf3; color: #005c40; }
+
+/* ── Skill Bars (shared: practice + dashboard + student detail) ───────── */
+.skill-bars-grid { display: flex; flex-direction: column; gap: 0.6rem; }
+.skill-row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: nowrap; }
+.skill-label { width: 150px; font-size: 1.05rem; font-weight: 700; color: var(--text); flex-shrink: 0; }
+.skill-track { flex: 1; height: 10px; background: var(--border); border-radius: 5px; overflow: hidden; min-width: 60px; }
+.skill-fill { height: 100%; border-radius: 5px; transition: width 0.5s ease; width: 0%; }
+.fill-high { background: linear-gradient(90deg, #00c385, #009b6a); }
+.fill-mid { background: linear-gradient(90deg, #f9f871, #e0dc40); }
+.fill-low { background: linear-gradient(90deg, #ef4444, #dc2626); }
+.skill-stars { font-size: 1.25rem; white-space: nowrap; min-width: 130px; text-align: right; flex-shrink: 0; }
+
+/* Improvement delta on skill bars */
+.skill-delta { font-size: 0.95rem; margin-left: 0.4rem; font-weight: 700; }
+.skill-delta.up { color: #009b6a; }
+.skill-delta.down { color: #dc2626; }
+.skill-delta.same { color: #96b1ac; }
+
+/* FL-weighted word coloring */
+.word-correct { color: #009b6a; font-weight: 600; }
+.word-fl-high { color: #dc2626; font-weight: 700; text-decoration: underline wavy #dc2626; }
+.word-fl-low { color: #d97706; font-weight: 600; }
+.word-error { color: #dc2626; font-weight: 600; }
+.word-partial { color: #6b7280; font-style: italic; }

@@ -1,0 +1,142 @@
+{
+    "_source": "Contrastive analysis literature — predicted L1 transfer difficulties for English",
+    "_note": "Phonemes in ARPAbet. Each entry lists predicted difficult phonemes and common substitution patterns.",
+    "profiles": {
+        "mandarin": {
+            "display_name": "Mandarin Chinese",
+            "predicted_difficult": ["R", "L", "TH", "DH", "V", "IH"],
+            "substitution_patterns": [
+                {"target": "R", "likely_sub": "L", "description": "r/l merger"},
+                {"target": "TH", "likely_sub": "S", "description": "dental fricative -> alveolar"},
+                {"target": "V", "likely_sub": "W", "description": "labiodental -> bilabial"}
+            ]
+        },
+        "hindi": {
+            "display_name": "Hindi/Urdu",
+            "predicted_difficult": ["TH", "DH", "AE", "AO", "W", "V", "Z"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "T", "description": "dental fricative -> dental stop"},
+                {"target": "DH", "likely_sub": "D", "description": "voiced dental fricative -> stop"},
+                {"target": "AE", "likely_sub": "EH", "description": "low front -> mid front (trap-dress merger)"},
+                {"target": "W", "likely_sub": "V", "description": "w/v merger common in Indian English"},
+                {"target": "V", "likely_sub": "W", "description": "w/v merger common in Indian English"},
+                {"target": "AO", "likely_sub": "AA", "description": "lot-thought neutralization"},
+                {"target": "Z", "likely_sub": "JH", "description": "fricative -> affricate in some dialects"}
+            ]
+        },
+        "tamil": {
+            "display_name": "Tamil",
+            "predicted_difficult": ["TH", "DH", "F", "Z", "AE", "W", "V", "SH"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "T", "description": "dental fricative -> stop"},
+                {"target": "F", "likely_sub": "P", "description": "labiodental -> bilabial (no /f/ in Tamil)"},
+                {"target": "Z", "likely_sub": "S", "description": "voiced -> voiceless"},
+                {"target": "W", "likely_sub": "V", "description": "w/v merger"},
+                {"target": "SH", "likely_sub": "S", "description": "postalveolar -> alveolar"}
+            ]
+        },
+        "malayalam": {
+            "display_name": "Malayalam",
+            "predicted_difficult": ["TH", "DH", "F", "AE", "W", "V", "Z", "SH"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "T", "description": "dental fricative -> dental stop"},
+                {"target": "DH", "likely_sub": "D", "description": "voiced dental fricative -> stop"},
+                {"target": "F", "likely_sub": "P", "description": "labiodental -> bilabial"},
+                {"target": "W", "likely_sub": "V", "description": "w/v merger"},
+                {"target": "AE", "likely_sub": "EH", "description": "trap-dress merger"},
+                {"target": "SH", "likely_sub": "S", "description": "postalveolar -> alveolar"}
+            ]
+        },
+        "telugu": {
+            "display_name": "Telugu",
+            "predicted_difficult": ["TH", "DH", "F", "AE", "W", "V", "Z"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "T", "description": "dental fricative -> stop"},
+                {"target": "F", "likely_sub": "P", "description": "labiodental -> bilabial"},
+                {"target": "W", "likely_sub": "V", "description": "w/v merger"},
+                {"target": "Z", "likely_sub": "S", "description": "voiced -> voiceless"},
+                {"target": "AE", "likely_sub": "EH", "description": "trap-dress merger"}
+            ]
+        },
+        "kannada": {
+            "display_name": "Kannada",
+            "predicted_difficult": ["TH", "DH", "F", "AE", "W", "V", "Z", "SH"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "T", "description": "dental fricative -> stop"},
+                {"target": "F", "likely_sub": "P", "description": "labiodental -> bilabial"},
+                {"target": "W", "likely_sub": "V", "description": "w/v merger"},
+                {"target": "AE", "likely_sub": "EH", "description": "trap-dress merger"},
+                {"target": "SH", "likely_sub": "S", "description": "postalveolar -> alveolar"}
+            ]
+        },
+        "bengali": {
+            "display_name": "Bengali",
+            "predicted_difficult": ["TH", "DH", "AE", "V", "W", "F"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "T", "description": "dental fricative -> stop"},
+                {"target": "DH", "likely_sub": "D", "description": "voiced dental fricative -> stop"},
+                {"target": "V", "likely_sub": "BH", "description": "labiodental -> aspirated bilabial"},
+                {"target": "W", "likely_sub": "V", "description": "w/v merger"},
+                {"target": "F", "likely_sub": "PH", "description": "labiodental -> aspirated bilabial"},
+                {"target": "AE", "likely_sub": "EH", "description": "trap-dress merger"}
+            ]
+        },
+        "marathi": {
+            "display_name": "Marathi",
+            "predicted_difficult": ["TH", "DH", "AE", "W", "V", "Z"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "T", "description": "dental fricative -> stop"},
+                {"target": "DH", "likely_sub": "D", "description": "voiced dental fricative -> stop"},
+                {"target": "W", "likely_sub": "V", "description": "w/v merger"},
+                {"target": "AE", "likely_sub": "EH", "description": "trap-dress merger"},
+                {"target": "Z", "likely_sub": "JH", "description": "fricative -> affricate"}
+            ]
+        },
+        "arabic": {
+            "display_name": "Arabic",
+            "predicted_difficult": ["P", "V", "NG", "IH", "EH"],
+            "substitution_patterns": [
+                {"target": "P", "likely_sub": "B", "description": "voiceless -> voiced bilabial"},
+                {"target": "V", "likely_sub": "F", "description": "voiced -> voiceless"},
+                {"target": "NG", "likely_sub": "N", "description": "velar -> alveolar nasal"}
+            ]
+        },
+        "japanese": {
+            "display_name": "Japanese",
+            "predicted_difficult": ["R", "L", "TH", "V", "UH"],
+            "substitution_patterns": [
+                {"target": "R", "likely_sub": "L", "description": "r/l merger"},
+                {"target": "L", "likely_sub": "R", "description": "r/l merger"},
+                {"target": "TH", "likely_sub": "S", "description": "dental fricative -> alveolar"},
+                {"target": "V", "likely_sub": "B", "description": "labiodental -> bilabial"}
+            ]
+        },
+        "korean": {
+            "display_name": "Korean",
+            "predicted_difficult": ["R", "L", "F", "V", "Z"],
+            "substitution_patterns": [
+                {"target": "R", "likely_sub": "L", "description": "r/l merger"},
+                {"target": "F", "likely_sub": "P", "description": "labiodental -> bilabial"},
+                {"target": "Z", "likely_sub": "JH", "description": "fricative -> affricate"}
+            ]
+        },
+        "spanish": {
+            "display_name": "Spanish",
+            "predicted_difficult": ["JH", "SH", "Z", "V", "IH"],
+            "substitution_patterns": [
+                {"target": "JH", "likely_sub": "Y", "description": "affricate -> approximant"},
+                {"target": "Z", "likely_sub": "S", "description": "voiced -> voiceless"},
+                {"target": "V", "likely_sub": "B", "description": "labiodental -> bilabial"}
+            ]
+        },
+        "french": {
+            "display_name": "French",
+            "predicted_difficult": ["TH", "DH", "HH", "IH", "AE"],
+            "substitution_patterns": [
+                {"target": "TH", "likely_sub": "S", "description": "dental fricative -> alveolar"},
+                {"target": "HH", "likely_sub": "", "description": "h-dropping"},
+                {"target": "AE", "likely_sub": "EH", "description": "low front -> mid front"}
+            ]
+        }
+    }
+}

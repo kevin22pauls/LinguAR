@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LinguAR{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css?v=4">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="logo">LinguAR</a>
+            <div class="nav-links">
+                <a href="/scan" {% if active == "scan" %}class="active"{% endif %}>Scan</a>
+                <a href="/practice" {% if active == "practice" %}class="active"{% endif %}>Practice</a>
+                <a href="/dashboard" {% if active == "dashboard" %}class="active"{% endif %}>Dashboard</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <script src="/static/js/auth.js?v=3"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

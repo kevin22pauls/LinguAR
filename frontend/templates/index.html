@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}LinguAR — Learn English with Real Objects{% endblock %}
+
+{% block head %}
+<style>
+    .assignments-section { margin-bottom: 1.5rem; }
+    .assignment-card {
+        display: flex; align-items: center; justify-content: space-between;
+        background: var(--card-bg, #fff); border: 2px solid var(--primary, #4f46e5);
+        border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 0.75rem;
+        flex-wrap: wrap; gap: 0.5rem;
+    }
+    .assignment-card .assign-label { font-weight: 700; color: var(--primary, #4f46e5); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .assignment-card .assign-detail { font-size: 1rem; }
+    .assignment-card .btn-practice {
+        padding: 0.5rem 1.2rem; background: var(--primary, #4f46e5); color: #fff;
+        border: none; border-radius: 6px; font-weight: 600; cursor: pointer; text-decoration: none; font-size: 0.9rem;
+    }
+    .assignment-card .btn-practice:hover { opacity: 0.9; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>LinguAR</h1>
+    <p>Point your camera at objects around you and practice speaking English.</p>
+</div>
+
+<!-- Active assignments from teacher -->
+<div id="assignments-section" class="assignments-section" style="display:none;">
+    <h2 style="margin-bottom:0.75rem;">Your Assignments</h2>
+    <div id="assignments-list"></div>
+</div>
+
+<div class="features">
+    <a href="/scan" class="feature-card">
+        <div class="icon">&#128247;</div>
+        <h3>Scan Objects</h3>
+        <p>Use your camera to detect everyday objects and get practice sentences.</p>
+    </a>
+    <a href="/practice" class="feature-card">
+        <div class="icon">&#127908;</div>
+        <h3>Practice Speaking</h3>
+        <p>Read sentences aloud and get detailed pronunciation feedback.</p>
+    </a>
+    <a href="/dashboard" class="feature-card">
+        <div class="icon">&#128200;</div>
+        <h3>Track Progress</h3>
+        <p>See your scores, trends, and which sounds need the most work.</p>
+    </a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+    // Load active assignments if student is in a class
+    function loadAssignments() {
+        // Wait for auth.js to set currentUser
+        var attempts = 0;
+        var timer = setInterval(function () {
+            attempts++;
+            if (typeof currentUser !== "undefined" && currentUser && currentUser.class_id) {
+                clearInterval(timer);
+                fetchAssignments(currentUser.class_id);
+            } else if (attempts > 20) {
+                clearInterval(timer);
+            }
+        }, 100);
+    }
+
+    async function fetchAssignments(classId) {
+        try {
+            var resp = await fetch("/api/classroom/class/" + classId + "/assignments/active");
+            var assignments = await resp.json();
+            if (assignments && assignments.length > 0) {
+                renderAssignments(assignments);
+            }
+        } catch (e) {
+            // No assignments or not in a class — that's fine
+        }
+    }
+
+    function renderAssignments(assignments) {
+        var section = document.getElementById("assignments-section");
+        var list = document.getElementById("assignments-list");
+        section.style.display = "";
+
+        var html = "";
+        for (var i = 0; i < assignments.length; i++) {
+            var a = assignments[i];
+            var objects = a.target_objects || "";
+            var firstObj = objects.split(",")[0].trim();
+            var practiceUrl = "/practice" + (firstObj ? "?object=" + encodeURIComponent(firstObj) : "");
+
+            html +=
+                '<div class="assignment-card">' +
+                    '<div>' +
+                        '<div class="assign-label">Assignment — Level ' + a.target_level + '</div>' +
+                        '<div class="assign-detail">' +
+                            (objects ? 'Practice with: <strong>' + objects + '</strong>' : 'Free practice') +
+                        '</div>' +
+                    '</div>' +
+                    '<a href="' + practiceUrl + '" class="btn-practice">Practice</a>' +
+                '</div>';
+        }
+        list.innerHTML = html;
+    }
+
+    loadAssignments();
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+{% block title %}LinguAR — Practice Speaking{% endblock %}
+
+{% block head %}
+<style>
+    .practice-controls {
+        display: flex; flex-wrap: wrap; gap: 0.75rem;
+        align-items: flex-end; margin-bottom: 1.25rem;
+    }
+    .practice-controls .control-group { display: flex; flex-direction: column; gap: 0.3rem; }
+    .practice-controls label { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .practice-controls select, .practice-controls button {
+        padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.95rem;
+        border: 1.5px solid var(--border, #d1d5db); background: var(--card-bg, #fff);
+    }
+    .practice-controls select { min-width: 160px; cursor: pointer; }
+    .btn-generate {
+        background: var(--primary, #4f46e5) !important; color: #fff !important;
+        border-color: var(--primary, #4f46e5) !important; font-weight: 600; cursor: pointer;
+    }
+    .btn-generate:hover { opacity: 0.9; }
+    .btn-generate:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .sentence-display {
+        font-size: 1.3rem; font-weight: 500; line-height: 1.6;
+        padding: 1.25rem; background: var(--bg, #f9fafb); border-radius: 10px;
+        margin-bottom: 1.25rem; min-height: 3rem; text-align: center;
+    }
+
+    .action-row {
+        display: flex; justify-content: center; align-items: center; gap: 1.5rem;
+        flex-wrap: wrap; margin-bottom: 0.75rem;
+    }
+    .btn-listen {
+        padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.95rem;
+        font-weight: 600; cursor: pointer; border: 1.5px solid var(--primary, #00c385);
+        background: #fff; color: var(--primary, #00c385); transition: all 0.15s;
+    }
+    .btn-listen:hover { background: var(--primary, #00c385); color: #fff; }
+    .btn-listen:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* Skill bars */
+    .skill-bars { display: flex; flex-direction: column; gap: 0.6rem; }
+    .skill-bar-row { display: flex; align-items: center; gap: 0.75rem; }
+    .skill-label { width: 150px; font-size: 1.05rem; font-weight: 700; color: var(--text, #344b47); flex-shrink: 0; }
+    .skill-track {
+        flex: 1; height: 10px; background: var(--border, #a3d4cb); border-radius: 5px;
+        overflow: hidden; position: relative;
+    }
+    .skill-fill {
+        height: 100%; border-radius: 5px; transition: width 0.6s ease;
+        width: 0%;
+    }
+    .skill-fill.fill-high { background: linear-gradient(90deg, #00c385, #009b6a); }
+    .skill-fill.fill-mid { background: linear-gradient(90deg, #f9f871, #e0dc40); }
+    .skill-fill.fill-low { background: linear-gradient(90deg, #ef4444, #dc2626); }
+    .skill-stars { font-size: 1.25rem; min-width: 130px; text-align: right; }
+
+    /* Toggle header */
+    .toggle-header { cursor: pointer; user-select: none; }
+    .toggle-header:hover { opacity: 0.8; }
+    #toggle-arrow { font-size: 0.8rem; transition: transform 0.2s; display: inline-block; }
+    #toggle-arrow.open { transform: rotate(90deg); }
+
+    /* Mode tabs */
+    .mode-tabs { display: flex; gap: 0; margin-bottom: 1.25rem; border-bottom: 2px solid var(--border, #e5e7eb); }
+    .mode-tab { padding: 0.6rem 1.25rem; font-size: 0.95rem; font-weight: 700; cursor: pointer; border: none; background: none; color: var(--text-muted); border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+    .mode-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+    .mode-tab:hover { color: var(--text); }
+
+    /* Minimal pair styles */
+    .mp-contrast-select { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    .mp-chip { padding: 0.45rem 0.9rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 2px solid var(--border, #e5e7eb); background: var(--surface, #fff); transition: all 0.15s; }
+    .mp-chip:hover { border-color: var(--primary); }
+    .mp-chip.selected { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .mp-pair-display { display: flex; gap: 1rem; justify-content: center; align-items: stretch; margin-bottom: 1rem; }
+    .mp-word-card { flex: 1; max-width: 200px; padding: 1rem; border-radius: 10px; text-align: center; border: 2px solid var(--border); background: var(--surface, #fff); }
+    .mp-word-card .mp-word { font-size: 1.4rem; font-weight: 800; }
+    .mp-word-card .mp-phoneme { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem; }
+    .mp-vs { font-size: 1.2rem; font-weight: 800; color: var(--text-muted); align-self: center; }
+
+    /* FL-weighted word coloring */
+    .word-correct { color: #009b6a; font-weight: 600; }
+    .word-fl-high { color: #dc2626; font-weight: 700; text-decoration: underline wavy #dc2626; }
+    .word-fl-low { color: #d97706; font-weight: 600; }
+    .word-error { color: #dc2626; font-weight: 600; }
+    .word-partial { color: #6b7280; font-style: italic; }
+
+    /* Improvement delta on skill bars */
+    .skill-delta { font-size: 0.95rem; margin-left: 0.4rem; font-weight: 700; }
+    .skill-delta.up { color: #009b6a; }
+    .skill-delta.down { color: #dc2626; }
+    .skill-delta.same { color: #96b1ac; }
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Practice Speaking</h2>
+
+    <!-- Mode tabs -->
+    <div class="mode-tabs">
+        <button class="mode-tab active" id="tab-normal" onclick="switchMode('normal')">Sentence Practice</button>
+        <button class="mode-tab" id="tab-minimal" onclick="switchMode('minimal')">Minimal Pairs</button>
+    </div>
+
+    <!-- Normal mode: Object selection + generate -->
+    <div id="mode-normal">
+    <div class="practice-controls">
+        <div class="control-group">
+            <label for="object-select">Object</label>
+            <select id="object-select">
+                <option value="">Loading...</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="level-select">Level</label>
+            <select id="level-select">
+                <option value="beginner">Beginner</option>
+                <option value="elementary">Elementary</option>
+                <option value="intermediate">Intermediate</option>
+            </select>
+        </div>
+        <button class="btn-generate" id="generate-btn" disabled>Generate Sentence</button>
+    </div>
+    </div>
+
+    <!-- Minimal pair mode -->
+    <div id="mode-minimal" style="display:none;">
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.75rem;">Pick a sound contrast to practice:</p>
+        <div class="mp-contrast-select" id="mp-contrasts">
+            <span class="mp-chip" data-contrast="R-L">/R/ vs /L/</span>
+            <span class="mp-chip" data-contrast="TH-S">/TH/ vs /S/</span>
+            <span class="mp-chip" data-contrast="V-W">/V/ vs /W/</span>
+            <span class="mp-chip" data-contrast="P-B">/P/ vs /B/</span>
+            <span class="mp-chip" data-contrast="IH-IY">/IH/ vs /IY/</span>
+            <span class="mp-chip" data-contrast="AE-EH">/AE/ vs /EH/</span>
+            <span class="mp-chip" data-contrast="Z-S">/Z/ vs /S/</span>
+            <span class="mp-chip" data-contrast="SH-S">/SH/ vs /S/</span>
+        </div>
+        <div id="mp-pair-display" class="mp-pair-display" style="display:none;">
+            <div class="mp-word-card"><span class="mp-word" id="mp-word-a"></span><span class="mp-phoneme" id="mp-phone-a"></span></div>
+            <span class="mp-vs">vs</span>
+            <div class="mp-word-card"><span class="mp-word" id="mp-word-b"></span><span class="mp-phoneme" id="mp-phone-b"></span></div>
+        </div>
+        <div style="text-align:center; margin-bottom:0.5rem;">
+            <button class="btn-generate" id="mp-generate-btn" disabled>Get Minimal Pair</button>
+        </div>
+    </div>
+
+    <!-- Sentence display -->
+    <div class="sentence-display" id="reference-text">
+        Select an object and tap "Generate Sentence" to begin.
+    </div>
+
+    <!-- Listen + Record row -->
+    <div class="action-row">
+        <button class="btn-listen" id="listen-btn" disabled>Listen</button>
+        <button class="btn-generate" id="start-btn" disabled style="background:#ef4444 !important; border-color:#ef4444 !important;">Start Recording</button>
+        <button class="btn-generate" id="stop-btn" style="background:#dc2626 !important; border-color:#dc2626 !important; display:none;">Stop Recording</button>
+    </div>
+    <div class="status-text" id="status-text" style="text-align:center; margin-top:0.5rem; color:var(--text-muted);">Generate a sentence first</div>
+</div>
+
+<!-- Results Section -->
+<div id="results-card" style="display: none;">
+
+    <!-- Total Score Banner -->
+    <div class="card" id="verdict-card">
+        <div class="verdict-banner" id="verdict-banner">
+            <span class="verdict-score" id="verdict-score">--</span>
+            <span class="verdict-label" id="verdict-label">Overall Score</span>
+        </div>
+    </div>
+
+    <!-- Insights (plain English feedback) -->
+    <div class="card" id="insights-card" style="display:none;">
+        <h2>What This Means</h2>
+        <div id="insights-list"></div>
+    </div>
+
+    <!-- Student-Friendly Skill Bars -->
+    <div class="card">
+        <h2>How You Did</h2>
+        <div class="skill-bars" id="skill-bars">
+            <div class="skill-bar-row">
+                <span class="skill-label">Speed</span>
+                <div class="skill-track"><div class="skill-fill" id="bar-speed"></div></div>
+                <span class="skill-stars" id="stars-speed"></span>
+            </div>
+            <div class="skill-bar-row">
+                <span class="skill-label">Smoothness</span>
+                <div class="skill-track"><div class="skill-fill" id="bar-smoothness"></div></div>
+                <span class="skill-stars" id="stars-smoothness"></span>
+            </div>
+            <div class="skill-bar-row">
+                <span class="skill-label">Sounds</span>
+                <div class="skill-track"><div class="skill-fill" id="bar-sounds"></div></div>
+                <span class="skill-stars" id="stars-sounds"></span>
+            </div>
+            <div class="skill-bar-row">
+                <span class="skill-label">Sounding Natural</span>
+                <div class="skill-track"><div class="skill-fill" id="bar-natural"></div></div>
+                <span class="skill-stars" id="stars-natural"></span>
+            </div>
+            <div class="skill-bar-row">
+                <span class="skill-label">Confidence</span>
+                <div class="skill-track"><div class="skill-fill" id="bar-confidence"></div></div>
+                <span class="skill-stars" id="stars-confidence"></span>
+            </div>
+            <div class="skill-bar-row">
+                <span class="skill-label">Completeness</span>
+                <div class="skill-track"><div class="skill-fill" id="bar-completeness"></div></div>
+                <span class="skill-stars" id="stars-completeness"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Word-Level Feedback -->
+    <div class="card">
+        <h2>Reading Feedback</h2>
+        <div id="word-feedback" style="line-height: 2;"></div>
+        <div id="transcript-line" style="display:none; margin-top:0.75rem; color:var(--text-muted); font-size:0.85rem;"></div>
+        <div id="classification-badge" style="display:none; margin-top:0.75rem;"></div>
+    </div>
+
+    <!-- Phoneme Analysis -->
+    <div class="card" id="phoneme-card" style="display:none;">
+        <h2>Phoneme Analysis</h2>
+        <div id="phoneme-summary" class="phoneme-summary"></div>
+        <div id="phoneme-grid" class="phoneme-analysis-grid"></div>
+    </div>
+
+    <!-- Per-Word Scores Table -->
+    <div class="card" id="word-scores-card" style="display:none;">
+        <h2>Per-Word Breakdown</h2>
+        <div class="table-scroll">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Word</th>
+                        <th>Accuracy</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="word-scores-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Teacher Details (collapsible) -->
+    <div class="card" id="teacher-details-card" style="display:none;">
+        <h2 class="toggle-header" onclick="toggleTeacherDetails()">
+            Detailed Numbers (Teacher View) <span id="toggle-arrow">&#9654;</span>
+        </h2>
+        <div id="teacher-details-body" style="display:none;">
+            <!-- Teacher Insights -->
+            <div id="teacher-insights-list" style="margin-bottom:1rem;"></div>
+
+            <h3 style="margin:1rem 0 0.5rem; font-size:0.9rem; color:var(--text-muted);">Fluency</h3>
+            <div class="detail-grid">
+                <div class="detail-item"><span class="detail-val" id="d-wpm">--</span><span class="detail-lbl">WPM</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-artrate">--</span><span class="detail-lbl">Art. Rate</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-mlr">--</span><span class="detail-lbl">MLR</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-longest">--</span><span class="detail-lbl">Longest</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-fillers">--</span><span class="detail-lbl">Fillers</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-reps">--</span><span class="detail-lbl">Reps</span></div>
+            </div>
+
+            <h3 style="margin:1rem 0 0.5rem; font-size:0.9rem; color:var(--text-muted);">Prosody</h3>
+            <div class="detail-grid">
+                <div class="detail-item"><span class="detail-val" id="d-stress">--</span><span class="detail-lbl">Stress</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-intonation">--</span><span class="detail-lbl">Intonation</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-rhythm">--</span><span class="detail-lbl">nPVI-V</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-pitch">--</span><span class="detail-lbl">Pitch (ST)</span></div>
+            </div>
+
+            <h3 style="margin:1rem 0 0.5rem; font-size:0.9rem; color:var(--text-muted);">Pronunciation</h3>
+            <div class="detail-grid">
+                <div class="detail-item"><span class="detail-val" id="d-pronscore">--</span><span class="detail-lbl">Intelligibility</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-per">--</span><span class="detail-lbl">PER</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-wer">--</span><span class="detail-lbl">WER</span></div>
+                <div class="detail-item"><span class="detail-val" id="d-duration">--</span><span class="detail-lbl">Duration</span></div>
+            </div>
+
+            <h3 style="margin:1rem 0 0.5rem; font-size:0.9rem; color:var(--text-muted);">4-Dimension Scores</h3>
+            <div class="detail-grid">
+                <div class="detail-item"><span class="detail-val" id="score-accuracy">--</span><span class="detail-lbl">Accuracy</span></div>
+                <div class="detail-item"><span class="detail-val" id="score-fluency">--</span><span class="detail-lbl">Fluency</span></div>
+                <div class="detail-item"><span class="detail-val" id="score-prosody">--</span><span class="detail-lbl">Prosody</span></div>
+                <div class="detail-item"><span class="detail-val" id="score-completeness">--</span><span class="detail-lbl">Completeness</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/practice.js?v=6"></script>
+{% endblock %}

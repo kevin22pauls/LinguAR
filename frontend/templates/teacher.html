@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+{% block title %}Teacher Dashboard — LinguAR{% endblock %}
+{% block head %}
+<style>
+    .teacher-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+    .teacher-header h1 { margin: 0; font-size: 1.6rem; font-weight: 800; }
+    .teacher-meta { color: var(--text-muted); font-size: 0.95rem; font-weight: 500; }
+
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .stat-box { background: var(--surface, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 1rem 1.2rem; text-align: center; }
+    .stat-value { display: block; font-size: 1.9rem; font-weight: 800; color: var(--primary); }
+    .stat-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+
+    .dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    @media (max-width: 768px) { .dash-grid { grid-template-columns: 1fr; } }
+    .chart-container-sq { position: relative; width: 100%; max-height: 320px; }
+    .chart-container { position: relative; width: 100%; max-height: 280px; }
+
+    .problem-sounds { margin-bottom: 1rem; }
+    .sound-bar { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
+    .sound-label { font-weight: 700; font-size: 1rem; min-width: 40px; text-align: center; }
+    .sound-track { flex: 1; height: 24px; background: var(--border, #a3d4cb); border-radius: 12px; overflow: hidden; }
+    .sound-fill { height: 100%; border-radius: 12px; transition: width 0.4s ease; }
+    .sound-fill.high { background: #ef4444; }
+    .sound-fill.mid { background: #c4a800; }
+    .sound-fill.low { background: #00c385; }
+    .sound-pct { font-size: 0.85rem; min-width: 80px; color: var(--text-muted); }
+    .suggestion { margin-top: 0.75rem; padding: 0.75rem 1rem; background: #eafff9; border-left: 3px solid var(--primary); border-radius: 4px; font-size: 0.95rem; font-weight: 600; color: #344b47; }
+
+    /* Leaderboard */
+    .leaderboard { list-style: none; padding: 0; margin: 0; }
+    .lb-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 0.5rem; border-bottom: 1px solid var(--border); }
+    .lb-row:last-child { border-bottom: none; }
+    .lb-rank { font-size: 1.3rem; font-weight: 800; min-width: 2rem; text-align: center; color: var(--primary); }
+    .lb-rank.gold { color: #d4a017; }
+    .lb-rank.silver { color: #8a8a8a; }
+    .lb-rank.bronze { color: #b87333; }
+    .lb-name { flex: 1; font-weight: 600; font-size: 0.95rem; }
+    .lb-score { font-weight: 800; font-size: 1.1rem; }
+    .lb-bar-track { flex: 2; height: 10px; background: var(--border); border-radius: 5px; overflow: hidden; }
+    .lb-bar-fill { height: 100%; border-radius: 5px; background: linear-gradient(90deg, #00c385, #009b6a); }
+    .lb-details { font-size: 0.78rem; color: var(--text-muted); min-width: 80px; text-align: right; }
+
+    /* Struggling words */
+    .word-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .word-chip { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; border: 1px solid var(--border); background: var(--surface); }
+    .word-chip .wc-pct { font-size: 0.75rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; }
+    .wc-pct.err-high { background: #fee2e2; color: #991b1b; }
+    .wc-pct.err-mid { background: #fef9c3; color: #854d0e; }
+    .wc-pct.err-low { background: #e6fbf3; color: #005c40; }
+    .word-chip .wc-students { font-size: 0.72rem; color: var(--text-muted); }
+
+    /* Score distribution */
+    .dist-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.45rem; }
+    .dist-label { font-size: 0.85rem; font-weight: 600; min-width: 50px; text-align: right; }
+    .dist-track { flex: 1; height: 20px; background: var(--border); border-radius: 10px; overflow: hidden; }
+    .dist-fill { height: 100%; border-radius: 10px; transition: width 0.4s ease; }
+    .dist-count { font-size: 0.85rem; font-weight: 700; min-width: 30px; }
+
+    .student-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .student-table th { text-align: left; padding: 0.65rem 0.75rem; border-bottom: 2px solid var(--border, #e5e7eb); color: var(--text-muted); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .student-table td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--border, #e5e7eb); font-size: 0.93rem; }
+    .student-table tr:hover { background: rgba(0,195,133,0.06); }
+    .status-on { color: #00c385; font-weight: 600; }
+    .status-off { color: #96b1ac; }
+    .score-high { color: #009b6a; font-weight: 600; }
+    .score-mid { color: #c4a800; font-weight: 600; }
+    .score-low { color: #ef4444; font-weight: 600; }
+
+    .assign-form { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+    .assign-form input, .assign-form select { padding: 0.5rem 0.75rem; border: 1px solid var(--border, #e5e7eb); border-radius: 6px; font-size: 0.9rem; }
+    .assign-form input { flex: 1; min-width: 150px; }
+    .assignment-item { padding: 0.6rem 0; border-bottom: 1px solid var(--border, #e5e7eb); font-size: 0.9rem; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; }
+    .assignment-item:last-child { border-bottom: none; }
+    .assignment-info { flex: 1; }
+    .assignment-status { font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; }
+    .assignment-status.open { background: #e6fbf3; color: #005c40; }
+    .assignment-status.closed { background: #f3f4f6; color: #6b7280; }
+    .btn-sm { padding: 0.25rem 0.6rem; font-size: 0.8rem; border-radius: 4px; border: 1px solid var(--border, #e5e7eb); cursor: pointer; background: #fff; }
+    .btn-sm:hover { background: #f3f4f6; }
+    .btn-close-assign { color: #ef4444; border-color: #fca5a5; }
+    .btn-open-assign { color: #00c385; border-color: #4dd9a8; }
+
+    .empty-state { text-align: center; padding: 2rem; color: var(--text-muted); }
+    #loading-state { text-align: center; padding: 3rem; color: var(--text-muted); }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div id="loading-state">Loading teacher dashboard...</div>
+
+    <div id="teacher-content" style="display:none;">
+        <!-- Header -->
+        <div class="teacher-header">
+            <div>
+                <h1 id="class-title">Classroom</h1>
+                <span class="teacher-meta" id="class-meta"></span>
+            </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <span class="stat-value" id="st-students">0</span>
+                <span class="stat-label">Students</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value" id="st-active">0</span>
+                <span class="stat-label">Active This Week</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value" id="st-avg">—</span>
+                <span class="stat-label">Class Average</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value" id="st-recordings">0</span>
+                <span class="stat-label">Total Recordings</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value" id="st-acc">—</span>
+                <span class="stat-label">Avg Accuracy</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value" id="st-flu">—</span>
+                <span class="stat-label">Avg Fluency</span>
+            </div>
+        </div>
+
+        <!-- Class Insights -->
+        <section class="card" id="class-insights-card" style="display:none;">
+            <h2>Class Insights</h2>
+            <div id="class-insights-list"></div>
+        </section>
+
+        <!-- Progress Trend + Dimension Radar side by side -->
+        <div class="dash-grid">
+            <section class="card">
+                <h2>Class Progress Over Time</h2>
+                <div class="chart-container-sq">
+                    <canvas id="progress-chart"></canvas>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Class Skill Breakdown</h2>
+                <div class="chart-container-sq">
+                    <canvas id="dimension-radar"></canvas>
+                </div>
+            </section>
+        </div>
+
+        <!-- Leaderboard + Score Distribution side by side -->
+        <div class="dash-grid">
+            <section class="card">
+                <h2>Leaderboard</h2>
+                <div id="leaderboard-list" class="leaderboard">
+                    <p class="empty-state">No scores yet.</p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Score Distribution</h2>
+                <div id="score-dist"></div>
+            </section>
+        </div>
+
+        <!-- Problem Sounds + Struggling Words side by side -->
+        <div class="dash-grid">
+            <section class="card">
+                <h2>Class-wide Problem Sounds</h2>
+                <div id="problem-sounds" class="problem-sounds">
+                    <p class="empty-state">No phoneme data yet.</p>
+                </div>
+                <div id="sound-suggestion" class="suggestion" style="display:none;"></div>
+            </section>
+            <section class="card">
+                <h2>Most Struggling Words</h2>
+                <p class="card-subtitle" style="font-size:0.82rem;color:var(--text-muted);margin-bottom:0.75rem;">Words students get wrong most often</p>
+                <div id="struggling-words" class="word-grid">
+                    <p class="empty-state">No word data yet.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Student List -->
+        <section class="card">
+            <h2>All Students</h2>
+            <div style="overflow-x:auto;">
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Level</th>
+                        <th>Score</th>
+                        <th>Acc</th>
+                        <th>Flu</th>
+                        <th>Pro</th>
+                        <th>Comp</th>
+                        <th>Rec</th>
+                        <th>Last Active</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="student-tbody">
+                    <tr><td colspan="10" class="empty-state">No students yet.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+
+        <!-- Assignments -->
+        <section class="card">
+            <h2>Assignments</h2>
+            <div id="assignment-list">
+                <p class="empty-state">No assignments yet.</p>
+            </div>
+            <div class="assign-form">
+                <input type="text" id="assign-objects" placeholder="Target objects (e.g. cup, book)">
+                <select id="assign-level">
+                    <option value="A1">A1</option>
+                    <option value="A2" selected>A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                </select>
+                <button onclick="createAssignment()" class="btn btn-primary">Assign</button>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/teacher.js?v=4"></script>
+{% endblock %}

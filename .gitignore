@@ -1,0 +1,52 @@
+# Environment & secrets
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Database
+*.db
+*.sqlite3
+
+# ML model cache
+backend/models/cache/
+backend/data/phoneme_pool/*.npy
+backend/data/phoneme_pool/*.bin
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+certbot/
+
+# Uploads (user audio)
+uploads/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Logs
+logs/
+
+# Test audio
+test_audio.wav
+
+# YOLO weights (large binary files — download separately)
+*.pt
+*.onnx
+
+# Launcher PID
+.launcher.pid

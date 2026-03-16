@@ -1,0 +1,2618 @@
+{
+  "sharpner": {
+    "beginner": [
+      {
+        "id": "sharpner_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Can I use your sharpner?"
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, here you go."
+          },
+          {
+            "speaker": "learner",
+            "line": "Thank you. My pencil is very blunt."
+          },
+          {
+            "speaker": "system",
+            "line": "You are welcome."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Where is my sharpner?"
+          },
+          {
+            "speaker": "system",
+            "line": "I think it is in your pencil box."
+          },
+          {
+            "speaker": "learner",
+            "line": "Oh yes, I found it."
+          },
+          {
+            "speaker": "system",
+            "line": "Good. Now sharpen your pencil quickly."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I lost my sharpner."
+          },
+          {
+            "speaker": "system",
+            "line": "Check under your desk."
+          },
+          {
+            "speaker": "learner",
+            "line": "It is not there."
+          },
+          {
+            "speaker": "system",
+            "line": "You can share mine for now."
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "sharpner_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My sharpner broke during the maths class."
+          },
+          {
+            "speaker": "system",
+            "line": "That is unfortunate. What happened?"
+          },
+          {
+            "speaker": "learner",
+            "line": "The blade came out when I was sharpening my pencil."
+          },
+          {
+            "speaker": "system",
+            "line": "Be careful next time. You can buy a new one after school."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Do you think this sharpner is good?"
+          },
+          {
+            "speaker": "system",
+            "line": "It looks fine. Is it new?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, I bought it yesterday from the bookshop."
+          },
+          {
+            "speaker": "system",
+            "line": "Try sharpening your pencil and see if it works well."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I need a sharpner with two holes."
+          },
+          {
+            "speaker": "system",
+            "line": "Why do you need two holes?"
+          },
+          {
+            "speaker": "learner",
+            "line": "One is for thin pencils and the other is for thick colour pencils."
+          },
+          {
+            "speaker": "system",
+            "line": "That makes sense. The stationery shop near school has those."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "sharpner_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have been looking for a good sharpner for weeks."
+          },
+          {
+            "speaker": "system",
+            "line": "What kind of sharpner do you prefer?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I want one with a container to catch the shavings."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a smart choice. It keeps your desk clean."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you recommend a sharpner that works well with colour pencils?"
+          },
+          {
+            "speaker": "system",
+            "line": "You should try a sharpner with a wider hole and a sharp blade."
+          },
+          {
+            "speaker": "learner",
+            "line": "Do they cost much more than regular sharpners?"
+          },
+          {
+            "speaker": "system",
+            "line": "Not really. They are only slightly more expensive."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My sharpner always breaks the pencil tip instead of sharpening it."
+          },
+          {
+            "speaker": "system",
+            "line": "The blade might be dull. Have you tried replacing it?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I did not know you could replace sharpner blades."
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, some sharpners have a small screw that holds the blade in place."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "sharpner_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I find it interesting that something as small as a sharpner can affect the quality of your drawing."
+          },
+          {
+            "speaker": "system",
+            "line": "That is very true. A sharp pencil makes clean, precise lines."
+          },
+          {
+            "speaker": "learner",
+            "line": "I noticed my sketches improved after I started using a better sharpner."
+          },
+          {
+            "speaker": "system",
+            "line": "Good tools make a real difference, even simple ones like sharpners."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had I not forgotten my sharpner at home, I would have finished the diagram on time."
+          },
+          {
+            "speaker": "system",
+            "line": "That must have been frustrating during the test."
+          },
+          {
+            "speaker": "learner",
+            "line": "It was. I had to borrow one and it wasted several minutes."
+          },
+          {
+            "speaker": "system",
+            "line": "Perhaps keeping a spare in your school bag would prevent that from happening again."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Do you think electric sharpners are better than manual ones?"
+          },
+          {
+            "speaker": "system",
+            "line": "They are faster, but they can over-sharpen and waste the pencil."
+          },
+          {
+            "speaker": "learner",
+            "line": "I suppose a manual sharpner gives you more control."
+          },
+          {
+            "speaker": "system",
+            "line": "Exactly. For drawing especially, manual sharpners are often preferred."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "sharpner_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is remarkable how the design of sharpners has barely changed over the decades."
+          },
+          {
+            "speaker": "system",
+            "line": "That is because the basic mechanism is already very efficient."
+          },
+          {
+            "speaker": "learner",
+            "line": "I suppose there is an elegance in simplicity when it comes to everyday tools."
+          },
+          {
+            "speaker": "system",
+            "line": "Indeed. Sometimes the simplest solutions are the ones that endure the longest."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One could argue that the quality of classroom stationery, including sharpners, reflects the resources available to a school."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a thoughtful observation. Access to good tools does affect learning."
+          },
+          {
+            "speaker": "learner",
+            "line": "I noticed that students with better stationery tend to take more pride in their work."
+          },
+          {
+            "speaker": "system",
+            "line": "There is likely a connection between having the right tools and developing good study habits."
+          }
+        ]
+      },
+      {
+        "id": "sharpner_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of how advanced digital tools become, I believe physical tools like sharpners will always have a place in primary classrooms."
+          },
+          {
+            "speaker": "system",
+            "line": "I agree. Young children benefit from the tactile experience of writing and drawing by hand."
+          },
+          {
+            "speaker": "learner",
+            "line": "There is something satisfying about sharpening a pencil and seeing those clean curls of wood."
+          },
+          {
+            "speaker": "system",
+            "line": "Absolutely. It is a small ritual that connects the student to the act of creating."
+          }
+        ]
+      }
+    ]
+  },
+  "ballpen": {
+    "beginner": [
+      {
+        "id": "ballpen_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Can I borrow your ballpen?"
+          },
+          {
+            "speaker": "system",
+            "line": "Of course. Here it is."
+          },
+          {
+            "speaker": "learner",
+            "line": "Thank you. Mine stopped working."
+          },
+          {
+            "speaker": "system",
+            "line": "You are welcome. Return it after the class."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have a new blue ballpen."
+          },
+          {
+            "speaker": "system",
+            "line": "It looks nice. Where did you get it?"
+          },
+          {
+            "speaker": "learner",
+            "line": "My mother bought it for me."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a good ballpen for writing."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My ballpen is not writing."
+          },
+          {
+            "speaker": "system",
+            "line": "Try shaking it a little."
+          },
+          {
+            "speaker": "learner",
+            "line": "It is still not working."
+          },
+          {
+            "speaker": "system",
+            "line": "The ink may have run out. Use a pencil for now."
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "ballpen_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Which colour ballpen should I use for the test?"
+          },
+          {
+            "speaker": "system",
+            "line": "The teacher said we must use blue or black."
+          },
+          {
+            "speaker": "learner",
+            "line": "I only have a red ballpen today."
+          },
+          {
+            "speaker": "system",
+            "line": "You can borrow my blue one. I have a spare."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My ballpen leaked inside my pencil case."
+          },
+          {
+            "speaker": "system",
+            "line": "Oh no. Is everything stained?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, there is ink on my eraser and sharpner too."
+          },
+          {
+            "speaker": "system",
+            "line": "Let us clean it up before the next class starts."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I think ballpens are better than pencils for writing."
+          },
+          {
+            "speaker": "system",
+            "line": "Why do you think so?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Because ballpen writing looks neater and does not smudge."
+          },
+          {
+            "speaker": "system",
+            "line": "That is true, but pencils are easier to correct."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ballpen_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have been searching for a ballpen that writes smoothly without skipping."
+          },
+          {
+            "speaker": "system",
+            "line": "Have you tried gel ballpens? They usually write very smoothly."
+          },
+          {
+            "speaker": "learner",
+            "line": "I have, but they tend to run out of ink faster than regular ones."
+          },
+          {
+            "speaker": "system",
+            "line": "That is the trade-off. Smooth writing often means more ink consumption."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you explain why some ballpens stop working even when they still have ink?"
+          },
+          {
+            "speaker": "system",
+            "line": "It usually happens when air gets trapped in the refill tube."
+          },
+          {
+            "speaker": "learner",
+            "line": "Is there any way to fix it?"
+          },
+          {
+            "speaker": "system",
+            "line": "Sometimes warming the tip gently or scribbling on rough paper can help restart the flow."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The teacher told us not to use ballpens for the geometry diagram."
+          },
+          {
+            "speaker": "system",
+            "line": "That makes sense. Pencil lines are easier to erase and correct."
+          },
+          {
+            "speaker": "learner",
+            "line": "But I find it difficult to draw neat lines with a pencil."
+          },
+          {
+            "speaker": "system",
+            "line": "Practice will help. Use a sharp pencil and a steady hand."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "ballpen_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The ballpen that my uncle gave me has a very smooth grip and writes beautifully."
+          },
+          {
+            "speaker": "system",
+            "line": "Good writing instruments can make a real difference to how you feel about writing."
+          },
+          {
+            "speaker": "learner",
+            "line": "I have noticed that I actually enjoy taking notes more when I use a comfortable pen."
+          },
+          {
+            "speaker": "system",
+            "line": "That is an interesting observation. The right tool can genuinely motivate you."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had the ballpen not leaked in my pocket, my school uniform would not have been ruined."
+          },
+          {
+            "speaker": "system",
+            "line": "That sounds like it was quite a disaster."
+          },
+          {
+            "speaker": "learner",
+            "line": "It was. The stain would not come off even after washing it twice."
+          },
+          {
+            "speaker": "system",
+            "line": "In the future, always keep the cap on tightly, especially when the pen is in your pocket."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It concerns me that millions of plastic ballpens are thrown away every year around the world."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a valid environmental concern."
+          },
+          {
+            "speaker": "learner",
+            "line": "Perhaps schools should encourage the use of refillable pens instead of disposable ones."
+          },
+          {
+            "speaker": "system",
+            "line": "That would be a practical step towards reducing plastic waste from classrooms."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ballpen_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is fascinating that the ballpoint pen was invented to solve the specific problem of fountain pen ink smudging on paper."
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, and the rotating ball mechanism was a brilliantly simple engineering solution."
+          },
+          {
+            "speaker": "learner",
+            "line": "I read that early ballpens were considered luxury items and were quite expensive."
+          },
+          {
+            "speaker": "system",
+            "line": "That is correct. It took several decades of manufacturing improvements before they became affordable for everyone."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One might argue that the shift from fountain pens to ballpens changed not only writing habits but also handwriting itself."
+          },
+          {
+            "speaker": "system",
+            "line": "That is an interesting perspective. Could you elaborate?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Ballpens require less pressure variation, so the flowing, expressive strokes of fountain pen writing gradually disappeared."
+          },
+          {
+            "speaker": "system",
+            "line": "You make a compelling point. The tool we write with does shape how our writing looks and feels."
+          }
+        ]
+      },
+      {
+        "id": "ballpen_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of the rise of digital communication, I believe the physical act of writing with a ballpen engages the brain differently."
+          },
+          {
+            "speaker": "system",
+            "line": "Research does support that claim. Handwriting activates areas of the brain associated with memory and comprehension."
+          },
+          {
+            "speaker": "learner",
+            "line": "Perhaps that is why taking notes by hand often helps me remember things better than typing."
+          },
+          {
+            "speaker": "system",
+            "line": "Indeed. The slower pace of handwriting forces you to process and summarise information rather than just transcribing it."
+          }
+        ]
+      }
+    ]
+  },
+  "book": {
+    "beginner": [
+      {
+        "id": "book_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have a new book."
+          },
+          {
+            "speaker": "system",
+            "line": "What is it about?"
+          },
+          {
+            "speaker": "learner",
+            "line": "It is about animals in the forest."
+          },
+          {
+            "speaker": "system",
+            "line": "That sounds very interesting."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Where is my English book?"
+          },
+          {
+            "speaker": "system",
+            "line": "Did you check your bag?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, I found it. It was at the bottom."
+          },
+          {
+            "speaker": "system",
+            "line": "Good. Open it to page twenty."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Can I read your book?"
+          },
+          {
+            "speaker": "system",
+            "line": "Of course. I finished reading it yesterday."
+          },
+          {
+            "speaker": "learner",
+            "line": "Thank you. I will return it next week."
+          },
+          {
+            "speaker": "system",
+            "line": "Take your time. There is no hurry."
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "book_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I read three books during the holidays."
+          },
+          {
+            "speaker": "system",
+            "line": "That is wonderful. Which one did you like the most?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I liked the story about a boy who travels around the world."
+          },
+          {
+            "speaker": "system",
+            "line": "Adventure stories are always fun to read."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My book has a torn page in the middle."
+          },
+          {
+            "speaker": "system",
+            "line": "How did that happen?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I think someone pulled it out by mistake."
+          },
+          {
+            "speaker": "system",
+            "line": "You can fix it with some tape. Be careful next time."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The teacher asked us to read chapter five before tomorrow."
+          },
+          {
+            "speaker": "system",
+            "line": "Have you started reading it?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Not yet. I will read it after dinner."
+          },
+          {
+            "speaker": "system",
+            "line": "Do not leave it too late or you might fall asleep."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "book_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have been reading a book about the solar system and it is absolutely fascinating."
+          },
+          {
+            "speaker": "system",
+            "line": "What is the most interesting thing you have learned so far?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I learned that Jupiter has more than seventy moons."
+          },
+          {
+            "speaker": "system",
+            "line": "That is incredible. Books are such a wonderful source of knowledge."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you suggest a book that would help me improve my English vocabulary?"
+          },
+          {
+            "speaker": "system",
+            "line": "I would recommend reading story books with slightly challenging language."
+          },
+          {
+            "speaker": "learner",
+            "line": "Should I look up every new word in the dictionary?"
+          },
+          {
+            "speaker": "system",
+            "line": "Try to understand the meaning from context first. Look it up only if you are really stuck."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The book I borrowed from the library is due tomorrow, but I am only halfway through."
+          },
+          {
+            "speaker": "system",
+            "line": "Can you renew it for another week?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I am not sure. I will ask the librarian during the break."
+          },
+          {
+            "speaker": "system",
+            "line": "That would be a good idea. Most libraries allow at least one renewal."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "book_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The book that won the national award this year was written by a teacher from a small village."
+          },
+          {
+            "speaker": "system",
+            "line": "That is inspiring. What is the book about?"
+          },
+          {
+            "speaker": "learner",
+            "line": "It tells the story of children in a rural school who overcome many challenges to pursue their dreams."
+          },
+          {
+            "speaker": "system",
+            "line": "Stories like that remind us that determination can triumph over difficult circumstances."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had I started the book a few days earlier, I would have had time to discuss it properly in class."
+          },
+          {
+            "speaker": "system",
+            "line": "Did you feel unprepared during the discussion?"
+          },
+          {
+            "speaker": "learner",
+            "line": "A little, yes. I had only skimmed the last three chapters."
+          },
+          {
+            "speaker": "system",
+            "line": "Next time, try setting a reading schedule so that you finish well before the deadline."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It saddens me that many schools in rural areas do not have enough books in their libraries."
+          },
+          {
+            "speaker": "system",
+            "line": "That is an important issue. Access to books is essential for quality education."
+          },
+          {
+            "speaker": "learner",
+            "line": "I have been thinking about organising a book donation drive at our school."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a wonderful idea. I am sure many students would be willing to contribute their old books."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "book_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is often said that a single book has the power to change the course of a person's life."
+          },
+          {
+            "speaker": "system",
+            "line": "Do you believe that from personal experience?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes. A book about scientists inspired me to take a serious interest in physics."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a perfect example of how literature can ignite a passion that shapes one's future."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One could argue that the decline in recreational reading among children is a direct consequence of increased screen time."
+          },
+          {
+            "speaker": "system",
+            "line": "There is certainly data to support that view. Do you think anything can reverse the trend?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I believe schools could dedicate a regular reading period where students read books of their own choice."
+          },
+          {
+            "speaker": "system",
+            "line": "Giving students autonomy in their reading choices is one of the most effective ways to foster a genuine love of books."
+          }
+        ]
+      },
+      {
+        "id": "book_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of the format, whether printed or digital, the essence of a book lies in its ability to transport the reader to a different world."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a beautifully expressed thought. Do you have a preference between the two formats?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I prefer printed books because the physical sensation of turning pages adds to the experience."
+          },
+          {
+            "speaker": "system",
+            "line": "Many readers share that sentiment. There is an intimacy to holding a physical book that screens cannot quite replicate."
+          }
+        ]
+      }
+    ]
+  },
+  "eraser": {
+    "beginner": [
+      {
+        "id": "eraser_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Can I use your eraser?"
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, of course. Here you are."
+          },
+          {
+            "speaker": "learner",
+            "line": "Thank you. I made a mistake."
+          },
+          {
+            "speaker": "system",
+            "line": "No problem. Everyone makes mistakes."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I lost my eraser."
+          },
+          {
+            "speaker": "system",
+            "line": "Look inside your desk."
+          },
+          {
+            "speaker": "learner",
+            "line": "I found it. It was under my book."
+          },
+          {
+            "speaker": "system",
+            "line": "Good. Try not to lose it again."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My eraser smells like mango."
+          },
+          {
+            "speaker": "system",
+            "line": "Really? That is funny."
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, it is a fruit-shaped eraser."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a cute eraser. Where did you buy it?"
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "eraser_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My eraser is leaving marks on the paper instead of cleaning them."
+          },
+          {
+            "speaker": "system",
+            "line": "It might be too old or too hard."
+          },
+          {
+            "speaker": "learner",
+            "line": "Should I buy a new one?"
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, a soft white eraser usually works the best."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Someone took my eraser from my desk."
+          },
+          {
+            "speaker": "system",
+            "line": "Are you sure you did not drop it?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I checked everywhere. It was definitely on my desk before the break."
+          },
+          {
+            "speaker": "system",
+            "line": "Ask your neighbours politely. They might have picked it up by mistake."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Do you know why some erasers are pink and some are white?"
+          },
+          {
+            "speaker": "system",
+            "line": "The colour usually depends on the material they are made from."
+          },
+          {
+            "speaker": "learner",
+            "line": "Which type erases better?"
+          },
+          {
+            "speaker": "system",
+            "line": "White vinyl erasers are generally softer and cleaner."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "eraser_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have been trying to erase this pencil mark but it will not come off completely."
+          },
+          {
+            "speaker": "system",
+            "line": "You might have pressed too hard when you wrote it."
+          },
+          {
+            "speaker": "learner",
+            "line": "Is there a way to remove deep pencil marks?"
+          },
+          {
+            "speaker": "system",
+            "line": "A kneaded eraser might work better for heavy marks. It lifts the graphite gently."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you explain why erasers can remove pencil marks but not ballpen ink?"
+          },
+          {
+            "speaker": "system",
+            "line": "Pencil marks sit on the surface as graphite particles, which the eraser can rub away."
+          },
+          {
+            "speaker": "learner",
+            "line": "And ballpen ink soaks into the paper fibres?"
+          },
+          {
+            "speaker": "system",
+            "line": "Exactly. That is why ink marks are much harder to remove."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The teacher told us to erase our rough work before submitting the answer sheet."
+          },
+          {
+            "speaker": "system",
+            "line": "Did you manage to erase everything neatly?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Most of it, but some faint marks are still visible."
+          },
+          {
+            "speaker": "system",
+            "line": "That should be fine. The teacher will understand."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "eraser_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I find it interesting that erasers were originally made from natural rubber."
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, that is actually where the word rubber comes from in British English."
+          },
+          {
+            "speaker": "learner",
+            "line": "So the act of rubbing out pencil marks literally gave the material its name?"
+          },
+          {
+            "speaker": "system",
+            "line": "Precisely. Language often preserves the history of how objects were originally used."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had I not had an eraser during the exam, my answer sheet would have looked terribly messy."
+          },
+          {
+            "speaker": "system",
+            "line": "A clean presentation does matter, especially in exams."
+          },
+          {
+            "speaker": "learner",
+            "line": "I agree. Being able to correct mistakes neatly gives you more confidence."
+          },
+          {
+            "speaker": "system",
+            "line": "It also shows the examiner that you care about the quality of your work."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It seems wasteful that erasers get smaller and smaller until you cannot hold them anymore."
+          },
+          {
+            "speaker": "system",
+            "line": "That is true. Most of the eraser ends up as tiny crumbs on the desk."
+          },
+          {
+            "speaker": "learner",
+            "line": "I wonder if someone could design an eraser holder, like a pencil holder, to use the last bit."
+          },
+          {
+            "speaker": "system",
+            "line": "That is actually a clever idea. Some companies do make eraser holders for exactly that reason."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "eraser_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is worth noting that the eraser symbolises something important in education: the freedom to make mistakes without permanent consequences."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a profound observation. The ability to correct encourages risk-taking in learning."
+          },
+          {
+            "speaker": "learner",
+            "line": "I think classrooms should celebrate mistakes as part of the learning process rather than penalising them."
+          },
+          {
+            "speaker": "system",
+            "line": "Many modern educational philosophies share that view. A growth mindset values effort and correction over perfection."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One might argue that the eraser is a metaphor for resilience: no matter how many mistakes you make, you can always start again on a clean page."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a beautiful way to think about it. Have you always seen everyday objects in such symbolic terms?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I started thinking this way after reading an essay about how simple tools reflect deeper human values."
+          },
+          {
+            "speaker": "system",
+            "line": "Literature has a wonderful way of helping us see the extraordinary in the ordinary."
+          }
+        ]
+      },
+      {
+        "id": "eraser_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of whether we move to entirely digital classrooms, I believe the concept behind the eraser, the ability to undo and revise, will always remain fundamental to learning."
+          },
+          {
+            "speaker": "system",
+            "line": "Absolutely. The undo button on a computer is essentially the digital descendant of the eraser."
+          },
+          {
+            "speaker": "learner",
+            "line": "That is an interesting parallel. Both serve the same psychological purpose of reducing the fear of making errors."
+          },
+          {
+            "speaker": "system",
+            "line": "And that freedom is precisely what allows learners to experiment, explore, and ultimately grow."
+          }
+        ]
+      }
+    ]
+  },
+  "notebook": {
+    "beginner": [
+      {
+        "id": "notebook_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I need a new notebook."
+          },
+          {
+            "speaker": "system",
+            "line": "What happened to your old one?"
+          },
+          {
+            "speaker": "learner",
+            "line": "It is full. There are no more pages."
+          },
+          {
+            "speaker": "system",
+            "line": "Let us buy a new one after school."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Where is my notebook?"
+          },
+          {
+            "speaker": "system",
+            "line": "Is it in your bag?"
+          },
+          {
+            "speaker": "learner",
+            "line": "No, I think I left it in class."
+          },
+          {
+            "speaker": "system",
+            "line": "Go and check before someone takes it."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My notebook is very neat."
+          },
+          {
+            "speaker": "system",
+            "line": "That is great. Your teacher will be happy."
+          },
+          {
+            "speaker": "learner",
+            "line": "I write carefully every day."
+          },
+          {
+            "speaker": "system",
+            "line": "Keep up the good work."
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "notebook_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I spilled water on my notebook and the ink started spreading."
+          },
+          {
+            "speaker": "system",
+            "line": "Oh no. How many pages were damaged?"
+          },
+          {
+            "speaker": "learner",
+            "line": "About five or six pages. The writing is not readable anymore."
+          },
+          {
+            "speaker": "system",
+            "line": "Try drying it in the sun. You may need to rewrite those pages."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "How many notebooks do you use for school?"
+          },
+          {
+            "speaker": "system",
+            "line": "I use one for each subject, so about six in total."
+          },
+          {
+            "speaker": "learner",
+            "line": "That is a lot. I only use four."
+          },
+          {
+            "speaker": "system",
+            "line": "It depends on the school. Some teachers want separate notebooks for classwork and homework."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The teacher asked us to bring a new notebook for project work."
+          },
+          {
+            "speaker": "system",
+            "line": "What size does she want?"
+          },
+          {
+            "speaker": "learner",
+            "line": "She said a big one with plain pages, not ruled ones."
+          },
+          {
+            "speaker": "system",
+            "line": "We can find one at the bookshop near the bus stop."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "notebook_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have been maintaining a separate notebook for new English words I learn."
+          },
+          {
+            "speaker": "system",
+            "line": "That is an excellent habit. How many words have you collected so far?"
+          },
+          {
+            "speaker": "learner",
+            "line": "About a hundred and fifty. I also write the meaning and a sentence for each word."
+          },
+          {
+            "speaker": "system",
+            "line": "That is very thorough. Reviewing it regularly will help you remember them."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you tell me how you keep your notebook so well organised?"
+          },
+          {
+            "speaker": "system",
+            "line": "I always write the date and topic at the top, and I leave space between sections."
+          },
+          {
+            "speaker": "learner",
+            "line": "I tend to write everything together without any gaps."
+          },
+          {
+            "speaker": "system",
+            "line": "Try using headings and bullet points. It makes revision much easier."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The notebook I was using for maths ran out of pages right before the revision started."
+          },
+          {
+            "speaker": "system",
+            "line": "Did you start a new one?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, but now my notes are split across two notebooks, which is confusing."
+          },
+          {
+            "speaker": "system",
+            "line": "You could number the pages and create a small index at the back to help you find topics quickly."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "notebook_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The notebook that I used throughout the year has become a kind of personal record of everything I learned."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a wonderful way to look at it."
+          },
+          {
+            "speaker": "learner",
+            "line": "I sometimes flip through old notebooks and I am surprised by how much I have improved."
+          },
+          {
+            "speaker": "system",
+            "line": "Seeing your own progress is one of the most rewarding aspects of keeping good notes."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had I organised my notebook by topic instead of by date, revision would have been much more efficient."
+          },
+          {
+            "speaker": "system",
+            "line": "Organisation is something most students learn through trial and error."
+          },
+          {
+            "speaker": "learner",
+            "line": "I plan to use a different system next year with colour-coded sections."
+          },
+          {
+            "speaker": "system",
+            "line": "That sounds like a well-thought-out plan. Colour coding helps your brain retrieve information faster."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It surprises me that some students throw away their notebooks at the end of the year."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a shame. Old notebooks can be very useful for revision."
+          },
+          {
+            "speaker": "learner",
+            "line": "I always keep mine. They serve as a reference whenever I need to revisit a topic."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a smart approach. Your future self will thank you for keeping them."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "notebook_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is fascinating how a notebook can serve as both a learning tool and a record of personal intellectual development."
+          },
+          {
+            "speaker": "system",
+            "line": "You raise an excellent point. Few objects capture a student's journey as directly as a notebook."
+          },
+          {
+            "speaker": "learner",
+            "line": "I read that many famous scientists and writers kept detailed notebooks throughout their lives."
+          },
+          {
+            "speaker": "system",
+            "line": "Indeed. Leonardo da Vinci's notebooks, for example, are considered some of the most remarkable documents in human history."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One could argue that the practice of handwriting notes in a notebook engages the brain more deeply than typing on a screen."
+          },
+          {
+            "speaker": "system",
+            "line": "Research in cognitive science supports that claim."
+          },
+          {
+            "speaker": "learner",
+            "line": "The slower pace of writing forces you to think about and summarise information rather than just copying it."
+          },
+          {
+            "speaker": "system",
+            "line": "Exactly. That processing step is what strengthens understanding and long-term retention."
+          }
+        ]
+      },
+      {
+        "id": "notebook_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of how technology transforms education, I believe the notebook will remain a cornerstone of the student experience."
+          },
+          {
+            "speaker": "system",
+            "line": "What makes you so confident about that?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Because the act of writing by hand connects thinking to a physical action, which digital tools cannot fully replicate."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a compelling argument. The notebook bridges the gap between thought and tangible expression in a way that feels uniquely personal."
+          }
+        ]
+      }
+    ]
+  },
+  "pencil": {
+    "beginner": [
+      {
+        "id": "pencil_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I need a pencil."
+          },
+          {
+            "speaker": "system",
+            "line": "Here, take this one."
+          },
+          {
+            "speaker": "learner",
+            "line": "Thank you. My pencil broke."
+          },
+          {
+            "speaker": "system",
+            "line": "You are welcome. Be careful not to drop it."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My pencil is very short."
+          },
+          {
+            "speaker": "system",
+            "line": "You have used it a lot."
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, I need a new one."
+          },
+          {
+            "speaker": "system",
+            "line": "Ask your mother to buy one today."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I like drawing with a pencil."
+          },
+          {
+            "speaker": "system",
+            "line": "What do you like to draw?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I draw trees and houses."
+          },
+          {
+            "speaker": "system",
+            "line": "That sounds lovely. Keep practising."
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "pencil_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My pencil keeps breaking every time I sharpen it."
+          },
+          {
+            "speaker": "system",
+            "line": "The lead inside might be cracked."
+          },
+          {
+            "speaker": "learner",
+            "line": "Should I throw it away?"
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, get a new one. A good pencil should not break so easily."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Do you know the difference between an HB pencil and a 2B pencil?"
+          },
+          {
+            "speaker": "system",
+            "line": "An HB pencil is harder and lighter, while a 2B is softer and darker."
+          },
+          {
+            "speaker": "learner",
+            "line": "Which one should I use for my drawings?"
+          },
+          {
+            "speaker": "system",
+            "line": "Use HB for outlines and 2B for shading and darker areas."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I dropped my pencil during the test and it rolled away."
+          },
+          {
+            "speaker": "system",
+            "line": "Did you manage to get it back?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, but I wasted time looking for it under the benches."
+          },
+          {
+            "speaker": "system",
+            "line": "Next time, keep a spare pencil on your desk just in case."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "pencil_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have been practising pencil shading for my art class."
+          },
+          {
+            "speaker": "system",
+            "line": "How is it going so far?"
+          },
+          {
+            "speaker": "learner",
+            "line": "It is getting better, but I still struggle with making smooth gradients."
+          },
+          {
+            "speaker": "system",
+            "line": "Try tilting the pencil and using the side of the lead. It gives a softer, more even shade."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you explain why some pencils have an eraser on one end?"
+          },
+          {
+            "speaker": "system",
+            "line": "It is simply for convenience so that you do not need to carry a separate eraser."
+          },
+          {
+            "speaker": "learner",
+            "line": "But those built-in erasers never seem to work very well."
+          },
+          {
+            "speaker": "system",
+            "line": "You are right. They tend to be harder and can sometimes smear the graphite instead of removing it."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The teacher mentioned that pencils were once considered very expensive writing tools."
+          },
+          {
+            "speaker": "system",
+            "line": "That is true. Before mass production, only wealthy people could afford them."
+          },
+          {
+            "speaker": "learner",
+            "line": "It is hard to imagine a time when a simple pencil was a luxury."
+          },
+          {
+            "speaker": "system",
+            "line": "Technology and manufacturing have made many everyday objects accessible that were once rare."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "pencil_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have noticed that the pencil I use for writing feels different from the one I use for art."
+          },
+          {
+            "speaker": "system",
+            "line": "That is because they likely have different graphite grades."
+          },
+          {
+            "speaker": "learner",
+            "line": "The writing pencil feels harder and leaves a lighter mark."
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, writing pencils are usually HB grade for a balance of darkness and precision, while art pencils range from hard H to soft B."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had I used a softer pencil for the landscape drawing, the shadows would have looked more realistic."
+          },
+          {
+            "speaker": "system",
+            "line": "Pencil grade selection is an important skill in art."
+          },
+          {
+            "speaker": "learner",
+            "line": "I am starting to understand that the right tools matter as much as technique."
+          },
+          {
+            "speaker": "system",
+            "line": "Absolutely. A skilled artist knows how to match the pencil to the purpose."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It occurred to me that the pencil is one of the few tools that is both creative and correctable."
+          },
+          {
+            "speaker": "system",
+            "line": "What do you mean by that?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Unlike a pen, anything you write or draw with a pencil can be erased and redone."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a keen observation. The pencil offers a unique combination of permanence and flexibility."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "pencil_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is a testament to the enduring design of the pencil that it has remained virtually unchanged for over four hundred years."
+          },
+          {
+            "speaker": "system",
+            "line": "Few inventions can claim such remarkable longevity."
+          },
+          {
+            "speaker": "learner",
+            "line": "I think its simplicity is precisely what has allowed it to survive in a world of constant technological change."
+          },
+          {
+            "speaker": "system",
+            "line": "You make an excellent point. True elegance in design often lies in doing one thing exceptionally well."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One could argue that the pencil democratised education by making writing accessible to people of all social classes."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a historically significant claim. Can you elaborate?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Before cheap pencils became widely available, most people simply could not afford the tools needed to write or draw."
+          },
+          {
+            "speaker": "system",
+            "line": "And affordable pencils, combined with paper, opened the door to mass literacy. That is a powerful historical connection."
+          }
+        ]
+      },
+      {
+        "id": "pencil_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of the rise of digital art tools, many professional artists still begin their work with a simple graphite pencil on paper."
+          },
+          {
+            "speaker": "system",
+            "line": "Why do you think that is?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I believe it is because the directness and immediacy of pencil on paper allows ideas to flow without the barrier of technology."
+          },
+          {
+            "speaker": "system",
+            "line": "That resonates with what many artists describe as the intimacy of the creative process, a direct connection between hand and mind."
+          }
+        ]
+      }
+    ]
+  },
+  "pointer": {
+    "beginner": [
+      {
+        "id": "pointer_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "What is that long stick?"
+          },
+          {
+            "speaker": "system",
+            "line": "That is the teacher's pointer."
+          },
+          {
+            "speaker": "learner",
+            "line": "What does the teacher use it for?"
+          },
+          {
+            "speaker": "system",
+            "line": "She uses it to point at words on the board."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The pointer is on the floor."
+          },
+          {
+            "speaker": "system",
+            "line": "Please pick it up."
+          },
+          {
+            "speaker": "learner",
+            "line": "Here it is. I will put it on the desk."
+          },
+          {
+            "speaker": "system",
+            "line": "Thank you. The teacher will need it soon."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The teacher pointed at me with the pointer."
+          },
+          {
+            "speaker": "system",
+            "line": "She wanted you to answer the question."
+          },
+          {
+            "speaker": "learner",
+            "line": "I was scared for a moment."
+          },
+          {
+            "speaker": "system",
+            "line": "Do not worry. She just wanted your attention."
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "pointer_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Our teacher broke the pointer by accident today."
+          },
+          {
+            "speaker": "system",
+            "line": "What happened?"
+          },
+          {
+            "speaker": "learner",
+            "line": "She tapped it too hard on the desk and it snapped."
+          },
+          {
+            "speaker": "system",
+            "line": "I hope the school gives her a new one soon."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Why does the teacher use a pointer instead of just her finger?"
+          },
+          {
+            "speaker": "system",
+            "line": "Because the board is too big and her hand might block the view."
+          },
+          {
+            "speaker": "learner",
+            "line": "That makes sense. The pointer reaches higher too."
+          },
+          {
+            "speaker": "system",
+            "line": "Exactly. It helps everyone in the class see clearly."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Some teachers use a laser pointer instead of a wooden one."
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, the red dot is easy to see on a screen."
+          },
+          {
+            "speaker": "learner",
+            "line": "I think laser pointers look more modern."
+          },
+          {
+            "speaker": "system",
+            "line": "They are useful, but you must never shine them in anyone's eyes."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "pointer_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have noticed that the teacher uses the pointer more during map lessons."
+          },
+          {
+            "speaker": "system",
+            "line": "That is because maps have many small labels and details."
+          },
+          {
+            "speaker": "learner",
+            "line": "It does help us follow exactly where she is pointing."
+          },
+          {
+            "speaker": "system",
+            "line": "A pointer bridges the gap between the teacher and a large visual display."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you imagine teaching a class without any pointer or similar tool?"
+          },
+          {
+            "speaker": "system",
+            "line": "It would be difficult, especially with large diagrams or charts."
+          },
+          {
+            "speaker": "learner",
+            "line": "I suppose the teacher would have to walk up to the board every time."
+          },
+          {
+            "speaker": "system",
+            "line": "That would slow down the lesson and break the flow of explanation."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The pointer our teacher uses has the school name engraved on it."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a nice touch. Is it a special one?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I think it was a gift from the students of the previous batch."
+          },
+          {
+            "speaker": "system",
+            "line": "What a thoughtful gesture. It shows the bond between students and teachers."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "pointer_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I find it fascinating how a simple pointer changes the dynamic of a classroom."
+          },
+          {
+            "speaker": "system",
+            "line": "In what way?"
+          },
+          {
+            "speaker": "learner",
+            "line": "When the teacher picks up the pointer, everyone instinctively looks at the board."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a keen observation about non-verbal communication and classroom management."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had the pointer not been available during the geography lesson, explaining the river system would have been very confusing."
+          },
+          {
+            "speaker": "system",
+            "line": "Visual guidance is essential when dealing with complex diagrams."
+          },
+          {
+            "speaker": "learner",
+            "line": "The teacher traced the entire path of the river using the pointer, from source to sea."
+          },
+          {
+            "speaker": "system",
+            "line": "That kind of visual storytelling makes abstract information concrete and memorable."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Do you think pointers will eventually be replaced entirely by interactive whiteboards?"
+          },
+          {
+            "speaker": "system",
+            "line": "Technology is certainly changing how teachers present information."
+          },
+          {
+            "speaker": "learner",
+            "line": "But I think there is something direct and personal about a teacher using a physical pointer."
+          },
+          {
+            "speaker": "system",
+            "line": "I agree. Technology enhances teaching, but human gestures and presence remain irreplaceable."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "pointer_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is interesting to consider the pointer as an extension of the teacher's hand, bridging the physical space between the educator and the material being taught."
+          },
+          {
+            "speaker": "system",
+            "line": "That is an insightful way to frame it."
+          },
+          {
+            "speaker": "learner",
+            "line": "In a sense, the pointer materialises the teacher's attention and directs the collective gaze of the class."
+          },
+          {
+            "speaker": "system",
+            "line": "You are describing something that education theorists call shared attention, and you are right that the pointer facilitates it beautifully."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One might argue that the pointer is one of the oldest teaching technologies, predating even the blackboard itself."
+          },
+          {
+            "speaker": "system",
+            "line": "That is likely true. Pointing sticks have been used by teachers for centuries."
+          },
+          {
+            "speaker": "learner",
+            "line": "And yet, despite all the advances in educational technology, many teachers still reach for a simple wooden pointer."
+          },
+          {
+            "speaker": "system",
+            "line": "Perhaps because its simplicity is its strength. It does exactly one thing, and it does it well."
+          }
+        ]
+      },
+      {
+        "id": "pointer_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of whether a teacher uses a traditional pointer, a laser, or a digital pen, the underlying purpose remains the same: to guide the student's focus."
+          },
+          {
+            "speaker": "system",
+            "line": "Absolutely. The tool changes, but the pedagogical function endures."
+          },
+          {
+            "speaker": "learner",
+            "line": "I think that speaks to something fundamental about teaching: it is ultimately about directing attention to what matters."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a remarkably mature insight. Attention is indeed the foundation upon which all learning is built."
+          }
+        ]
+      }
+    ]
+  },
+  "scale": {
+    "beginner": [
+      {
+        "id": "scale_dial_beg_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Can I borrow your scale?"
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, here it is."
+          },
+          {
+            "speaker": "learner",
+            "line": "Thank you. I need to draw a line."
+          },
+          {
+            "speaker": "system",
+            "line": "You are welcome. Give it back after you finish."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_beg_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My scale is broken."
+          },
+          {
+            "speaker": "system",
+            "line": "What happened to it?"
+          },
+          {
+            "speaker": "learner",
+            "line": "It cracked when I sat on it."
+          },
+          {
+            "speaker": "system",
+            "line": "Be more careful next time. Put it inside your box."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_beg_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "How long is this scale?"
+          },
+          {
+            "speaker": "system",
+            "line": "It is thirty centimetres long."
+          },
+          {
+            "speaker": "learner",
+            "line": "That is enough for my drawing."
+          },
+          {
+            "speaker": "system",
+            "line": "Yes, thirty centimetres is the standard size."
+          }
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "scale_dial_ele_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I used my scale to measure the length of my textbook."
+          },
+          {
+            "speaker": "system",
+            "line": "How long was it?"
+          },
+          {
+            "speaker": "learner",
+            "line": "It was about twenty-four centimetres."
+          },
+          {
+            "speaker": "system",
+            "line": "Good job. Measuring things around you is a great way to practise."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_ele_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "My friend has a metal scale and I have a plastic one."
+          },
+          {
+            "speaker": "system",
+            "line": "Do you know which one is better?"
+          },
+          {
+            "speaker": "learner",
+            "line": "I think the metal one is stronger and does not bend."
+          },
+          {
+            "speaker": "system",
+            "line": "That is true, but metal scales can be heavier to carry around."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_ele_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The teacher asked us to draw a rectangle using a scale and pencil."
+          },
+          {
+            "speaker": "system",
+            "line": "Did you remember to mark the measurements first?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, I marked five centimetres and three centimetres for the sides."
+          },
+          {
+            "speaker": "system",
+            "line": "Well done. Always measure before you draw for accurate shapes."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "scale_dial_int_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I have been practising drawing parallel lines using my scale and set square."
+          },
+          {
+            "speaker": "system",
+            "line": "How is it going?"
+          },
+          {
+            "speaker": "learner",
+            "line": "It is tricky to keep the scale steady while drawing the line."
+          },
+          {
+            "speaker": "system",
+            "line": "Press down firmly with one hand and draw with the other. It takes practice to get it right."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_int_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Could you tell me why architects use a triangular scale with three different measurement systems?"
+          },
+          {
+            "speaker": "system",
+            "line": "It allows them to measure in different scales without converting numbers."
+          },
+          {
+            "speaker": "learner",
+            "line": "So one edge might represent metres and another might represent centimetres?"
+          },
+          {
+            "speaker": "system",
+            "line": "Exactly. It saves time when working with blueprints at different scales."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_int_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "The markings on my scale are starting to fade after months of use."
+          },
+          {
+            "speaker": "system",
+            "line": "That happens with cheaper plastic scales over time."
+          },
+          {
+            "speaker": "learner",
+            "line": "Should I buy a new one or can I still use this one?"
+          },
+          {
+            "speaker": "system",
+            "line": "If the millimetre marks are unclear, it is best to replace it for accuracy."
+          }
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "scale_dial_upp_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "I find it satisfying to draw perfectly straight lines using a good scale and a sharp pencil."
+          },
+          {
+            "speaker": "system",
+            "line": "There is a certain pleasure in precision, is there not?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, especially when a geometry diagram comes out looking clean and professional."
+          },
+          {
+            "speaker": "system",
+            "line": "That attention to neatness often translates into better marks and clearer thinking."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_upp_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Had I used my scale properly instead of drawing freehand, the diagram would have been much more accurate."
+          },
+          {
+            "speaker": "system",
+            "line": "Did the teacher notice the difference?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Yes, she pointed out that my angles were slightly off because the lines were not straight."
+          },
+          {
+            "speaker": "system",
+            "line": "In geometry, even small inaccuracies can lead to incorrect conclusions. The scale is not optional."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_upp_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It strikes me that the scale is one of the earliest tools a child learns to use in school."
+          },
+          {
+            "speaker": "system",
+            "line": "That is true. It is often introduced as early as the first or second grade."
+          },
+          {
+            "speaker": "learner",
+            "line": "And yet it remains relevant all the way through engineering and architecture courses."
+          },
+          {
+            "speaker": "system",
+            "line": "The principle of accurate measurement is foundational. The tool may become more sophisticated, but the concept stays the same."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "scale_dial_adv_001",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "It is worth considering that the concept of standardised measurement, which the scale represents, was a revolutionary development in human civilisation."
+          },
+          {
+            "speaker": "system",
+            "line": "Absolutely. Before standardised units, trade and construction were far more prone to error and dispute."
+          },
+          {
+            "speaker": "learner",
+            "line": "The ability to measure consistently is what made large-scale engineering projects possible."
+          },
+          {
+            "speaker": "system",
+            "line": "From the pyramids to modern skyscrapers, every great structure began with a simple act of measurement."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_adv_002",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "One could argue that the scale teaches children something deeper than just how to draw straight lines; it introduces the concept of precision and accountability."
+          },
+          {
+            "speaker": "system",
+            "line": "That is a perceptive observation. How do you see precision connecting to accountability?"
+          },
+          {
+            "speaker": "learner",
+            "line": "When you measure something, you commit to a specific value. There is no room for vagueness."
+          },
+          {
+            "speaker": "system",
+            "line": "And that discipline of mind, the habit of being exact and deliberate, carries over into many other areas of learning and life."
+          }
+        ]
+      },
+      {
+        "id": "scale_dial_adv_003",
+        "turns": [
+          {
+            "speaker": "learner",
+            "line": "Regardless of how advanced digital measurement tools become, I believe the physical scale will always be the first measuring instrument a child holds in their hands."
+          },
+          {
+            "speaker": "system",
+            "line": "Why do you feel so strongly about that?"
+          },
+          {
+            "speaker": "learner",
+            "line": "Because understanding measurement begins with the tangible experience of placing a ruler against an object and reading the numbers."
+          },
+          {
+            "speaker": "system",
+            "line": "You are describing what educators call embodied cognition, the idea that we learn best when our bodies are physically engaged in the process."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6613 @@
+{
+  "sharpner": {
+    "beginner": [
+      {
+        "id": "sharpner_beg_001",
+        "sentence": "I need a sharpner.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "AH",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_beg_002",
+        "sentence": "The sharpner is small.",
+        "grammar_focus": "copula + adjective",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "IH",
+          "AO"
+        ]
+      },
+      {
+        "id": "sharpner_beg_003",
+        "sentence": "This sharpner is blue.",
+        "grammar_focus": "demonstrative",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "SH",
+          "AA",
+          "ER",
+          "UW"
+        ]
+      },
+      {
+        "id": "sharpner_beg_004",
+        "sentence": "My sharpner is new.",
+        "grammar_focus": "possessive",
+        "target_phonemes": [
+          "AY",
+          "SH",
+          "AA",
+          "ER",
+          "IH",
+          "UW"
+        ]
+      },
+      {
+        "id": "sharpner_beg_005",
+        "sentence": "Where is the sharpner?",
+        "grammar_focus": "question word",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_beg_006",
+        "sentence": "I lost my sharpner today.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "SH",
+          "AA",
+          "ER",
+          "AH",
+          "EY"
+        ]
+      },
+      {
+        "id": "sharpner_beg_007",
+        "sentence": "Give me the sharpner, please.",
+        "grammar_focus": "imperative",
+        "target_phonemes": [
+          "IH",
+          "IY",
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_beg_008",
+        "sentence": "The sharpner is on the desk.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "IH",
+          "EH"
+        ]
+      },
+      {
+        "id": "sharpner_beg_009",
+        "sentence": "I have two sharpners.",
+        "grammar_focus": "have + plural",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "UW",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_beg_010",
+        "sentence": "Can I use your sharpner?",
+        "grammar_focus": "request",
+        "target_phonemes": [
+          "AE",
+          "AY",
+          "UW",
+          "AO",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "sharpner_ele_001",
+        "sentence": "My pencil is blunt, so I need a sharpner.",
+        "grammar_focus": "cause and effect",
+        "target_phonemes": [
+          "AY",
+          "EH",
+          "AH",
+          "IH",
+          "OW",
+          "IY",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_ele_002",
+        "sentence": "I always keep a sharpner in my pencil box.",
+        "grammar_focus": "frequency adverb",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EY",
+          "IY",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "IH",
+          "EH"
+        ]
+      },
+      {
+        "id": "sharpner_ele_003",
+        "sentence": "This sharpner makes my pencils very sharp.",
+        "grammar_focus": "cause and result",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "SH",
+          "AA",
+          "ER",
+          "EY",
+          "AY",
+          "EH",
+          "AH",
+          "IY"
+        ]
+      },
+      {
+        "id": "sharpner_ele_004",
+        "sentence": "I bought a new sharpner from the school shop.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "AA",
+          "AH",
+          "UW",
+          "SH",
+          "ER",
+          "DH"
+        ]
+      },
+      {
+        "id": "sharpner_ele_005",
+        "sentence": "The sharpner fell under the bench during class.",
+        "grammar_focus": "past simple + preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "EH",
+          "CH",
+          "UH",
+          "IH",
+          "NG",
+          "AE"
+        ]
+      },
+      {
+        "id": "sharpner_ele_006",
+        "sentence": "Please do not throw sharpner shavings on the floor.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "IY",
+          "UW",
+          "AA",
+          "TH",
+          "OW",
+          "SH",
+          "ER",
+          "EY",
+          "IH",
+          "NG",
+          "DH",
+          "AH",
+          "AO"
+        ]
+      },
+      {
+        "id": "sharpner_ele_007",
+        "sentence": "My friend gave me a bright yellow sharpner.",
+        "grammar_focus": "indirect object",
+        "target_phonemes": [
+          "AY",
+          "EH",
+          "EY",
+          "IY",
+          "AH",
+          "OW",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_ele_008",
+        "sentence": "There are many types of sharpners in the shop.",
+        "grammar_focus": "there are",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "AA",
+          "IY",
+          "AY",
+          "AH",
+          "SH",
+          "ER",
+          "IH"
+        ]
+      },
+      {
+        "id": "sharpner_ele_009",
+        "sentence": "I sharpened three pencils with this sharpner.",
+        "grammar_focus": "past simple + number",
+        "target_phonemes": [
+          "AY",
+          "SH",
+          "AA",
+          "AH",
+          "TH",
+          "IY",
+          "EH",
+          "IH",
+          "DH",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_ele_010",
+        "sentence": "Be careful when you use the sharpner.",
+        "grammar_focus": "imperative + when clause",
+        "target_phonemes": [
+          "IY",
+          "EH",
+          "AH",
+          "UW",
+          "DH",
+          "SH",
+          "AA",
+          "ER"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "sharpner_int_001",
+        "sentence": "The sharpner that my mother bought is better than the old one.",
+        "grammar_focus": "relative clause + comparative",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "AE",
+          "AY",
+          "IH",
+          "EH",
+          "OW"
+        ]
+      },
+      {
+        "id": "sharpner_int_002",
+        "sentence": "I have been using this sharpner since the beginning of the school year.",
+        "grammar_focus": "present perfect continuous",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "IH",
+          "UW",
+          "NG",
+          "DH",
+          "SH",
+          "AA",
+          "ER",
+          "AH"
+        ]
+      },
+      {
+        "id": "sharpner_int_003",
+        "sentence": "If you forget your sharpner, you can borrow mine during the test.",
+        "grammar_focus": "first conditional",
+        "target_phonemes": [
+          "IH",
+          "UW",
+          "ER",
+          "EH",
+          "AO",
+          "SH",
+          "AA",
+          "AE",
+          "OW",
+          "AY",
+          "UH",
+          "NG",
+          "DH",
+          "AH"
+        ]
+      },
+      {
+        "id": "sharpner_int_004",
+        "sentence": "Could you lend me your sharpner for a moment, please?",
+        "grammar_focus": "polite request",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "EH",
+          "IY",
+          "AO",
+          "SH",
+          "AA",
+          "ER",
+          "AH",
+          "OW"
+        ]
+      },
+      {
+        "id": "sharpner_int_005",
+        "sentence": "Although this sharpner looks simple, it works very well.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "IH",
+          "SH",
+          "AA",
+          "ER",
+          "UH",
+          "AH",
+          "EH",
+          "IY"
+        ]
+      },
+      {
+        "id": "sharpner_int_006",
+        "sentence": "The teacher asked us to keep a sharpner in our pencil boxes.",
+        "grammar_focus": "reported speech",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "AE",
+          "UW",
+          "SH",
+          "AA",
+          "IH",
+          "AW",
+          "EH"
+        ]
+      },
+      {
+        "id": "sharpner_int_007",
+        "sentence": "I would rather buy a metal sharpner than a plastic one.",
+        "grammar_focus": "would rather",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AE",
+          "DH",
+          "ER",
+          "AH",
+          "EH",
+          "SH",
+          "AA",
+          "IH"
+        ]
+      },
+      {
+        "id": "sharpner_int_008",
+        "sentence": "My sharpner broke while I was sharpening my colour pencil.",
+        "grammar_focus": "past continuous",
+        "target_phonemes": [
+          "AY",
+          "SH",
+          "AA",
+          "ER",
+          "OW",
+          "AH",
+          "IH",
+          "NG",
+          "AW",
+          "EH"
+        ]
+      },
+      {
+        "id": "sharpner_int_009",
+        "sentence": "Have you ever used a sharpner with two different-sized holes?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "AH",
+          "SH",
+          "AA",
+          "IH",
+          "DH",
+          "AY",
+          "OW"
+        ]
+      },
+      {
+        "id": "sharpner_int_010",
+        "sentence": "The sharpner needs to be replaced because the blade has become dull.",
+        "grammar_focus": "because clause + present perfect",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "IY",
+          "UW",
+          "EY",
+          "IH",
+          "AO",
+          "HH",
+          "AE"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "sharpner_upp_001",
+        "sentence": "The sharpner, which I had been using for over a year, finally broke during the exam.",
+        "grammar_focus": "non-defining relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "IH",
+          "CH",
+          "AY",
+          "HH",
+          "AE",
+          "UW",
+          "NG",
+          "AO",
+          "OW",
+          "IY",
+          "UH"
+        ]
+      },
+      {
+        "id": "sharpner_upp_002",
+        "sentence": "Had I brought a spare sharpner, I would not have had to borrow one.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "AY",
+          "AO",
+          "AH",
+          "EH",
+          "SH",
+          "AA",
+          "ER",
+          "UH",
+          "UW",
+          "OW"
+        ]
+      },
+      {
+        "id": "sharpner_upp_003",
+        "sentence": "Despite being very small, a good sharpner can make a real difference to your writing.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "EH",
+          "AO",
+          "AH",
+          "UH",
+          "SH",
+          "AA",
+          "ER",
+          "AE",
+          "EY",
+          "UW"
+        ]
+      },
+      {
+        "id": "sharpner_upp_004",
+        "sentence": "Not only does a sharp pencil write neatly, but it also helps you draw better lines.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "AH",
+          "SH",
+          "EH",
+          "AY",
+          "IH",
+          "AO",
+          "HH",
+          "UW",
+          "ER"
+        ]
+      },
+      {
+        "id": "sharpner_upp_005",
+        "sentence": "I wish I had bought a better sharpner instead of the cheap one that broke.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "HH",
+          "AE",
+          "AA",
+          "AH",
+          "EH",
+          "ER",
+          "DH",
+          "CH",
+          "IY",
+          "OW"
+        ]
+      },
+      {
+        "id": "sharpner_upp_006",
+        "sentence": "It is surprising how something as small as a sharpner can be so important in class.",
+        "grammar_focus": "it is + adjective + how",
+        "target_phonemes": [
+          "IH",
+          "ER",
+          "AY",
+          "NG",
+          "HH",
+          "AW",
+          "AH",
+          "TH",
+          "AE",
+          "AO",
+          "SH",
+          "AA",
+          "IY",
+          "OW"
+        ]
+      },
+      {
+        "id": "sharpner_upp_007",
+        "sentence": "The quality of a sharpner depends on the sharpness of its blade.",
+        "grammar_focus": "depends on",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AA",
+          "IY",
+          "SH",
+          "ER",
+          "IH",
+          "EH",
+          "EY"
+        ]
+      },
+      {
+        "id": "sharpner_upp_008",
+        "sentence": "Whoever lost their sharpner on the floor should come and collect it.",
+        "grammar_focus": "whoever",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "AO",
+          "DH",
+          "SH",
+          "AA",
+          "AH",
+          "UH",
+          "IH"
+        ]
+      },
+      {
+        "id": "sharpner_upp_009",
+        "sentence": "Were it not for this tiny sharpner, I would not have been able to finish my drawing.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "DH",
+          "AY",
+          "IY",
+          "SH",
+          "UH",
+          "HH",
+          "AE",
+          "EY",
+          "AH",
+          "UW",
+          "NG"
+        ]
+      },
+      {
+        "id": "sharpner_upp_010",
+        "sentence": "The number of students who forget their sharpners has increased this term.",
+        "grammar_focus": "present perfect passive",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "ER",
+          "UW",
+          "HH",
+          "EH",
+          "SH",
+          "AA",
+          "AE",
+          "IH",
+          "IY"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "sharpner_adv_001",
+        "sentence": "It is remarkable that such an inexpensive tool as a sharpner plays such a vital role in every student's daily routine.",
+        "grammar_focus": "it is + adjective + that",
+        "target_phonemes": [
+          "IH",
+          "AA",
+          "AH",
+          "DH",
+          "AE",
+          "CH",
+          "EH",
+          "UW",
+          "SH",
+          "ER",
+          "EY",
+          "AY",
+          "OW",
+          "IY"
+        ]
+      },
+      {
+        "id": "sharpner_adv_002",
+        "sentence": "One could argue that the design of the modern sharpner, with its compact size and replaceable blade, represents an efficient solution to a simple problem.",
+        "grammar_focus": "one could argue",
+        "target_phonemes": [
+          "AH",
+          "UH",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "IH",
+          "AY",
+          "ER",
+          "SH",
+          "IY",
+          "EY",
+          "EH"
+        ]
+      },
+      {
+        "id": "sharpner_adv_003",
+        "sentence": "The sharpner that had been sitting in my pencil case for months turned out to be the only one sharp enough to use during the final examination.",
+        "grammar_focus": "past perfect continuous + turned out",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "SH",
+          "AA",
+          "ER",
+          "AE",
+          "HH",
+          "IH",
+          "NG",
+          "AY",
+          "EH",
+          "EY",
+          "AO",
+          "TH",
+          "AW",
+          "UW",
+          "IY",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "sharpner_adv_004",
+        "sentence": "No sooner had I lent my sharpner to my classmate than the tip of my own pencil broke.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "AY",
+          "EH",
+          "SH",
+          "AA",
+          "EY",
+          "DH",
+          "AH",
+          "IH"
+        ]
+      },
+      {
+        "id": "sharpner_adv_005",
+        "sentence": "Regardless of whether students prefer mechanical pencils or traditional ones, a reliable sharpner remains an essential part of any pencil box.",
+        "grammar_focus": "regardless of whether",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "EH",
+          "DH",
+          "ER",
+          "UW",
+          "AE",
+          "IH",
+          "AO",
+          "SH",
+          "AY",
+          "EY",
+          "IY"
+        ]
+      }
+    ]
+  },
+  "ballpen": {
+    "beginner": [
+      {
+        "id": "ballpen_beg_001",
+        "sentence": "I write with a ballpen.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "DH",
+          "AH",
+          "AO",
+          "EH"
+        ]
+      },
+      {
+        "id": "ballpen_beg_002",
+        "sentence": "The ballpen is black.",
+        "grammar_focus": "copula + adjective",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "IH",
+          "AE"
+        ]
+      },
+      {
+        "id": "ballpen_beg_003",
+        "sentence": "This is my ballpen.",
+        "grammar_focus": "demonstrative + possessive",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "AY",
+          "AO",
+          "EH"
+        ]
+      },
+      {
+        "id": "ballpen_beg_004",
+        "sentence": "My ballpen ran out of ink.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EH",
+          "AE",
+          "AW",
+          "AH",
+          "IH",
+          "NG"
+        ]
+      },
+      {
+        "id": "ballpen_beg_005",
+        "sentence": "Where did you keep my ballpen?",
+        "grammar_focus": "past simple question",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "UW",
+          "IY",
+          "AY",
+          "AO"
+        ]
+      },
+      {
+        "id": "ballpen_beg_006",
+        "sentence": "I found a ballpen on the floor.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "AW",
+          "AH",
+          "AO",
+          "EH",
+          "AA",
+          "DH"
+        ]
+      },
+      {
+        "id": "ballpen_beg_007",
+        "sentence": "Give me a blue ballpen.",
+        "grammar_focus": "imperative",
+        "target_phonemes": [
+          "IH",
+          "IY",
+          "AH",
+          "UW",
+          "AO",
+          "EH"
+        ]
+      },
+      {
+        "id": "ballpen_beg_008",
+        "sentence": "The ballpen is inside my bag.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "IH",
+          "AY",
+          "AE"
+        ]
+      },
+      {
+        "id": "ballpen_beg_009",
+        "sentence": "I like this ballpen very much.",
+        "grammar_focus": "like + adverb",
+        "target_phonemes": [
+          "AY",
+          "DH",
+          "IH",
+          "AO",
+          "EH",
+          "IY",
+          "AH",
+          "CH"
+        ]
+      },
+      {
+        "id": "ballpen_beg_010",
+        "sentence": "Can I borrow your ballpen?",
+        "grammar_focus": "request",
+        "target_phonemes": [
+          "AE",
+          "AY",
+          "AA",
+          "OW",
+          "AO",
+          "EH"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "ballpen_ele_001",
+        "sentence": "I always write my homework with a blue ballpen.",
+        "grammar_focus": "frequency adverb",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EY",
+          "HH",
+          "OW",
+          "ER",
+          "IH",
+          "DH",
+          "AH",
+          "UW",
+          "EH"
+        ]
+      },
+      {
+        "id": "ballpen_ele_002",
+        "sentence": "My teacher said we must use a black ballpen for the test.",
+        "grammar_focus": "reported speech simple",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "CH",
+          "ER",
+          "EH",
+          "AH",
+          "UW",
+          "AE",
+          "AO",
+          "DH"
+        ]
+      },
+      {
+        "id": "ballpen_ele_003",
+        "sentence": "The ink in my ballpen finished during the exam.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "NG",
+          "AY",
+          "AO",
+          "EH",
+          "SH",
+          "UH",
+          "AE"
+        ]
+      },
+      {
+        "id": "ballpen_ele_004",
+        "sentence": "I bought a pack of five ballpens from the shop.",
+        "grammar_focus": "past simple + number",
+        "target_phonemes": [
+          "AY",
+          "AA",
+          "AH",
+          "AE",
+          "AO",
+          "EH",
+          "DH",
+          "SH"
+        ]
+      },
+      {
+        "id": "ballpen_ele_005",
+        "sentence": "Please write your name with a ballpen, not a pencil.",
+        "grammar_focus": "imperative + not",
+        "target_phonemes": [
+          "IY",
+          "AY",
+          "AO",
+          "EY",
+          "IH",
+          "DH",
+          "AH",
+          "EH",
+          "AA"
+        ]
+      },
+      {
+        "id": "ballpen_ele_006",
+        "sentence": "My ballpen stopped working in the middle of the page.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EH",
+          "AA",
+          "ER",
+          "IH",
+          "NG",
+          "DH",
+          "AH",
+          "EY",
+          "JH"
+        ]
+      },
+      {
+        "id": "ballpen_ele_007",
+        "sentence": "Do not press the ballpen too hard on the paper.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "UW",
+          "AA",
+          "EH",
+          "DH",
+          "AH",
+          "AO",
+          "HH",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "ballpen_ele_008",
+        "sentence": "She lent me her favourite red ballpen.",
+        "grammar_focus": "past simple + indirect object",
+        "target_phonemes": [
+          "SH",
+          "IY",
+          "EH",
+          "HH",
+          "ER",
+          "AE",
+          "UW",
+          "AY",
+          "AO"
+        ]
+      },
+      {
+        "id": "ballpen_ele_009",
+        "sentence": "There were no ballpens left in the stationery shop.",
+        "grammar_focus": "there were + negative",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "ER",
+          "OW",
+          "AO",
+          "IH",
+          "AH",
+          "EY",
+          "SH",
+          "IY",
+          "AA"
+        ]
+      },
+      {
+        "id": "ballpen_ele_010",
+        "sentence": "I prefer ballpens because they write more smoothly.",
+        "grammar_focus": "preference + because",
+        "target_phonemes": [
+          "AY",
+          "AH",
+          "ER",
+          "AO",
+          "EH",
+          "IH",
+          "DH",
+          "EY",
+          "UW",
+          "IY"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ballpen_int_001",
+        "sentence": "The ballpen that I bought last week writes much better than the old one.",
+        "grammar_focus": "relative clause + comparative",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "AE",
+          "AY",
+          "AA",
+          "IY",
+          "CH",
+          "ER",
+          "OW"
+        ]
+      },
+      {
+        "id": "ballpen_int_002",
+        "sentence": "I have been looking for my ballpen since the morning.",
+        "grammar_focus": "present perfect continuous",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "IH",
+          "UH",
+          "NG",
+          "AO",
+          "EH",
+          "DH",
+          "AH"
+        ]
+      },
+      {
+        "id": "ballpen_int_003",
+        "sentence": "If the ballpen does not work, try shaking it gently.",
+        "grammar_focus": "first conditional + imperative",
+        "target_phonemes": [
+          "IH",
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "AA",
+          "ER",
+          "AY",
+          "SH",
+          "EY",
+          "NG",
+          "JH",
+          "IY"
+        ]
+      },
+      {
+        "id": "ballpen_int_004",
+        "sentence": "Could you please return the ballpen you borrowed yesterday?",
+        "grammar_focus": "polite request + relative clause",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "IY",
+          "IH",
+          "ER",
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "AA",
+          "OW",
+          "EY"
+        ]
+      },
+      {
+        "id": "ballpen_int_005",
+        "sentence": "Although ballpens are cheap, some of them write very badly.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "EH",
+          "AA",
+          "CH",
+          "IY",
+          "AH",
+          "AY",
+          "AE"
+        ]
+      },
+      {
+        "id": "ballpen_int_006",
+        "sentence": "The teacher told us that we should not use red ballpens in the answer sheet.",
+        "grammar_focus": "reported speech + should not",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "OW",
+          "AE",
+          "SH",
+          "UH",
+          "AA",
+          "UW",
+          "EH",
+          "AO",
+          "IH"
+        ]
+      },
+      {
+        "id": "ballpen_int_007",
+        "sentence": "I would prefer a ballpen with a grip because my fingers get tired.",
+        "grammar_focus": "would prefer + because",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AH",
+          "ER",
+          "AO",
+          "EH",
+          "IH",
+          "DH",
+          "NG"
+        ]
+      },
+      {
+        "id": "ballpen_int_008",
+        "sentence": "My ballpen leaked and left a big ink stain on my shirt.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EH",
+          "IY",
+          "AH",
+          "IH",
+          "NG",
+          "EY",
+          "AA",
+          "SH",
+          "ER"
+        ]
+      },
+      {
+        "id": "ballpen_int_009",
+        "sentence": "Have you ever tried writing with a ballpen that has three different colours?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "AY",
+          "IH",
+          "NG",
+          "DH",
+          "AH",
+          "AO",
+          "TH",
+          "IY"
+        ]
+      },
+      {
+        "id": "ballpen_int_010",
+        "sentence": "The ballpen needs a refill because the ink has completely run out.",
+        "grammar_focus": "because + present perfect",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "IY",
+          "IH",
+          "NG",
+          "HH",
+          "AE",
+          "AW"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "ballpen_upp_001",
+        "sentence": "The ballpen, which was a gift from my grandmother, has sentimental value that no other pen could replace.",
+        "grammar_focus": "non-defining relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "IH",
+          "CH",
+          "AA",
+          "AY",
+          "AE",
+          "ER",
+          "HH",
+          "UW",
+          "OW",
+          "UH",
+          "IY",
+          "EY"
+        ]
+      },
+      {
+        "id": "ballpen_upp_002",
+        "sentence": "Had I checked my pencil box before leaving home, I would have noticed that my ballpen was missing.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "AY",
+          "CH",
+          "EH",
+          "AH",
+          "AA",
+          "IH",
+          "AO",
+          "IY",
+          "NG",
+          "OW",
+          "UH",
+          "DH"
+        ]
+      },
+      {
+        "id": "ballpen_upp_003",
+        "sentence": "Despite being the most common writing instrument in classrooms, the ballpen is often taken for granted.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "DH",
+          "AH",
+          "OW",
+          "AA",
+          "AE",
+          "UW",
+          "AO",
+          "EH",
+          "EY"
+        ]
+      },
+      {
+        "id": "ballpen_upp_004",
+        "sentence": "Not only did the ballpen leak all over my notebook, but it also stained the cover of the textbook underneath.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "IH",
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "ER",
+          "AY",
+          "UH",
+          "EY",
+          "TH"
+        ]
+      },
+      {
+        "id": "ballpen_upp_005",
+        "sentence": "I wish I had kept the cap on the ballpen, as the ink has now dried out completely.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "HH",
+          "AE",
+          "EH",
+          "DH",
+          "AH",
+          "AA",
+          "AO",
+          "NG",
+          "AW",
+          "IY"
+        ]
+      },
+      {
+        "id": "ballpen_upp_006",
+        "sentence": "It is frustrating when a brand-new ballpen stops working after just a few pages.",
+        "grammar_focus": "it is + adjective + when",
+        "target_phonemes": [
+          "IH",
+          "AH",
+          "EY",
+          "NG",
+          "EH",
+          "AE",
+          "AO",
+          "AA",
+          "ER",
+          "JH",
+          "UW"
+        ]
+      },
+      {
+        "id": "ballpen_upp_007",
+        "sentence": "The invention of the ballpen revolutionised the way people write, making fountain pens less common.",
+        "grammar_focus": "past simple + gerund",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EH",
+          "SH",
+          "AO",
+          "UW",
+          "AY",
+          "EY",
+          "IY",
+          "NG",
+          "AW",
+          "AA"
+        ]
+      },
+      {
+        "id": "ballpen_upp_008",
+        "sentence": "Whoever took my ballpen from the desk should return it before the next class.",
+        "grammar_focus": "whoever + should",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "UH",
+          "AY",
+          "AO",
+          "AH",
+          "DH",
+          "SH",
+          "IH",
+          "AE"
+        ]
+      },
+      {
+        "id": "ballpen_upp_009",
+        "sentence": "Were it not for ballpens, students would still be dipping nibs into inkwells.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "EH",
+          "UW",
+          "AH",
+          "UH",
+          "IY",
+          "NG"
+        ]
+      },
+      {
+        "id": "ballpen_upp_010",
+        "sentence": "The number of ballpens discarded each year contributes significantly to plastic waste.",
+        "grammar_focus": "contributes to",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "ER",
+          "AO",
+          "EH",
+          "IH",
+          "AA",
+          "IY",
+          "CH",
+          "UW",
+          "AE",
+          "EY"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ballpen_adv_001",
+        "sentence": "It is worth noting that the humble ballpen, invented in the 1930s, transformed everyday writing by eliminating the mess and inconvenience of fountain pens.",
+        "grammar_focus": "it is worth noting",
+        "target_phonemes": [
+          "IH",
+          "ER",
+          "TH",
+          "OW",
+          "NG",
+          "DH",
+          "AE",
+          "AH",
+          "HH",
+          "AO",
+          "EH",
+          "AY",
+          "IY",
+          "EY",
+          "AW"
+        ]
+      },
+      {
+        "id": "ballpen_adv_002",
+        "sentence": "One might argue that the widespread availability of cheap ballpens has led to a throwaway culture where writing instruments are treated as disposable rather than treasured.",
+        "grammar_focus": "one might argue",
+        "target_phonemes": [
+          "AH",
+          "AY",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "EH",
+          "EY",
+          "IH",
+          "IY",
+          "CH",
+          "AO",
+          "HH",
+          "TH",
+          "OW",
+          "ER",
+          "NG",
+          "ZH"
+        ]
+      },
+      {
+        "id": "ballpen_adv_003",
+        "sentence": "The ballpen that I had been searching for all morning was eventually discovered wedged between the pages of my science textbook.",
+        "grammar_focus": "past perfect continuous",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AO",
+          "EH",
+          "AE",
+          "AY",
+          "HH",
+          "IH",
+          "ER",
+          "CH",
+          "NG",
+          "AA",
+          "IY",
+          "JH",
+          "EY",
+          "UH"
+        ]
+      },
+      {
+        "id": "ballpen_adv_004",
+        "sentence": "No sooner had the teacher distributed the question papers than my ballpen ran out of ink, leaving me in a state of panic.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "IH",
+          "EH",
+          "EY",
+          "AY",
+          "AO",
+          "AW",
+          "NG"
+        ]
+      },
+      {
+        "id": "ballpen_adv_005",
+        "sentence": "Regardless of advances in digital technology, the ballpen continues to be an indispensable tool in classrooms around the world.",
+        "grammar_focus": "regardless of",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "AE",
+          "IH",
+          "JH",
+          "EH",
+          "IY",
+          "DH",
+          "AO",
+          "UW",
+          "ER",
+          "AW"
+        ]
+      }
+    ]
+  },
+  "book": {
+    "beginner": [
+      {
+        "id": "book_beg_001",
+        "sentence": "I read a book every night.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "AH",
+          "UH",
+          "EH",
+          "ER"
+        ]
+      },
+      {
+        "id": "book_beg_002",
+        "sentence": "The book has many pictures.",
+        "grammar_focus": "have/has",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "HH",
+          "AE",
+          "EH",
+          "IY",
+          "IH",
+          "CH",
+          "ER"
+        ]
+      },
+      {
+        "id": "book_beg_003",
+        "sentence": "This book is very thick.",
+        "grammar_focus": "demonstrative + adjective",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "UH",
+          "EH",
+          "IY",
+          "TH"
+        ]
+      },
+      {
+        "id": "book_beg_004",
+        "sentence": "My favourite book is about animals.",
+        "grammar_focus": "possessive + about",
+        "target_phonemes": [
+          "AY",
+          "AE",
+          "UW",
+          "UH",
+          "IH",
+          "AH",
+          "AW"
+        ]
+      },
+      {
+        "id": "book_beg_005",
+        "sentence": "Where is my English book?",
+        "grammar_focus": "question word",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "AY",
+          "NG",
+          "SH",
+          "UH"
+        ]
+      },
+      {
+        "id": "book_beg_006",
+        "sentence": "I left my book at home.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "EH",
+          "UH",
+          "AE",
+          "HH",
+          "OW"
+        ]
+      },
+      {
+        "id": "book_beg_007",
+        "sentence": "Open your book to page ten.",
+        "grammar_focus": "imperative",
+        "target_phonemes": [
+          "OW",
+          "AH",
+          "AO",
+          "UH",
+          "UW",
+          "EY",
+          "JH",
+          "EH"
+        ]
+      },
+      {
+        "id": "book_beg_008",
+        "sentence": "The book is on the shelf.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "IH",
+          "AA",
+          "SH",
+          "EH"
+        ]
+      },
+      {
+        "id": "book_beg_009",
+        "sentence": "I got a new book for my birthday.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "AA",
+          "AH",
+          "UW",
+          "UH",
+          "AO",
+          "ER",
+          "TH",
+          "EY"
+        ]
+      },
+      {
+        "id": "book_beg_010",
+        "sentence": "Can I read your book?",
+        "grammar_focus": "request",
+        "target_phonemes": [
+          "AE",
+          "AY",
+          "EH",
+          "AO",
+          "UH"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "book_ele_001",
+        "sentence": "I finished reading the book before the bell rang.",
+        "grammar_focus": "past simple + before",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "EH",
+          "NG",
+          "DH",
+          "AH",
+          "UH",
+          "AO",
+          "AE"
+        ]
+      },
+      {
+        "id": "book_ele_002",
+        "sentence": "My teacher gave us a new English book this term.",
+        "grammar_focus": "indirect object",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "CH",
+          "ER",
+          "EY",
+          "AH",
+          "UW",
+          "IH",
+          "NG",
+          "SH",
+          "UH",
+          "DH"
+        ]
+      },
+      {
+        "id": "book_ele_003",
+        "sentence": "The pages of this book are torn and dirty.",
+        "grammar_focus": "compound adjective",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "JH",
+          "IH",
+          "UH",
+          "AA",
+          "AO",
+          "ER",
+          "IY"
+        ]
+      },
+      {
+        "id": "book_ele_004",
+        "sentence": "I always cover my books with brown paper.",
+        "grammar_focus": "frequency adverb",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EY",
+          "AH",
+          "ER",
+          "UH",
+          "IH",
+          "DH",
+          "AW"
+        ]
+      },
+      {
+        "id": "book_ele_005",
+        "sentence": "Please return the library book by Friday.",
+        "grammar_focus": "imperative + by",
+        "target_phonemes": [
+          "IY",
+          "IH",
+          "ER",
+          "DH",
+          "AH",
+          "AY",
+          "EH",
+          "UH"
+        ]
+      },
+      {
+        "id": "book_ele_006",
+        "sentence": "There are twelve chapters in this book.",
+        "grammar_focus": "there are + number",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "AA",
+          "CH",
+          "AE",
+          "ER",
+          "IH",
+          "UH"
+        ]
+      },
+      {
+        "id": "book_ele_007",
+        "sentence": "She borrowed my science book and forgot to return it.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "SH",
+          "IY",
+          "AA",
+          "OW",
+          "AY",
+          "AH",
+          "UH",
+          "ER",
+          "UW",
+          "IH"
+        ]
+      },
+      {
+        "id": "book_ele_008",
+        "sentence": "Do not write anything on the pages of the textbook.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "UW",
+          "AA",
+          "AY",
+          "EH",
+          "IY",
+          "TH",
+          "IH",
+          "NG",
+          "DH",
+          "AH",
+          "EY",
+          "JH",
+          "UH"
+        ]
+      },
+      {
+        "id": "book_ele_009",
+        "sentence": "I enjoy reading books about space and planets.",
+        "grammar_focus": "enjoy + gerund",
+        "target_phonemes": [
+          "AY",
+          "EH",
+          "JH",
+          "OY",
+          "IH",
+          "NG",
+          "UH",
+          "AH",
+          "AW",
+          "EY",
+          "AE"
+        ]
+      },
+      {
+        "id": "book_ele_010",
+        "sentence": "The book fell from the table and the cover came off.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "EH",
+          "EY",
+          "ER",
+          "AO"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "book_int_001",
+        "sentence": "The book that my father bought me last week is about the history of India.",
+        "grammar_focus": "relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "AE",
+          "AY",
+          "AA",
+          "ER",
+          "IY",
+          "IH",
+          "AW",
+          "HH"
+        ]
+      },
+      {
+        "id": "book_int_002",
+        "sentence": "I have been reading this book for two weeks and I am still on the third chapter.",
+        "grammar_focus": "present perfect continuous",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "IH",
+          "EH",
+          "NG",
+          "DH",
+          "UH",
+          "AO",
+          "UW",
+          "IY",
+          "AH",
+          "AA",
+          "TH",
+          "ER",
+          "CH"
+        ]
+      },
+      {
+        "id": "book_int_003",
+        "sentence": "If you read one book every month, you will read twelve books in a year.",
+        "grammar_focus": "first conditional",
+        "target_phonemes": [
+          "IH",
+          "UW",
+          "EH",
+          "AH",
+          "UH",
+          "ER",
+          "IY",
+          "TH"
+        ]
+      },
+      {
+        "id": "book_int_004",
+        "sentence": "Could you recommend a good book for someone who enjoys adventure stories?",
+        "grammar_focus": "polite request + relative clause",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "EH",
+          "AH",
+          "AO",
+          "HH",
+          "JH",
+          "OY",
+          "AE",
+          "CH",
+          "ER",
+          "IY"
+        ]
+      },
+      {
+        "id": "book_int_005",
+        "sentence": "Although the book looks boring from the cover, the story inside is actually very exciting.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "AH",
+          "UH",
+          "IH",
+          "NG",
+          "ER",
+          "IY",
+          "AY",
+          "AE",
+          "CH",
+          "EH"
+        ]
+      },
+      {
+        "id": "book_int_006",
+        "sentence": "The teacher suggested that we should read at least one book during the holidays.",
+        "grammar_focus": "reported speech + should",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "JH",
+          "EH",
+          "AE",
+          "SH",
+          "UH",
+          "IH",
+          "NG",
+          "HH",
+          "AA",
+          "EY"
+        ]
+      },
+      {
+        "id": "book_int_007",
+        "sentence": "I would rather read a story book than a textbook during my free time.",
+        "grammar_focus": "would rather + than",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AE",
+          "DH",
+          "ER",
+          "EH",
+          "AH",
+          "AO",
+          "IY",
+          "IH",
+          "NG"
+        ]
+      },
+      {
+        "id": "book_int_008",
+        "sentence": "My book got wet because I left it near the open window when it rained.",
+        "grammar_focus": "because clause",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AA",
+          "EH",
+          "IH",
+          "AO",
+          "DH",
+          "AH",
+          "OW",
+          "EY"
+        ]
+      },
+      {
+        "id": "book_int_009",
+        "sentence": "Have you ever read a book that changed the way you think about something?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "AH",
+          "UH",
+          "DH",
+          "CH",
+          "EY",
+          "JH",
+          "TH",
+          "IH",
+          "NG",
+          "AW"
+        ]
+      },
+      {
+        "id": "book_int_010",
+        "sentence": "The book needs to be returned to the library because it is already overdue.",
+        "grammar_focus": "because + already",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "IY",
+          "UW",
+          "IH",
+          "ER",
+          "AY",
+          "EH",
+          "AO",
+          "OW"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "book_upp_001",
+        "sentence": "The book, which was written by a famous Tamil author, has been translated into more than twenty languages.",
+        "grammar_focus": "non-defining relative clause + present perfect passive",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "IH",
+          "CH",
+          "AA",
+          "AY",
+          "EY",
+          "AO",
+          "TH",
+          "ER",
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "IY",
+          "NG",
+          "JH"
+        ]
+      },
+      {
+        "id": "book_upp_002",
+        "sentence": "Had I started reading the book earlier, I would have finished it before the exam.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "AY",
+          "AA",
+          "AH",
+          "EH",
+          "IH",
+          "NG",
+          "DH",
+          "UH",
+          "ER",
+          "IY",
+          "SH",
+          "AO"
+        ]
+      },
+      {
+        "id": "book_upp_003",
+        "sentence": "Despite being published over a hundred years ago, this book remains popular among young readers.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "AH",
+          "SH",
+          "OW",
+          "ER",
+          "HH",
+          "DH",
+          "UH",
+          "EY",
+          "AA"
+        ]
+      },
+      {
+        "id": "book_upp_004",
+        "sentence": "Not only does reading books improve your vocabulary, but it also strengthens your imagination.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "AH",
+          "EH",
+          "IH",
+          "NG",
+          "UH",
+          "UW",
+          "AO",
+          "AE",
+          "TH",
+          "JH",
+          "EY",
+          "SH"
+        ]
+      },
+      {
+        "id": "book_upp_005",
+        "sentence": "I wish I had taken better care of my books, as many of them are now damaged beyond repair.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "HH",
+          "AE",
+          "EY",
+          "AH",
+          "EH",
+          "ER",
+          "UH",
+          "IY",
+          "DH",
+          "AA",
+          "AW",
+          "JH"
+        ]
+      },
+      {
+        "id": "book_upp_006",
+        "sentence": "It is widely believed that children who read books regularly perform better in school.",
+        "grammar_focus": "it is + adverb + believed",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "DH",
+          "AE",
+          "CH",
+          "AH",
+          "HH",
+          "UW",
+          "EH",
+          "UH",
+          "ER",
+          "AO"
+        ]
+      },
+      {
+        "id": "book_upp_007",
+        "sentence": "The number of books in our school library has doubled since the new principal arrived.",
+        "grammar_focus": "present perfect + since",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "ER",
+          "UH",
+          "IH",
+          "AW",
+          "UW",
+          "AY",
+          "EH",
+          "IY",
+          "HH",
+          "AE"
+        ]
+      },
+      {
+        "id": "book_upp_008",
+        "sentence": "Whoever finds the missing library book should hand it over to the class monitor.",
+        "grammar_focus": "whoever + should",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "AY",
+          "DH",
+          "AH",
+          "IH",
+          "NG",
+          "IY",
+          "UH",
+          "SH",
+          "AE",
+          "OW",
+          "AA"
+        ]
+      },
+      {
+        "id": "book_upp_009",
+        "sentence": "Were it not for books, much of the knowledge from ancient times would have been lost forever.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "UH",
+          "AH",
+          "CH",
+          "DH",
+          "JH",
+          "EY",
+          "AY",
+          "HH",
+          "AE",
+          "EH"
+        ]
+      },
+      {
+        "id": "book_upp_010",
+        "sentence": "The book I was given as a prize turned out to be one of the most interesting stories I have ever read.",
+        "grammar_focus": "turned out + superlative",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "AY",
+          "AA",
+          "IH",
+          "AE",
+          "ER",
+          "AW",
+          "UW",
+          "IY",
+          "OW",
+          "NG",
+          "AO",
+          "HH",
+          "EH"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "book_adv_001",
+        "sentence": "It strikes me as remarkable that a single well-written book can shape the thoughts and values of an entire generation of young readers.",
+        "grammar_focus": "it strikes me",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "AE",
+          "AA",
+          "AH",
+          "DH",
+          "NG",
+          "EH",
+          "UH",
+          "SH",
+          "EY",
+          "TH",
+          "AO",
+          "UW",
+          "ER",
+          "JH"
+        ]
+      },
+      {
+        "id": "book_adv_002",
+        "sentence": "One could argue that the gradual shift from printed books to digital screens has both advantages and disadvantages for the development of reading habits in children.",
+        "grammar_focus": "one could argue",
+        "target_phonemes": [
+          "AH",
+          "UH",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "JH",
+          "SH",
+          "IH",
+          "IY",
+          "HH",
+          "OW",
+          "TH",
+          "AO",
+          "EH",
+          "NG",
+          "CH"
+        ]
+      },
+      {
+        "id": "book_adv_003",
+        "sentence": "The book that had been sitting on my desk for weeks, collecting dust, turned out to be exactly the one my teacher recommended for the summer reading list.",
+        "grammar_focus": "past perfect continuous + turned out",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "UH",
+          "AE",
+          "HH",
+          "IH",
+          "NG",
+          "AA",
+          "AY",
+          "EH",
+          "AO",
+          "IY",
+          "ER",
+          "AW",
+          "UW",
+          "CH"
+        ]
+      },
+      {
+        "id": "book_adv_004",
+        "sentence": "No sooner had I reached the final chapter of the book than the power went out, forcing me to wait until morning to read the ending.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "AY",
+          "IY",
+          "CH",
+          "DH",
+          "AH",
+          "UH",
+          "AW",
+          "EH",
+          "AO",
+          "IH",
+          "NG",
+          "EY"
+        ]
+      },
+      {
+        "id": "book_adv_005",
+        "sentence": "Regardless of whether one prefers fiction or non-fiction, the act of reading a book demands a level of concentration and imagination that few other activities can match.",
+        "grammar_focus": "regardless of whether",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "EH",
+          "DH",
+          "ER",
+          "IH",
+          "SH",
+          "AO",
+          "AE",
+          "NG",
+          "UH",
+          "EY",
+          "JH",
+          "UW",
+          "IY",
+          "CH"
+        ]
+      }
+    ]
+  },
+  "eraser": {
+    "beginner": [
+      {
+        "id": "eraser_beg_001",
+        "sentence": "I need an eraser.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "AE",
+          "IH",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_beg_002",
+        "sentence": "The eraser is white.",
+        "grammar_focus": "copula + adjective",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EY",
+          "ER",
+          "AY"
+        ]
+      },
+      {
+        "id": "eraser_beg_003",
+        "sentence": "This is a big eraser.",
+        "grammar_focus": "demonstrative",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "AH",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_beg_004",
+        "sentence": "My eraser is very soft.",
+        "grammar_focus": "possessive + adjective",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "EY",
+          "ER",
+          "EH",
+          "IY",
+          "AA"
+        ]
+      },
+      {
+        "id": "eraser_beg_005",
+        "sentence": "Where is my eraser?",
+        "grammar_focus": "question word",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "AY",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_beg_006",
+        "sentence": "I dropped my eraser.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "AA",
+          "IH",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_beg_007",
+        "sentence": "Pass me the eraser, please.",
+        "grammar_focus": "imperative",
+        "target_phonemes": [
+          "AE",
+          "IY",
+          "DH",
+          "AH",
+          "IH",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_beg_008",
+        "sentence": "The eraser is inside the box.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EY",
+          "ER",
+          "AY",
+          "AA"
+        ]
+      },
+      {
+        "id": "eraser_beg_009",
+        "sentence": "I bought a new eraser today.",
+        "grammar_focus": "past simple + time",
+        "target_phonemes": [
+          "AY",
+          "AA",
+          "AH",
+          "UW",
+          "IH",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_beg_010",
+        "sentence": "Can I use your eraser?",
+        "grammar_focus": "request",
+        "target_phonemes": [
+          "AE",
+          "AY",
+          "UW",
+          "AO",
+          "IH",
+          "EY",
+          "ER"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "eraser_ele_001",
+        "sentence": "I made a mistake, so I used my eraser.",
+        "grammar_focus": "cause and effect",
+        "target_phonemes": [
+          "AY",
+          "EY",
+          "AH",
+          "IH",
+          "OW",
+          "UW",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_ele_002",
+        "sentence": "My eraser smells like strawberry.",
+        "grammar_focus": "sensory verb",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "EY",
+          "ER",
+          "EH",
+          "AO",
+          "IY"
+        ]
+      },
+      {
+        "id": "eraser_ele_003",
+        "sentence": "This eraser does not rub out ink marks.",
+        "grammar_focus": "negative simple present",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "EY",
+          "ER",
+          "AH",
+          "AA",
+          "AW",
+          "NG"
+        ]
+      },
+      {
+        "id": "eraser_ele_004",
+        "sentence": "I always carry a spare eraser in my pencil case.",
+        "grammar_focus": "frequency adverb",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EY",
+          "AE",
+          "IY",
+          "AH",
+          "EH",
+          "IH",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_ele_005",
+        "sentence": "Please do not break the eraser into small pieces.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "IY",
+          "UW",
+          "AA",
+          "EY",
+          "DH",
+          "AH",
+          "IH",
+          "ER",
+          "AO"
+        ]
+      },
+      {
+        "id": "eraser_ele_006",
+        "sentence": "She gave me a pink eraser shaped like a heart.",
+        "grammar_focus": "past simple + adjective",
+        "target_phonemes": [
+          "SH",
+          "IY",
+          "EY",
+          "AH",
+          "IH",
+          "NG",
+          "ER",
+          "AY",
+          "HH",
+          "AA"
+        ]
+      },
+      {
+        "id": "eraser_ele_007",
+        "sentence": "There are many colourful erasers in the shop.",
+        "grammar_focus": "there are + adjective",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "AA",
+          "IY",
+          "AH",
+          "ER",
+          "IH",
+          "EY",
+          "SH"
+        ]
+      },
+      {
+        "id": "eraser_ele_008",
+        "sentence": "I rubbed too hard and tore the paper with the eraser.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "AY",
+          "AH",
+          "UW",
+          "HH",
+          "AA",
+          "AO",
+          "DH",
+          "EY",
+          "ER",
+          "IH"
+        ]
+      },
+      {
+        "id": "eraser_ele_009",
+        "sentence": "My eraser keeps slipping off the desk during class.",
+        "grammar_focus": "present continuous",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "EY",
+          "ER",
+          "IY",
+          "NG",
+          "AO",
+          "DH",
+          "AH",
+          "EH",
+          "UH",
+          "AE"
+        ]
+      },
+      {
+        "id": "eraser_ele_010",
+        "sentence": "Do you prefer a soft eraser or a hard one?",
+        "grammar_focus": "preference question",
+        "target_phonemes": [
+          "UW",
+          "AH",
+          "ER",
+          "AA",
+          "IH",
+          "EY",
+          "AO",
+          "HH"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "eraser_int_001",
+        "sentence": "The eraser that I bought from the book fair works much better than the one I had before.",
+        "grammar_focus": "relative clause + comparative",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EY",
+          "ER",
+          "AE",
+          "AY",
+          "AA",
+          "UH",
+          "EH",
+          "CH",
+          "HH",
+          "AO"
+        ]
+      },
+      {
+        "id": "eraser_int_002",
+        "sentence": "I have been looking for my eraser since the maths period started.",
+        "grammar_focus": "present perfect continuous",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "IH",
+          "UH",
+          "NG",
+          "AO",
+          "EY",
+          "ER",
+          "DH",
+          "AH",
+          "TH",
+          "IY",
+          "AA"
+        ]
+      },
+      {
+        "id": "eraser_int_003",
+        "sentence": "If you press too hard with the eraser, you will tear the paper.",
+        "grammar_focus": "first conditional",
+        "target_phonemes": [
+          "IH",
+          "UW",
+          "EH",
+          "HH",
+          "AA",
+          "DH",
+          "AH",
+          "EY",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_int_004",
+        "sentence": "Could you please return the eraser you took from my desk?",
+        "grammar_focus": "polite request + relative clause",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "IY",
+          "IH",
+          "ER",
+          "DH",
+          "AH",
+          "EY",
+          "AY",
+          "EH"
+        ]
+      },
+      {
+        "id": "eraser_int_005",
+        "sentence": "Although erasers are meant to correct mistakes, some of them leave ugly smudges on the page.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "IH",
+          "EY",
+          "ER",
+          "AA",
+          "EH",
+          "UW",
+          "AH",
+          "IY",
+          "JH"
+        ]
+      },
+      {
+        "id": "eraser_int_006",
+        "sentence": "The teacher reminded us to bring an eraser for the drawing class.",
+        "grammar_focus": "reported speech",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "AY",
+          "UW",
+          "IH",
+          "NG",
+          "AE",
+          "EY",
+          "AO"
+        ]
+      },
+      {
+        "id": "eraser_int_007",
+        "sentence": "I would rather have a good eraser than a fancy pencil.",
+        "grammar_focus": "would rather + than",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AE",
+          "DH",
+          "ER",
+          "HH",
+          "AH",
+          "IH",
+          "EY",
+          "IY",
+          "EH"
+        ]
+      },
+      {
+        "id": "eraser_int_008",
+        "sentence": "My eraser wore down completely because I had to correct so many mistakes.",
+        "grammar_focus": "because + past simple",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "EY",
+          "ER",
+          "AO",
+          "AW",
+          "AH",
+          "IY",
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "OW"
+        ]
+      },
+      {
+        "id": "eraser_int_009",
+        "sentence": "Have you ever seen an eraser that can rub out ballpen ink?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "IY",
+          "IH",
+          "EY",
+          "DH",
+          "AH",
+          "AW",
+          "AO",
+          "NG"
+        ]
+      },
+      {
+        "id": "eraser_int_010",
+        "sentence": "The eraser needs to be soft enough to clean the paper without damaging it.",
+        "grammar_focus": "enough + infinitive",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EY",
+          "ER",
+          "IY",
+          "UW",
+          "AA",
+          "TH",
+          "AW",
+          "AE",
+          "JH",
+          "NG"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "eraser_upp_001",
+        "sentence": "The eraser, which was barely the size of my thumbnail, somehow lasted the entire examination.",
+        "grammar_focus": "non-defining relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EY",
+          "ER",
+          "CH",
+          "AA",
+          "EH",
+          "IY",
+          "AY",
+          "TH",
+          "HH",
+          "AW",
+          "AE",
+          "SH"
+        ]
+      },
+      {
+        "id": "eraser_upp_002",
+        "sentence": "Had I not had a spare eraser in my bag, I would have had to submit the paper with all my mistakes.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "AY",
+          "AA",
+          "AH",
+          "EH",
+          "IH",
+          "EY",
+          "ER",
+          "UH",
+          "UW",
+          "DH",
+          "AO"
+        ]
+      },
+      {
+        "id": "eraser_upp_003",
+        "sentence": "Despite being one of the cheapest items in a pencil box, a good eraser is surprisingly hard to find.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "AH",
+          "DH",
+          "CH",
+          "EH",
+          "AA",
+          "UH",
+          "EY",
+          "ER",
+          "HH",
+          "UW"
+        ]
+      },
+      {
+        "id": "eraser_upp_004",
+        "sentence": "Not only did the eraser fail to remove the mark, but it also smeared graphite all over the page.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "IH",
+          "DH",
+          "AH",
+          "EY",
+          "ER",
+          "UW",
+          "AO",
+          "AE",
+          "AY",
+          "JH"
+        ]
+      },
+      {
+        "id": "eraser_upp_005",
+        "sentence": "I wish I had not lent my eraser to my classmate, as he returned it in a terrible condition.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "HH",
+          "AE",
+          "AA",
+          "EH",
+          "EY",
+          "ER",
+          "UW",
+          "IY",
+          "AH"
+        ]
+      },
+      {
+        "id": "eraser_upp_006",
+        "sentence": "It is ironic that the more mistakes you make, the faster your eraser disappears.",
+        "grammar_focus": "it is + adjective + that",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "AA",
+          "DH",
+          "AE",
+          "AH",
+          "AO",
+          "EY",
+          "UW",
+          "ER"
+        ]
+      },
+      {
+        "id": "eraser_upp_007",
+        "sentence": "The quality of an eraser can be judged by how cleanly it removes pencil marks without leaving residue.",
+        "grammar_focus": "can be judged by",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AA",
+          "IY",
+          "AE",
+          "IH",
+          "EY",
+          "ER",
+          "JH",
+          "AY",
+          "HH",
+          "AW",
+          "UW",
+          "EH",
+          "TH",
+          "NG"
+        ]
+      },
+      {
+        "id": "eraser_upp_008",
+        "sentence": "Whoever keeps breaking erasers into tiny pieces and throwing them around will be given detention.",
+        "grammar_focus": "whoever + future",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "IY",
+          "EY",
+          "IH",
+          "NG",
+          "AY",
+          "AH",
+          "TH",
+          "OW",
+          "DH",
+          "AW",
+          "SH"
+        ]
+      },
+      {
+        "id": "eraser_upp_009",
+        "sentence": "Were it not for the humble eraser, every pencil mistake would be permanent.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "DH",
+          "AH",
+          "HH",
+          "EY",
+          "EH",
+          "IY",
+          "UH"
+        ]
+      },
+      {
+        "id": "eraser_upp_010",
+        "sentence": "The number of erasers that go missing in a classroom is astonishing.",
+        "grammar_focus": "that clause + adjective",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "ER",
+          "IH",
+          "EY",
+          "AE",
+          "OW",
+          "NG",
+          "UW",
+          "AA",
+          "SH"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "eraser_adv_001",
+        "sentence": "It is often overlooked that the eraser, a seemingly insignificant item, gives students the confidence to attempt difficult problems knowing they can correct their mistakes.",
+        "grammar_focus": "it is + adverb + overlooked",
+        "target_phonemes": [
+          "IH",
+          "AO",
+          "AH",
+          "OW",
+          "ER",
+          "UH",
+          "DH",
+          "AE",
+          "EY",
+          "IY",
+          "NG",
+          "AY",
+          "UW",
+          "AA",
+          "EH"
+        ]
+      },
+      {
+        "id": "eraser_adv_002",
+        "sentence": "One might argue that the eraser embodies an important lesson for young learners: that making mistakes is a natural part of the learning process and can always be corrected.",
+        "grammar_focus": "one might argue",
+        "target_phonemes": [
+          "AH",
+          "AY",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "IH",
+          "EY",
+          "ER",
+          "EH",
+          "IY",
+          "AO",
+          "NG",
+          "CH"
+        ]
+      },
+      {
+        "id": "eraser_adv_003",
+        "sentence": "The eraser that had been wedged between the pages of my notebook for months was discovered just when I needed it most during the final examination.",
+        "grammar_focus": "past perfect passive + just when",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EY",
+          "ER",
+          "AE",
+          "HH",
+          "EH",
+          "JH",
+          "IY",
+          "AY",
+          "OW",
+          "UH",
+          "AO",
+          "TH",
+          "AA",
+          "NG",
+          "SH"
+        ]
+      },
+      {
+        "id": "eraser_adv_004",
+        "sentence": "No sooner had I finished correcting my answer than the eraser slipped from my fingers and rolled under the bench in front of me.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "AY",
+          "IH",
+          "SH",
+          "EH",
+          "NG",
+          "DH",
+          "AH",
+          "EY",
+          "CH",
+          "IY"
+        ]
+      },
+      {
+        "id": "eraser_adv_005",
+        "sentence": "Regardless of how advanced digital tools become, the simple eraser will likely remain a staple in classrooms for generations to come.",
+        "grammar_focus": "regardless of how",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "HH",
+          "AW",
+          "AE",
+          "IH",
+          "JH",
+          "UW",
+          "DH",
+          "EY",
+          "ER",
+          "AY",
+          "IY",
+          "AO",
+          "EH",
+          "SH"
+        ]
+      }
+    ]
+  },
+  "notebook": {
+    "beginner": [
+      {
+        "id": "notebook_beg_001",
+        "sentence": "I write in my notebook.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_beg_002",
+        "sentence": "The notebook has many pages.",
+        "grammar_focus": "have/has",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OW",
+          "UH",
+          "HH",
+          "AE",
+          "EH",
+          "IY",
+          "EY",
+          "JH"
+        ]
+      },
+      {
+        "id": "notebook_beg_003",
+        "sentence": "This is a new notebook.",
+        "grammar_focus": "demonstrative",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "AH",
+          "UW",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_beg_004",
+        "sentence": "My notebook is green.",
+        "grammar_focus": "possessive + adjective",
+        "target_phonemes": [
+          "AY",
+          "OW",
+          "UH",
+          "IH",
+          "IY"
+        ]
+      },
+      {
+        "id": "notebook_beg_005",
+        "sentence": "Where is my maths notebook?",
+        "grammar_focus": "question word",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "AY",
+          "AE",
+          "TH",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_beg_006",
+        "sentence": "I forgot my notebook at school.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "ER",
+          "AA",
+          "OW",
+          "UH",
+          "AE",
+          "UW"
+        ]
+      },
+      {
+        "id": "notebook_beg_007",
+        "sentence": "Open your notebook now.",
+        "grammar_focus": "imperative",
+        "target_phonemes": [
+          "OW",
+          "AH",
+          "AO",
+          "UH",
+          "AW"
+        ]
+      },
+      {
+        "id": "notebook_beg_008",
+        "sentence": "The notebook is in my bag.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OW",
+          "UH",
+          "IH",
+          "AY",
+          "AE"
+        ]
+      },
+      {
+        "id": "notebook_beg_009",
+        "sentence": "I finished one full notebook.",
+        "grammar_focus": "past simple + adjective",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "AH",
+          "UH",
+          "OW"
+        ]
+      },
+      {
+        "id": "notebook_beg_010",
+        "sentence": "Can I see your notebook?",
+        "grammar_focus": "request",
+        "target_phonemes": [
+          "AE",
+          "AY",
+          "IY",
+          "AO",
+          "OW",
+          "UH"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "notebook_ele_001",
+        "sentence": "I always write the date on top of each page in my notebook.",
+        "grammar_focus": "frequency adverb",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EY",
+          "DH",
+          "AH",
+          "AA",
+          "IY",
+          "CH",
+          "JH",
+          "IH",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_ele_002",
+        "sentence": "My teacher checked all our notebooks after the class.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "CH",
+          "ER",
+          "EH",
+          "AO",
+          "AW",
+          "OW",
+          "UH",
+          "AE",
+          "DH",
+          "AH"
+        ]
+      },
+      {
+        "id": "notebook_ele_003",
+        "sentence": "The pages of my notebook are getting torn and messy.",
+        "grammar_focus": "present continuous",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "JH",
+          "AY",
+          "OW",
+          "UH",
+          "AA",
+          "EH",
+          "IH",
+          "NG",
+          "AO",
+          "IY"
+        ]
+      },
+      {
+        "id": "notebook_ele_004",
+        "sentence": "I need to buy a new notebook for science.",
+        "grammar_focus": "need + infinitive",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "UW",
+          "AH",
+          "OW",
+          "UH",
+          "AO"
+        ]
+      },
+      {
+        "id": "notebook_ele_005",
+        "sentence": "Please write neatly in your notebook.",
+        "grammar_focus": "imperative + adverb",
+        "target_phonemes": [
+          "IY",
+          "AY",
+          "IH",
+          "AO",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_ele_006",
+        "sentence": "There are four different notebooks in my school bag.",
+        "grammar_focus": "there are + number",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "AA",
+          "AO",
+          "IH",
+          "ER",
+          "AH",
+          "OW",
+          "UH",
+          "AY",
+          "UW",
+          "AE"
+        ]
+      },
+      {
+        "id": "notebook_ele_007",
+        "sentence": "She copied the notes from my notebook.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "SH",
+          "IY",
+          "AA",
+          "DH",
+          "AH",
+          "OW",
+          "AY",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_ele_008",
+        "sentence": "Do not tear pages out of your notebook.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "UW",
+          "AA",
+          "EH",
+          "EY",
+          "JH",
+          "AH",
+          "AW",
+          "AO",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_ele_009",
+        "sentence": "I keep a separate notebook for English grammar.",
+        "grammar_focus": "keep + for",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "AH",
+          "EH",
+          "ER",
+          "IH",
+          "OW",
+          "UH",
+          "AO",
+          "NG",
+          "SH",
+          "AE"
+        ]
+      },
+      {
+        "id": "notebook_ele_010",
+        "sentence": "My notebook got wet in the rain and the ink spread everywhere.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "AY",
+          "OW",
+          "UH",
+          "AA",
+          "EH",
+          "IH",
+          "DH",
+          "AH",
+          "EY",
+          "NG",
+          "IY"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "notebook_int_001",
+        "sentence": "The notebook that I use for English has a bright orange cover.",
+        "grammar_focus": "relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OW",
+          "UH",
+          "AE",
+          "AY",
+          "UW",
+          "AO",
+          "IH",
+          "NG",
+          "SH",
+          "HH",
+          "JH",
+          "ER"
+        ]
+      },
+      {
+        "id": "notebook_int_002",
+        "sentence": "I have been writing in this notebook since January.",
+        "grammar_focus": "present perfect continuous + since",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "IH",
+          "NG",
+          "DH",
+          "OW",
+          "UH",
+          "JH",
+          "UW",
+          "EH",
+          "IY"
+        ]
+      },
+      {
+        "id": "notebook_int_003",
+        "sentence": "If you keep your notebook neat, it will be easier to revise before the exam.",
+        "grammar_focus": "first conditional",
+        "target_phonemes": [
+          "IH",
+          "UW",
+          "IY",
+          "AO",
+          "OW",
+          "UH",
+          "ER",
+          "AY",
+          "DH",
+          "AH",
+          "AE"
+        ]
+      },
+      {
+        "id": "notebook_int_004",
+        "sentence": "Could you show me how you organised your notes in your notebook?",
+        "grammar_focus": "polite request + how clause",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "SH",
+          "OW",
+          "IY",
+          "HH",
+          "AW",
+          "AO",
+          "AH",
+          "IH"
+        ]
+      },
+      {
+        "id": "notebook_int_005",
+        "sentence": "Although the notebook looks thin, it actually has two hundred pages.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "AH",
+          "UH",
+          "TH",
+          "IH",
+          "AE",
+          "CH",
+          "IY",
+          "HH",
+          "UW",
+          "EY",
+          "JH"
+        ]
+      },
+      {
+        "id": "notebook_int_006",
+        "sentence": "The teacher told us to leave two lines between each answer in our notebooks.",
+        "grammar_focus": "reported speech",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "OW",
+          "UW",
+          "AY",
+          "IH",
+          "AE",
+          "AW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_int_007",
+        "sentence": "I would rather use a ruled notebook than a plain one for writing.",
+        "grammar_focus": "would rather + than",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AE",
+          "DH",
+          "ER",
+          "UW",
+          "AH",
+          "OW",
+          "EY",
+          "AO",
+          "IH",
+          "NG"
+        ]
+      },
+      {
+        "id": "notebook_int_008",
+        "sentence": "My notebook fell into a puddle and half the pages became unreadable.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "AY",
+          "OW",
+          "UH",
+          "EH",
+          "IH",
+          "UW",
+          "AH",
+          "HH",
+          "AE",
+          "DH",
+          "EY",
+          "JH",
+          "IY"
+        ]
+      },
+      {
+        "id": "notebook_int_009",
+        "sentence": "Have you ever kept a notebook just for writing your own stories and poems?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "AH",
+          "OW",
+          "UH",
+          "JH",
+          "AO",
+          "AY",
+          "IH",
+          "NG",
+          "IY"
+        ]
+      },
+      {
+        "id": "notebook_int_010",
+        "sentence": "The notebook needs a new cover because the old one has completely torn off.",
+        "grammar_focus": "because + present perfect",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OW",
+          "UH",
+          "IY",
+          "UW",
+          "ER",
+          "IH",
+          "AO",
+          "HH",
+          "AE"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "notebook_upp_001",
+        "sentence": "The notebook, which my grandfather gave me on my birthday, has become my most treasured possession.",
+        "grammar_focus": "non-defining relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OW",
+          "UH",
+          "IH",
+          "CH",
+          "AY",
+          "AE",
+          "AA",
+          "ER",
+          "EY",
+          "IY",
+          "TH",
+          "HH",
+          "EH",
+          "ZH",
+          "SH"
+        ]
+      },
+      {
+        "id": "notebook_upp_002",
+        "sentence": "Had I labelled my notebooks properly, I would not have brought the wrong one to class.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "AY",
+          "EY",
+          "AH",
+          "OW",
+          "UH",
+          "AA",
+          "ER",
+          "IY",
+          "AO",
+          "DH",
+          "NG",
+          "UW"
+        ]
+      },
+      {
+        "id": "notebook_upp_003",
+        "sentence": "Despite being filled with scratchy handwriting and doodles, my old notebook brings back many fond memories.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "DH",
+          "AE",
+          "CH",
+          "HH",
+          "AH",
+          "UW",
+          "OW",
+          "UH",
+          "EH",
+          "AA",
+          "ER"
+        ]
+      },
+      {
+        "id": "notebook_upp_004",
+        "sentence": "Not only did the notebook get soaked in the rain, but some of the most important notes were washed away completely.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "IH",
+          "DH",
+          "AH",
+          "UH",
+          "EH",
+          "EY",
+          "AO",
+          "ER",
+          "SH"
+        ]
+      },
+      {
+        "id": "notebook_upp_005",
+        "sentence": "I wish I had written more carefully in my notebook, as I cannot read some of my own notes now.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "HH",
+          "AE",
+          "AH",
+          "AO",
+          "EH",
+          "IY",
+          "OW",
+          "UH",
+          "AA",
+          "AW"
+        ]
+      },
+      {
+        "id": "notebook_upp_006",
+        "sentence": "It is interesting to see how a student's handwriting improves by comparing the first and last pages of their notebook.",
+        "grammar_focus": "it is + adjective + infinitive",
+        "target_phonemes": [
+          "IH",
+          "AH",
+          "NG",
+          "UW",
+          "IY",
+          "HH",
+          "AW",
+          "AE",
+          "AY",
+          "EH",
+          "DH",
+          "ER",
+          "EY",
+          "JH",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_upp_007",
+        "sentence": "The condition of a student's notebook often reflects their attitude towards learning.",
+        "grammar_focus": "reflects",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "SH",
+          "UW",
+          "OW",
+          "UH",
+          "AO",
+          "EH",
+          "AE",
+          "ER",
+          "NG"
+        ]
+      },
+      {
+        "id": "notebook_upp_008",
+        "sentence": "Whoever left their notebook on the library table should collect it before it is thrown away.",
+        "grammar_focus": "whoever + should",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "DH",
+          "OW",
+          "UH",
+          "AA",
+          "AH",
+          "AY",
+          "IY",
+          "EY",
+          "SH",
+          "IH",
+          "AO",
+          "TH"
+        ]
+      },
+      {
+        "id": "notebook_upp_009",
+        "sentence": "Were it not for my well-organised notebook, I would have struggled to revise for the final exam.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "AY",
+          "EH",
+          "AH",
+          "EY",
+          "OW",
+          "UH",
+          "HH",
+          "AE",
+          "UW",
+          "DH"
+        ]
+      },
+      {
+        "id": "notebook_upp_010",
+        "sentence": "The number of notebooks a student uses in a year depends on how much they write in class.",
+        "grammar_focus": "depends on + how much",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "ER",
+          "OW",
+          "UH",
+          "UW",
+          "IH",
+          "EH",
+          "AA",
+          "HH",
+          "AW",
+          "CH",
+          "EY",
+          "AY",
+          "AE"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "notebook_adv_001",
+        "sentence": "It is fascinating to look back at old notebooks and trace the gradual development of one's handwriting, vocabulary, and ability to express complex ideas.",
+        "grammar_focus": "it is + adjective + infinitive",
+        "target_phonemes": [
+          "IH",
+          "AE",
+          "AH",
+          "EY",
+          "NG",
+          "UW",
+          "UH",
+          "OW",
+          "DH",
+          "JH",
+          "EH",
+          "HH",
+          "AY",
+          "IY",
+          "AA"
+        ]
+      },
+      {
+        "id": "notebook_adv_002",
+        "sentence": "One could argue that the notebook serves not merely as a record of lessons taught, but as a personal archive of a student's intellectual growth over the course of an academic year.",
+        "grammar_focus": "one could argue",
+        "target_phonemes": [
+          "AH",
+          "UH",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "OW",
+          "ER",
+          "IH",
+          "IY",
+          "EH",
+          "AO",
+          "AY",
+          "CH",
+          "TH"
+        ]
+      },
+      {
+        "id": "notebook_adv_003",
+        "sentence": "The notebook that had been gathering dust on my shelf for years turned out to contain the very notes I needed for my project on Indian history.",
+        "grammar_focus": "past perfect continuous + turned out",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OW",
+          "UH",
+          "AE",
+          "HH",
+          "IH",
+          "ER",
+          "NG",
+          "AA",
+          "AY",
+          "SH",
+          "EH",
+          "AO",
+          "AW",
+          "UW",
+          "EY",
+          "IY",
+          "JH"
+        ]
+      },
+      {
+        "id": "notebook_adv_004",
+        "sentence": "No sooner had the teacher announced a surprise test than every student frantically began flipping through their notebooks in search of the relevant chapter.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "AW",
+          "AY",
+          "EH",
+          "IH",
+          "NG",
+          "TH",
+          "UH"
+        ]
+      },
+      {
+        "id": "notebook_adv_005",
+        "sentence": "Regardless of whether one prefers digital note-taking or traditional handwriting, the physical notebook remains a powerful tool for memory retention and active learning.",
+        "grammar_focus": "regardless of whether",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "EH",
+          "DH",
+          "ER",
+          "IH",
+          "JH",
+          "OW",
+          "EY",
+          "NG",
+          "AO",
+          "SH",
+          "HH",
+          "AE",
+          "AY",
+          "UH",
+          "AW",
+          "UW",
+          "IY"
+        ]
+      }
+    ]
+  },
+  "pencil": {
+    "beginner": [
+      {
+        "id": "pencil_beg_001",
+        "sentence": "I draw with a pencil.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "IH",
+          "DH",
+          "AH",
+          "EH"
+        ]
+      },
+      {
+        "id": "pencil_beg_002",
+        "sentence": "The pencil is long and yellow.",
+        "grammar_focus": "copula + compound adjective",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EH",
+          "IH",
+          "AO",
+          "NG",
+          "OW"
+        ]
+      },
+      {
+        "id": "pencil_beg_003",
+        "sentence": "This pencil is very sharp.",
+        "grammar_focus": "demonstrative + adjective",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "EH",
+          "AH",
+          "IY",
+          "SH",
+          "AA"
+        ]
+      },
+      {
+        "id": "pencil_beg_004",
+        "sentence": "My pencil broke during class.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "EH",
+          "AH",
+          "OW",
+          "UH",
+          "IH",
+          "NG",
+          "AE"
+        ]
+      },
+      {
+        "id": "pencil_beg_005",
+        "sentence": "Where is my pencil?",
+        "grammar_focus": "question word",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "AY",
+          "AH"
+        ]
+      },
+      {
+        "id": "pencil_beg_006",
+        "sentence": "I sharpened my pencil.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "SH",
+          "AA",
+          "AH",
+          "EH"
+        ]
+      },
+      {
+        "id": "pencil_beg_007",
+        "sentence": "Give me a pencil, please.",
+        "grammar_focus": "imperative",
+        "target_phonemes": [
+          "IH",
+          "IY",
+          "AH",
+          "EH"
+        ]
+      },
+      {
+        "id": "pencil_beg_008",
+        "sentence": "The pencil is on the table.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EH",
+          "IH",
+          "AA",
+          "EY"
+        ]
+      },
+      {
+        "id": "pencil_beg_009",
+        "sentence": "I have three pencils in my box.",
+        "grammar_focus": "have + number",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "TH",
+          "IY",
+          "EH",
+          "AH",
+          "IH",
+          "AA"
+        ]
+      },
+      {
+        "id": "pencil_beg_010",
+        "sentence": "Can I borrow a pencil?",
+        "grammar_focus": "request",
+        "target_phonemes": [
+          "AE",
+          "AY",
+          "AA",
+          "OW",
+          "AH",
+          "EH"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "pencil_ele_001",
+        "sentence": "I always keep extra pencils in my bag.",
+        "grammar_focus": "frequency adverb",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EY",
+          "IY",
+          "EH",
+          "AH",
+          "IH",
+          "AE"
+        ]
+      },
+      {
+        "id": "pencil_ele_002",
+        "sentence": "My pencil keeps breaking whenever I sharpen it.",
+        "grammar_focus": "present simple + whenever",
+        "target_phonemes": [
+          "AY",
+          "EH",
+          "AH",
+          "IY",
+          "EY",
+          "IH",
+          "NG",
+          "ER",
+          "SH",
+          "AA"
+        ]
+      },
+      {
+        "id": "pencil_ele_003",
+        "sentence": "This pencil is darker than the other one.",
+        "grammar_focus": "comparative",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "EH",
+          "AH",
+          "AA",
+          "ER",
+          "AE"
+        ]
+      },
+      {
+        "id": "pencil_ele_004",
+        "sentence": "I finished the test using only a pencil.",
+        "grammar_focus": "past simple + gerund",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "DH",
+          "AH",
+          "EH",
+          "UW",
+          "NG",
+          "OW",
+          "IY"
+        ]
+      },
+      {
+        "id": "pencil_ele_005",
+        "sentence": "Please use a pencil for the rough work.",
+        "grammar_focus": "imperative + for",
+        "target_phonemes": [
+          "IY",
+          "UW",
+          "AH",
+          "EH",
+          "AO",
+          "DH",
+          "ER"
+        ]
+      },
+      {
+        "id": "pencil_ele_006",
+        "sentence": "There were no pencils left in the box.",
+        "grammar_focus": "there were + negative",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "ER",
+          "OW",
+          "AH",
+          "IH",
+          "AA"
+        ]
+      },
+      {
+        "id": "pencil_ele_007",
+        "sentence": "She drew a beautiful flower with her pencil.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "SH",
+          "IY",
+          "UW",
+          "AH",
+          "AW",
+          "ER",
+          "IH",
+          "DH",
+          "HH",
+          "EH"
+        ]
+      },
+      {
+        "id": "pencil_ele_008",
+        "sentence": "Do not chew on the end of your pencil.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "UW",
+          "AA",
+          "CH",
+          "DH",
+          "AH",
+          "EH",
+          "AO"
+        ]
+      },
+      {
+        "id": "pencil_ele_009",
+        "sentence": "I prefer pencils for drawing because they are easy to erase.",
+        "grammar_focus": "preference + because",
+        "target_phonemes": [
+          "AY",
+          "AH",
+          "ER",
+          "EH",
+          "AO",
+          "IH",
+          "NG",
+          "DH",
+          "EY",
+          "AA",
+          "IY",
+          "UW"
+        ]
+      },
+      {
+        "id": "pencil_ele_010",
+        "sentence": "The pencil rolled off the desk and fell on the floor.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EH",
+          "OW",
+          "AO",
+          "AA"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "pencil_int_001",
+        "sentence": "The pencil that I was using during the art class suddenly snapped in half.",
+        "grammar_focus": "relative clause + past simple",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EH",
+          "AE",
+          "AY",
+          "AA",
+          "UW",
+          "IH",
+          "NG",
+          "UH",
+          "IY",
+          "HH"
+        ]
+      },
+      {
+        "id": "pencil_int_002",
+        "sentence": "I have been using the same pencil for nearly three weeks now.",
+        "grammar_focus": "present perfect continuous",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "IH",
+          "UW",
+          "NG",
+          "DH",
+          "AH",
+          "EY",
+          "EH",
+          "AO",
+          "IY",
+          "TH",
+          "AW"
+        ]
+      },
+      {
+        "id": "pencil_int_003",
+        "sentence": "If you hold the pencil correctly, your handwriting will improve.",
+        "grammar_focus": "first conditional",
+        "target_phonemes": [
+          "IH",
+          "UW",
+          "HH",
+          "OW",
+          "DH",
+          "AH",
+          "EH",
+          "ER",
+          "IY",
+          "AO",
+          "AE",
+          "AY",
+          "NG"
+        ]
+      },
+      {
+        "id": "pencil_int_004",
+        "sentence": "Could you please pick up the pencil that fell behind your chair?",
+        "grammar_focus": "polite request + relative clause",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "IY",
+          "IH",
+          "AH",
+          "DH",
+          "EH",
+          "AE",
+          "HH",
+          "AY",
+          "AO",
+          "CH"
+        ]
+      },
+      {
+        "id": "pencil_int_005",
+        "sentence": "Although pencils seem simple, they are one of the most useful inventions.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "EH",
+          "AH",
+          "IY",
+          "IH",
+          "EY",
+          "AA",
+          "UW",
+          "SH"
+        ]
+      },
+      {
+        "id": "pencil_int_006",
+        "sentence": "The teacher suggested that we use pencils instead of pens for the diagram.",
+        "grammar_focus": "reported speech + that",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "JH",
+          "EH",
+          "AE",
+          "UW",
+          "IH",
+          "AO",
+          "AY"
+        ]
+      },
+      {
+        "id": "pencil_int_007",
+        "sentence": "I would rather write with a sharp pencil than a blunt one.",
+        "grammar_focus": "would rather + than",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AE",
+          "DH",
+          "ER",
+          "IH",
+          "AH",
+          "SH",
+          "AA",
+          "EH"
+        ]
+      },
+      {
+        "id": "pencil_int_008",
+        "sentence": "My pencil lead kept breaking because I was pressing too hard.",
+        "grammar_focus": "because + past continuous",
+        "target_phonemes": [
+          "AY",
+          "EH",
+          "AH",
+          "EY",
+          "IH",
+          "NG",
+          "AO",
+          "AA",
+          "UW",
+          "HH"
+        ]
+      },
+      {
+        "id": "pencil_int_009",
+        "sentence": "Have you ever wondered how the graphite gets inside a pencil?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "AH",
+          "AW",
+          "DH",
+          "AY",
+          "IH"
+        ]
+      },
+      {
+        "id": "pencil_int_010",
+        "sentence": "The pencil should be sharp enough to draw thin, clean lines.",
+        "grammar_focus": "should + enough",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EH",
+          "SH",
+          "UH",
+          "IY",
+          "AA",
+          "IH",
+          "UW",
+          "AO",
+          "TH",
+          "AY"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "pencil_upp_001",
+        "sentence": "The pencil, which appeared to be an ordinary writing tool, was actually a mechanical one with a twist mechanism.",
+        "grammar_focus": "non-defining relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EH",
+          "IH",
+          "CH",
+          "UW",
+          "IY",
+          "AE",
+          "AO",
+          "AY",
+          "NG",
+          "AA"
+        ]
+      },
+      {
+        "id": "pencil_upp_002",
+        "sentence": "Had I brought a softer pencil, the shading in my drawing would have looked much smoother.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "AY",
+          "AO",
+          "AH",
+          "AA",
+          "ER",
+          "EH",
+          "DH",
+          "SH",
+          "EY",
+          "IH",
+          "NG",
+          "UH",
+          "CH",
+          "UW"
+        ]
+      },
+      {
+        "id": "pencil_upp_003",
+        "sentence": "Despite being one of the oldest writing instruments, the pencil continues to be widely used in modern classrooms.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "AH",
+          "DH",
+          "OW",
+          "EH",
+          "UW",
+          "AA",
+          "ER",
+          "AE"
+        ]
+      },
+      {
+        "id": "pencil_upp_004",
+        "sentence": "Not only is the pencil useful for writing, but it is also essential for sketching, shading, and technical drawing.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "IH",
+          "DH",
+          "AH",
+          "EH",
+          "UW",
+          "AO",
+          "AY",
+          "NG",
+          "SH",
+          "CH",
+          "EY"
+        ]
+      },
+      {
+        "id": "pencil_upp_005",
+        "sentence": "I wish I had not pressed so hard with my pencil, as the deep marks are now impossible to erase.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "HH",
+          "AE",
+          "AA",
+          "EH",
+          "OW",
+          "DH",
+          "AH",
+          "IY",
+          "AW",
+          "UW",
+          "EY"
+        ]
+      },
+      {
+        "id": "pencil_upp_006",
+        "sentence": "It is estimated that a single pencil can draw a line approximately fifty-six kilometres long.",
+        "grammar_focus": "it is estimated + that",
+        "target_phonemes": [
+          "IH",
+          "EH",
+          "AH",
+          "EY",
+          "DH",
+          "AE",
+          "NG",
+          "AO",
+          "AY",
+          "AA",
+          "IY"
+        ]
+      },
+      {
+        "id": "pencil_upp_007",
+        "sentence": "The graphite in a pencil determines how dark or light the marks will be.",
+        "grammar_focus": "determines + how",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AE",
+          "AY",
+          "IH",
+          "EH",
+          "ER",
+          "HH",
+          "AW",
+          "AA",
+          "AO",
+          "IY"
+        ]
+      },
+      {
+        "id": "pencil_upp_008",
+        "sentence": "Whoever sharpened all the pencils before the exam deserves a word of thanks.",
+        "grammar_focus": "whoever + deserves",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "SH",
+          "AA",
+          "AH",
+          "AO",
+          "DH",
+          "IH",
+          "AE",
+          "TH",
+          "NG"
+        ]
+      },
+      {
+        "id": "pencil_upp_009",
+        "sentence": "Were it not for pencils, the art of sketching and drafting would be far more difficult.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "EH",
+          "AH",
+          "DH",
+          "CH",
+          "NG",
+          "AE",
+          "UH",
+          "IY"
+        ]
+      },
+      {
+        "id": "pencil_upp_010",
+        "sentence": "The quality of a pencil can be judged by how smoothly it glides across the paper.",
+        "grammar_focus": "can be judged by",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AA",
+          "IY",
+          "EH",
+          "AE",
+          "JH",
+          "AY",
+          "HH",
+          "AW",
+          "UW",
+          "IH",
+          "AO",
+          "EY",
+          "ER"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "pencil_adv_001",
+        "sentence": "It is a testament to the elegance of simple design that the pencil, virtually unchanged for centuries, remains one of the most reliable tools for creative expression and academic work.",
+        "grammar_focus": "it is + a testament",
+        "target_phonemes": [
+          "IH",
+          "AH",
+          "EH",
+          "UW",
+          "DH",
+          "AY",
+          "AE",
+          "ER",
+          "CH",
+          "IY",
+          "EY",
+          "JH",
+          "AO",
+          "OW",
+          "SH"
+        ]
+      },
+      {
+        "id": "pencil_adv_002",
+        "sentence": "One could argue that the humble pencil, with its capacity for both precision and correction, mirrors the learning process itself, where trial and error lead to eventual mastery.",
+        "grammar_focus": "one could argue",
+        "target_phonemes": [
+          "AH",
+          "UH",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "HH",
+          "EH",
+          "IH",
+          "IY",
+          "AO",
+          "OW",
+          "TH",
+          "ZH",
+          "ER",
+          "SH",
+          "NG",
+          "AY",
+          "CH"
+        ]
+      },
+      {
+        "id": "pencil_adv_003",
+        "sentence": "The pencil that had been rolling around the bottom of my drawer for months turned out to be exactly the grade I needed for my still-life drawing.",
+        "grammar_focus": "past perfect continuous + turned out",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EH",
+          "AE",
+          "HH",
+          "IH",
+          "OW",
+          "NG",
+          "ER",
+          "AW",
+          "AA",
+          "AY",
+          "AO",
+          "TH",
+          "UW",
+          "IY",
+          "EY"
+        ]
+      },
+      {
+        "id": "pencil_adv_004",
+        "sentence": "No sooner had the teacher asked us to begin sketching than I realised that every pencil in my case was either broken or blunt.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "IH",
+          "EH",
+          "NG",
+          "AY",
+          "EY",
+          "AA",
+          "AO"
+        ]
+      },
+      {
+        "id": "pencil_adv_005",
+        "sentence": "Regardless of how sophisticated digital drawing tablets become, many artists maintain that nothing quite compares to the tactile experience of a graphite pencil on paper.",
+        "grammar_focus": "regardless of how",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "HH",
+          "AW",
+          "IH",
+          "EY",
+          "JH",
+          "AO",
+          "NG",
+          "AE",
+          "EH",
+          "IY",
+          "DH",
+          "TH",
+          "AY",
+          "UW",
+          "ER"
+        ]
+      }
+    ]
+  },
+  "pointer": {
+    "beginner": [
+      {
+        "id": "pointer_beg_001",
+        "sentence": "The teacher has a pointer.",
+        "grammar_focus": "have/has",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "HH",
+          "AE",
+          "OY"
+        ]
+      },
+      {
+        "id": "pointer_beg_002",
+        "sentence": "The pointer is long and thin.",
+        "grammar_focus": "copula + compound adjective",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "IH",
+          "AO",
+          "NG",
+          "TH"
+        ]
+      },
+      {
+        "id": "pointer_beg_003",
+        "sentence": "That is the teacher's pointer.",
+        "grammar_focus": "possessive",
+        "target_phonemes": [
+          "DH",
+          "AE",
+          "IH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "OY"
+        ]
+      },
+      {
+        "id": "pointer_beg_004",
+        "sentence": "My teacher uses a pointer.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "CH",
+          "ER",
+          "UW",
+          "IH",
+          "AH",
+          "OY"
+        ]
+      },
+      {
+        "id": "pointer_beg_005",
+        "sentence": "Where is the pointer?",
+        "grammar_focus": "question word",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "DH",
+          "AH",
+          "OY",
+          "ER"
+        ]
+      },
+      {
+        "id": "pointer_beg_006",
+        "sentence": "The pointer fell on the floor.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "EH",
+          "AA",
+          "AO"
+        ]
+      },
+      {
+        "id": "pointer_beg_007",
+        "sentence": "Do not play with the pointer.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "UW",
+          "AA",
+          "EY",
+          "IH",
+          "DH",
+          "AH",
+          "OY",
+          "ER"
+        ]
+      },
+      {
+        "id": "pointer_beg_008",
+        "sentence": "The pointer is near the board.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "IH",
+          "AO"
+        ]
+      },
+      {
+        "id": "pointer_beg_009",
+        "sentence": "I can see a pointer on the desk.",
+        "grammar_focus": "can + see",
+        "target_phonemes": [
+          "AY",
+          "AE",
+          "IY",
+          "AH",
+          "OY",
+          "ER",
+          "AA",
+          "DH",
+          "EH"
+        ]
+      },
+      {
+        "id": "pointer_beg_010",
+        "sentence": "The teacher picked up the pointer.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "IH",
+          "OY"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "pointer_ele_001",
+        "sentence": "The teacher used the pointer to show us a word on the board.",
+        "grammar_focus": "past simple + infinitive",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "UW",
+          "OY",
+          "SH",
+          "OW",
+          "AA",
+          "AO"
+        ]
+      },
+      {
+        "id": "pointer_ele_002",
+        "sentence": "Our class teacher always keeps a pointer beside the whiteboard.",
+        "grammar_focus": "frequency adverb",
+        "target_phonemes": [
+          "AW",
+          "ER",
+          "AE",
+          "IY",
+          "CH",
+          "AO",
+          "EY",
+          "AH",
+          "OY",
+          "IH",
+          "AY",
+          "DH"
+        ]
+      },
+      {
+        "id": "pointer_ele_003",
+        "sentence": "The pointer is made of wood and has a rubber tip.",
+        "grammar_focus": "made of + and",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "IH",
+          "EY",
+          "UH",
+          "HH",
+          "AE"
+        ]
+      },
+      {
+        "id": "pointer_ele_004",
+        "sentence": "Please bring the pointer from the staff room.",
+        "grammar_focus": "imperative + from",
+        "target_phonemes": [
+          "IY",
+          "IH",
+          "NG",
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "AE",
+          "UW"
+        ]
+      },
+      {
+        "id": "pointer_ele_005",
+        "sentence": "The pointer broke when it fell off the teacher's desk.",
+        "grammar_focus": "past simple + when",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "OW",
+          "EH",
+          "IH",
+          "AO",
+          "IY",
+          "CH"
+        ]
+      },
+      {
+        "id": "pointer_ele_006",
+        "sentence": "Do not use the pointer to hit the desks or the walls.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "UW",
+          "AA",
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "HH",
+          "IH",
+          "EH",
+          "AO"
+        ]
+      },
+      {
+        "id": "pointer_ele_007",
+        "sentence": "The science teacher pointed at the diagram with a long metal pointer.",
+        "grammar_focus": "past simple + with",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AY",
+          "IY",
+          "CH",
+          "ER",
+          "OY",
+          "AE",
+          "IH",
+          "AO",
+          "NG",
+          "EH"
+        ]
+      },
+      {
+        "id": "pointer_ele_008",
+        "sentence": "There is a crack in the middle of the pointer.",
+        "grammar_focus": "there is + preposition",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "IH",
+          "AH",
+          "AE",
+          "OY",
+          "ER"
+        ]
+      },
+      {
+        "id": "pointer_ele_009",
+        "sentence": "Some teachers prefer a laser pointer instead of a wooden one.",
+        "grammar_focus": "preference",
+        "target_phonemes": [
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "EY",
+          "OY",
+          "IH",
+          "EH",
+          "UH"
+        ]
+      },
+      {
+        "id": "pointer_ele_010",
+        "sentence": "The pointer helps the teacher show exactly where to look on the chart.",
+        "grammar_focus": "helps + infinitive",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "HH",
+          "EH",
+          "IY",
+          "CH",
+          "SH",
+          "OW",
+          "IH",
+          "AE",
+          "UW",
+          "UH",
+          "AA"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "pointer_int_001",
+        "sentence": "The pointer that the teacher uses has a small flag attached to the end.",
+        "grammar_focus": "relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "AE",
+          "IY",
+          "CH",
+          "UW",
+          "IH",
+          "HH",
+          "AO",
+          "EH"
+        ]
+      },
+      {
+        "id": "pointer_int_002",
+        "sentence": "I have never seen a pointer as long as the one our geography teacher carries.",
+        "grammar_focus": "present perfect + never + comparative",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "EH",
+          "ER",
+          "IY",
+          "AH",
+          "OY",
+          "AO",
+          "NG",
+          "DH",
+          "AW",
+          "JH",
+          "AA",
+          "CH"
+        ]
+      },
+      {
+        "id": "pointer_int_003",
+        "sentence": "If the pointer breaks, the teacher will probably use a ruler instead.",
+        "grammar_focus": "first conditional",
+        "target_phonemes": [
+          "IH",
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "EY",
+          "IY",
+          "CH",
+          "AA",
+          "UW",
+          "EH"
+        ]
+      },
+      {
+        "id": "pointer_int_004",
+        "sentence": "Could you hand the pointer to the teacher, please?",
+        "grammar_focus": "polite request",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "HH",
+          "AE",
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "IY",
+          "CH"
+        ]
+      },
+      {
+        "id": "pointer_int_005",
+        "sentence": "Although pointers are rarely used by students, they are common in most classrooms.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "OY",
+          "ER",
+          "AA",
+          "EH",
+          "IY",
+          "UW",
+          "AY",
+          "AH",
+          "EY",
+          "IH",
+          "AE"
+        ]
+      },
+      {
+        "id": "pointer_int_006",
+        "sentence": "The teacher explained the map by sliding the pointer from one city to another.",
+        "grammar_focus": "by + gerund",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "IH",
+          "EY",
+          "AE",
+          "AY",
+          "NG",
+          "OY",
+          "UW"
+        ]
+      },
+      {
+        "id": "pointer_int_007",
+        "sentence": "I would rather the teacher use a pointer than tap on the board with a marker.",
+        "grammar_focus": "would rather",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AE",
+          "DH",
+          "ER",
+          "AH",
+          "IY",
+          "CH",
+          "UW",
+          "OY",
+          "AA",
+          "AO",
+          "IH"
+        ]
+      },
+      {
+        "id": "pointer_int_008",
+        "sentence": "The pointer slipped out of the teacher's hand and landed on the front bench.",
+        "grammar_focus": "past simple + and",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "IH",
+          "AW",
+          "IY",
+          "CH",
+          "HH",
+          "AE",
+          "AA",
+          "EH"
+        ]
+      },
+      {
+        "id": "pointer_int_009",
+        "sentence": "Have you ever noticed that the pointer always seems to end up on the wrong desk?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "OW",
+          "AH",
+          "DH",
+          "OY",
+          "AO",
+          "EY",
+          "IY",
+          "AA",
+          "NG"
+        ]
+      },
+      {
+        "id": "pointer_int_010",
+        "sentence": "The pointer should be kept in a safe place so that it does not break.",
+        "grammar_focus": "should + so that",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "SH",
+          "UH",
+          "IY",
+          "EH",
+          "IH",
+          "EY",
+          "OW",
+          "AE",
+          "AA"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "pointer_upp_001",
+        "sentence": "The pointer, which had belonged to our previous teacher, now sits unused in the corner of the classroom.",
+        "grammar_focus": "non-defining relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "IH",
+          "CH",
+          "HH",
+          "AE",
+          "AO",
+          "NG",
+          "UW",
+          "AW",
+          "IY"
+        ]
+      },
+      {
+        "id": "pointer_upp_002",
+        "sentence": "Had the teacher brought the pointer to the science lab, explaining the human skeleton would have been much easier.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "AO",
+          "OY",
+          "UW",
+          "AY",
+          "IH",
+          "EY",
+          "NG",
+          "EH",
+          "UH"
+        ]
+      },
+      {
+        "id": "pointer_upp_003",
+        "sentence": "Despite being a simple stick, the pointer commands attention the moment the teacher picks it up.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "AH",
+          "DH",
+          "OY",
+          "ER",
+          "AE",
+          "EH",
+          "SH",
+          "OW",
+          "CH"
+        ]
+      },
+      {
+        "id": "pointer_upp_004",
+        "sentence": "Not only does the pointer help the teacher direct our attention, but it also serves as a visual cue to stay focused.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "AH",
+          "DH",
+          "OY",
+          "ER",
+          "HH",
+          "EH",
+          "CH",
+          "AW",
+          "SH",
+          "IH",
+          "AO",
+          "AE",
+          "ZH",
+          "UW",
+          "EY"
+        ]
+      },
+      {
+        "id": "pointer_upp_005",
+        "sentence": "I wish the school had replaced the cracked pointer, as it looks quite unprofessional.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "DH",
+          "AH",
+          "UW",
+          "HH",
+          "AE",
+          "IY",
+          "EY",
+          "OY",
+          "ER",
+          "UH",
+          "EH"
+        ]
+      },
+      {
+        "id": "pointer_upp_006",
+        "sentence": "It is interesting how a simple pointer can change the way a class pays attention during a lesson.",
+        "grammar_focus": "it is + adjective + how",
+        "target_phonemes": [
+          "IH",
+          "AH",
+          "NG",
+          "HH",
+          "AW",
+          "OY",
+          "ER",
+          "AE",
+          "CH",
+          "EY",
+          "JH",
+          "DH",
+          "EH",
+          "SH",
+          "UH"
+        ]
+      },
+      {
+        "id": "pointer_upp_007",
+        "sentence": "The effectiveness of a pointer depends entirely on how the teacher uses it.",
+        "grammar_focus": "depends on + how",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IH",
+          "EH",
+          "OY",
+          "ER",
+          "AY",
+          "IY",
+          "AA",
+          "HH",
+          "AW",
+          "CH",
+          "UW"
+        ]
+      },
+      {
+        "id": "pointer_upp_008",
+        "sentence": "Whoever finds the missing pointer should leave it on the teacher's table before the next period.",
+        "grammar_focus": "whoever + should",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "AY",
+          "DH",
+          "AH",
+          "IH",
+          "NG",
+          "OY",
+          "SH",
+          "UH",
+          "IY",
+          "AA",
+          "CH",
+          "EY",
+          "AO"
+        ]
+      },
+      {
+        "id": "pointer_upp_009",
+        "sentence": "Were it not for the pointer, the teacher would have had difficulty showing the small details on the world map.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "DH",
+          "AH",
+          "OY",
+          "IY",
+          "CH",
+          "UH",
+          "HH",
+          "AE",
+          "SH",
+          "OW",
+          "NG",
+          "EY"
+        ]
+      },
+      {
+        "id": "pointer_upp_010",
+        "sentence": "A well-used pointer, combined with clear explanation, can make even the most difficult topic easy to understand.",
+        "grammar_focus": "can make",
+        "target_phonemes": [
+          "AH",
+          "EH",
+          "OY",
+          "ER",
+          "AY",
+          "IH",
+          "DH",
+          "EY",
+          "SH",
+          "AE",
+          "IY",
+          "OW",
+          "AA",
+          "UW"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "pointer_adv_001",
+        "sentence": "It is worth reflecting on how the presence of a simple pointer in a teacher's hand subtly shifts the dynamics of a classroom, directing collective attention with a single gesture.",
+        "grammar_focus": "it is worth + gerund",
+        "target_phonemes": [
+          "IH",
+          "ER",
+          "TH",
+          "AH",
+          "EH",
+          "NG",
+          "AA",
+          "HH",
+          "AW",
+          "DH",
+          "OY",
+          "IY",
+          "CH",
+          "AE",
+          "SH",
+          "AY",
+          "UW",
+          "JH"
+        ]
+      },
+      {
+        "id": "pointer_adv_002",
+        "sentence": "One might argue that the pointer is not merely a teaching aid, but a symbol of authority and guidance that has persisted in educational settings for centuries.",
+        "grammar_focus": "one might argue",
+        "target_phonemes": [
+          "AH",
+          "AY",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "OY",
+          "ER",
+          "IH",
+          "IY",
+          "CH",
+          "NG",
+          "EY",
+          "TH",
+          "AO",
+          "HH",
+          "EH",
+          "JH",
+          "SH"
+        ]
+      },
+      {
+        "id": "pointer_adv_003",
+        "sentence": "The pointer that had been leaning against the blackboard all year finally broke on the very last day of school, as if it too had grown tired.",
+        "grammar_focus": "past perfect continuous + as if",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "OY",
+          "ER",
+          "AE",
+          "HH",
+          "IH",
+          "IY",
+          "NG",
+          "EH",
+          "AO",
+          "AY",
+          "OW",
+          "AA",
+          "EY",
+          "UW"
+        ]
+      },
+      {
+        "id": "pointer_adv_004",
+        "sentence": "No sooner had the teacher raised the pointer towards the map than every student in the room instinctively looked in the direction it was pointing.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "EY",
+          "OY",
+          "AO",
+          "EH",
+          "IH",
+          "NG",
+          "UH",
+          "SH",
+          "AA"
+        ]
+      },
+      {
+        "id": "pointer_adv_005",
+        "sentence": "Regardless of whether classrooms adopt digital projectors or interactive whiteboards, the physical pointer retains a certain directness and simplicity that technology cannot entirely replicate.",
+        "grammar_focus": "regardless of whether",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "EH",
+          "DH",
+          "ER",
+          "AE",
+          "UW",
+          "IH",
+          "JH",
+          "AO",
+          "AY",
+          "OY",
+          "EY",
+          "IY"
+        ]
+      }
+    ]
+  },
+  "scale": {
+    "beginner": [
+      {
+        "id": "scale_beg_001",
+        "sentence": "I draw lines with a scale.",
+        "grammar_focus": "simple present",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "IH",
+          "DH",
+          "AH",
+          "EY"
+        ]
+      },
+      {
+        "id": "scale_beg_002",
+        "sentence": "The scale is thirty centimetres long.",
+        "grammar_focus": "copula + measurement",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "IH",
+          "TH",
+          "ER",
+          "IY",
+          "EH",
+          "AO",
+          "NG"
+        ]
+      },
+      {
+        "id": "scale_beg_003",
+        "sentence": "This is my new scale.",
+        "grammar_focus": "demonstrative",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "AY",
+          "UW",
+          "EY"
+        ]
+      },
+      {
+        "id": "scale_beg_004",
+        "sentence": "My scale is made of plastic.",
+        "grammar_focus": "made of",
+        "target_phonemes": [
+          "AY",
+          "EY",
+          "IH",
+          "AH",
+          "AE"
+        ]
+      },
+      {
+        "id": "scale_beg_005",
+        "sentence": "Where did I put my scale?",
+        "grammar_focus": "past simple question",
+        "target_phonemes": [
+          "EH",
+          "IH",
+          "AY",
+          "UH",
+          "EY"
+        ]
+      },
+      {
+        "id": "scale_beg_006",
+        "sentence": "I broke my scale yesterday.",
+        "grammar_focus": "past simple",
+        "target_phonemes": [
+          "AY",
+          "OW",
+          "EY",
+          "EH",
+          "ER"
+        ]
+      },
+      {
+        "id": "scale_beg_007",
+        "sentence": "Give me your scale for a minute.",
+        "grammar_focus": "imperative",
+        "target_phonemes": [
+          "IH",
+          "IY",
+          "AO",
+          "EY",
+          "AH"
+        ]
+      },
+      {
+        "id": "scale_beg_008",
+        "sentence": "The scale is inside my geometry box.",
+        "grammar_focus": "preposition",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "IH",
+          "AY",
+          "JH",
+          "IY",
+          "AA"
+        ]
+      },
+      {
+        "id": "scale_beg_009",
+        "sentence": "I need a scale to draw this line.",
+        "grammar_focus": "need + infinitive",
+        "target_phonemes": [
+          "AY",
+          "IY",
+          "AH",
+          "EY",
+          "UW",
+          "AO",
+          "DH",
+          "IH"
+        ]
+      },
+      {
+        "id": "scale_beg_010",
+        "sentence": "Can I borrow your scale?",
+        "grammar_focus": "request",
+        "target_phonemes": [
+          "AE",
+          "AY",
+          "AA",
+          "OW",
+          "AO",
+          "EY"
+        ]
+      }
+    ],
+    "elementary": [
+      {
+        "id": "scale_ele_001",
+        "sentence": "I used my scale to draw a straight line in my notebook.",
+        "grammar_focus": "past simple + infinitive",
+        "target_phonemes": [
+          "AY",
+          "UW",
+          "EY",
+          "AO",
+          "AH",
+          "IH",
+          "OW",
+          "UH"
+        ]
+      },
+      {
+        "id": "scale_ele_002",
+        "sentence": "The markings on my old scale have faded.",
+        "grammar_focus": "present perfect",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AA",
+          "IH",
+          "NG",
+          "AY",
+          "OW",
+          "EY",
+          "HH",
+          "AE"
+        ]
+      },
+      {
+        "id": "scale_ele_003",
+        "sentence": "This scale has both centimetre and inch markings.",
+        "grammar_focus": "has + both...and",
+        "target_phonemes": [
+          "DH",
+          "IH",
+          "EY",
+          "HH",
+          "AE",
+          "OW",
+          "TH",
+          "EH",
+          "AH",
+          "IY",
+          "CH",
+          "AA",
+          "NG"
+        ]
+      },
+      {
+        "id": "scale_ele_004",
+        "sentence": "I always use a scale when I draw diagrams in science.",
+        "grammar_focus": "frequency adverb + when",
+        "target_phonemes": [
+          "AY",
+          "AO",
+          "EY",
+          "UW",
+          "AH",
+          "EH",
+          "AE",
+          "IH"
+        ]
+      },
+      {
+        "id": "scale_ele_005",
+        "sentence": "Please draw the margin with a scale and a sharp pencil.",
+        "grammar_focus": "imperative + with",
+        "target_phonemes": [
+          "IY",
+          "AO",
+          "DH",
+          "AH",
+          "AA",
+          "JH",
+          "IH",
+          "EY",
+          "SH",
+          "EH"
+        ]
+      },
+      {
+        "id": "scale_ele_006",
+        "sentence": "There are many colourful scales in the stationery shop.",
+        "grammar_focus": "there are + adjective",
+        "target_phonemes": [
+          "DH",
+          "EH",
+          "AA",
+          "IY",
+          "AH",
+          "ER",
+          "EY",
+          "IH",
+          "SH"
+        ]
+      },
+      {
+        "id": "scale_ele_007",
+        "sentence": "My scale cracked in the middle when I sat on it by mistake.",
+        "grammar_focus": "past simple + when",
+        "target_phonemes": [
+          "AY",
+          "EY",
+          "AE",
+          "IH",
+          "DH",
+          "AH",
+          "EH",
+          "AA"
+        ]
+      },
+      {
+        "id": "scale_ele_008",
+        "sentence": "Do not use the scale to hit anyone.",
+        "grammar_focus": "negative imperative",
+        "target_phonemes": [
+          "UW",
+          "AA",
+          "DH",
+          "AH",
+          "EY",
+          "HH",
+          "IH",
+          "EH",
+          "IY"
+        ]
+      },
+      {
+        "id": "scale_ele_009",
+        "sentence": "A metal scale lasts longer than a plastic one.",
+        "grammar_focus": "comparative",
+        "target_phonemes": [
+          "AH",
+          "EH",
+          "EY",
+          "AE",
+          "AO",
+          "NG",
+          "ER",
+          "DH",
+          "IH"
+        ]
+      },
+      {
+        "id": "scale_ele_010",
+        "sentence": "The teacher measured the length of the paper with a scale.",
+        "grammar_focus": "past simple + with",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "EH",
+          "ZH",
+          "NG",
+          "TH",
+          "EY",
+          "IH"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "scale_int_001",
+        "sentence": "The scale that I keep in my geometry box is exactly fifteen centimetres long.",
+        "grammar_focus": "relative clause + exactly",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "AE",
+          "AY",
+          "IY",
+          "IH",
+          "JH",
+          "AA",
+          "EH",
+          "AO",
+          "NG"
+        ]
+      },
+      {
+        "id": "scale_int_002",
+        "sentence": "I have been using this scale since the third grade.",
+        "grammar_focus": "present perfect continuous + since",
+        "target_phonemes": [
+          "AY",
+          "HH",
+          "AE",
+          "IH",
+          "UW",
+          "NG",
+          "DH",
+          "EY",
+          "AH",
+          "TH",
+          "ER"
+        ]
+      },
+      {
+        "id": "scale_int_003",
+        "sentence": "If you do not use a scale, your lines will not be straight.",
+        "grammar_focus": "first conditional + negative",
+        "target_phonemes": [
+          "IH",
+          "UW",
+          "AA",
+          "AH",
+          "EY",
+          "AO",
+          "AY",
+          "IY"
+        ]
+      },
+      {
+        "id": "scale_int_004",
+        "sentence": "Could you measure this distance with your scale and tell me how long it is?",
+        "grammar_focus": "polite request + and",
+        "target_phonemes": [
+          "UH",
+          "UW",
+          "EH",
+          "ZH",
+          "ER",
+          "DH",
+          "IH",
+          "AH",
+          "AO",
+          "EY",
+          "IY",
+          "HH",
+          "AW",
+          "NG"
+        ]
+      },
+      {
+        "id": "scale_int_005",
+        "sentence": "Although the scale looks ordinary, it is essential for drawing neat diagrams.",
+        "grammar_focus": "concessive clause",
+        "target_phonemes": [
+          "AO",
+          "DH",
+          "OW",
+          "AH",
+          "EY",
+          "UH",
+          "EH",
+          "IY",
+          "IH",
+          "SH",
+          "NG",
+          "AY",
+          "AE"
+        ]
+      },
+      {
+        "id": "scale_int_006",
+        "sentence": "The teacher instructed us to underline the heading using a scale.",
+        "grammar_focus": "reported speech + gerund",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "ER",
+          "IH",
+          "UW",
+          "AY",
+          "HH",
+          "EH",
+          "NG",
+          "EY"
+        ]
+      },
+      {
+        "id": "scale_int_007",
+        "sentence": "I would rather use a transparent scale so that I can see through it.",
+        "grammar_focus": "would rather + so that",
+        "target_phonemes": [
+          "AY",
+          "UH",
+          "AE",
+          "DH",
+          "ER",
+          "UW",
+          "AH",
+          "EH",
+          "EY",
+          "OW",
+          "IY",
+          "TH",
+          "IH"
+        ]
+      },
+      {
+        "id": "scale_int_008",
+        "sentence": "My scale snapped in two while I was trying to bend it.",
+        "grammar_focus": "past simple + while",
+        "target_phonemes": [
+          "AY",
+          "EY",
+          "AE",
+          "IH",
+          "UW",
+          "AA",
+          "NG",
+          "EH"
+        ]
+      },
+      {
+        "id": "scale_int_009",
+        "sentence": "Have you ever used a triangular scale that architects use for their drawings?",
+        "grammar_focus": "present perfect + ever",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "UW",
+          "EH",
+          "ER",
+          "AH",
+          "AY",
+          "NG",
+          "EY",
+          "DH",
+          "AA",
+          "AO",
+          "IH"
+        ]
+      },
+      {
+        "id": "scale_int_010",
+        "sentence": "The scale should be placed flat on the paper before drawing any line.",
+        "grammar_focus": "should + passive",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "SH",
+          "UH",
+          "IY",
+          "AE",
+          "AA",
+          "ER",
+          "IH",
+          "AO",
+          "NG",
+          "EH",
+          "AY"
+        ]
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "scale_upp_001",
+        "sentence": "The scale, which I received as part of a geometry set, turned out to be the most frequently used tool in my pencil case.",
+        "grammar_focus": "non-defining relative clause",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "IH",
+          "CH",
+          "AY",
+          "IY",
+          "AE",
+          "AA",
+          "JH",
+          "EH",
+          "ER",
+          "AW",
+          "UW",
+          "OW"
+        ]
+      },
+      {
+        "id": "scale_upp_002",
+        "sentence": "Had I brought my scale to the exam, I would not have drawn such crooked lines in the diagram.",
+        "grammar_focus": "inverted conditional",
+        "target_phonemes": [
+          "HH",
+          "AE",
+          "AY",
+          "AO",
+          "EY",
+          "UW",
+          "DH",
+          "AH",
+          "IH",
+          "UH",
+          "AA",
+          "CH"
+        ]
+      },
+      {
+        "id": "scale_upp_003",
+        "sentence": "Despite being a very basic tool, the scale teaches students the importance of precision in measurement.",
+        "grammar_focus": "despite + gerund",
+        "target_phonemes": [
+          "IH",
+          "AY",
+          "IY",
+          "NG",
+          "AH",
+          "EH",
+          "EY",
+          "UW",
+          "DH",
+          "CH",
+          "AO",
+          "ZH",
+          "ER"
+        ]
+      },
+      {
+        "id": "scale_upp_004",
+        "sentence": "Not only is the scale used for drawing lines, but it is also helpful for measuring lengths accurately.",
+        "grammar_focus": "not only...but also",
+        "target_phonemes": [
+          "AA",
+          "OW",
+          "IY",
+          "IH",
+          "DH",
+          "AH",
+          "EY",
+          "UW",
+          "AO",
+          "NG",
+          "AY",
+          "HH",
+          "EH",
+          "ZH",
+          "ER",
+          "TH",
+          "AE"
+        ]
+      },
+      {
+        "id": "scale_upp_005",
+        "sentence": "I wish I had bought a sturdier scale, as the plastic one broke within the first week.",
+        "grammar_focus": "wish + past perfect",
+        "target_phonemes": [
+          "AY",
+          "IH",
+          "SH",
+          "HH",
+          "AE",
+          "AA",
+          "AH",
+          "ER",
+          "IY",
+          "EY",
+          "DH",
+          "OW"
+        ]
+      },
+      {
+        "id": "scale_upp_006",
+        "sentence": "It is surprising how often students forget to bring their scale to class, even for geometry lessons.",
+        "grammar_focus": "it is + adjective + how often",
+        "target_phonemes": [
+          "IH",
+          "ER",
+          "AY",
+          "NG",
+          "HH",
+          "AW",
+          "AO",
+          "AH",
+          "UW",
+          "EH",
+          "DH",
+          "EY",
+          "AE",
+          "IY",
+          "JH",
+          "AA"
+        ]
+      },
+      {
+        "id": "scale_upp_007",
+        "sentence": "The accuracy of a diagram depends largely on how carefully you place the scale on the paper.",
+        "grammar_focus": "depends on + how",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "AE",
+          "ER",
+          "IY",
+          "AY",
+          "IH",
+          "EH",
+          "AA",
+          "JH",
+          "HH",
+          "AW",
+          "UW",
+          "EY"
+        ]
+      },
+      {
+        "id": "scale_upp_008",
+        "sentence": "Whoever borrowed my scale from the desk should return it before the drawing period.",
+        "grammar_focus": "whoever + should",
+        "target_phonemes": [
+          "HH",
+          "UW",
+          "EH",
+          "ER",
+          "AA",
+          "OW",
+          "AY",
+          "EY",
+          "AH",
+          "DH",
+          "SH",
+          "UH",
+          "IH",
+          "AO",
+          "NG",
+          "IY"
+        ]
+      },
+      {
+        "id": "scale_upp_009",
+        "sentence": "Were it not for the scale, drawing precise geometric figures by hand would be nearly impossible.",
+        "grammar_focus": "subjunctive inversion",
+        "target_phonemes": [
+          "ER",
+          "IH",
+          "AA",
+          "AO",
+          "DH",
+          "AH",
+          "EY",
+          "NG",
+          "AY",
+          "JH",
+          "IY",
+          "EH",
+          "HH",
+          "AE",
+          "UH"
+        ]
+      },
+      {
+        "id": "scale_upp_010",
+        "sentence": "The steel scale that my father used during his school days is still in perfect condition after thirty years.",
+        "grammar_focus": "that clause + after",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "IY",
+          "EY",
+          "AE",
+          "AY",
+          "AA",
+          "ER",
+          "UW",
+          "UH",
+          "IH",
+          "NG",
+          "HH",
+          "SH",
+          "TH"
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "id": "scale_adv_001",
+        "sentence": "It is remarkable that such a simple instrument as a ruler can instil in young learners an appreciation for accuracy, measurement, and the mathematical principles that underpin the physical world.",
+        "grammar_focus": "it is remarkable that",
+        "target_phonemes": [
+          "IH",
+          "AA",
+          "AH",
+          "DH",
+          "AE",
+          "CH",
+          "UW",
+          "ER",
+          "NG",
+          "IY",
+          "SH",
+          "EY",
+          "AO",
+          "EH",
+          "ZH",
+          "TH"
+        ]
+      },
+      {
+        "id": "scale_adv_002",
+        "sentence": "One could argue that the scale represents one of the earliest introductions a child has to the concept of standardised measurement, bridging the gap between intuitive estimation and precise quantification.",
+        "grammar_focus": "one could argue",
+        "target_phonemes": [
+          "AH",
+          "UH",
+          "AA",
+          "UW",
+          "DH",
+          "AE",
+          "EY",
+          "EH",
+          "ER",
+          "IY",
+          "IH",
+          "SH",
+          "CH",
+          "AY",
+          "HH",
+          "ZH",
+          "JH",
+          "NG"
+        ]
+      },
+      {
+        "id": "scale_adv_003",
+        "sentence": "The scale that had been sitting at the bottom of my geometry box for the entire semester was the only tool I could find when the teacher announced a surprise diagram test.",
+        "grammar_focus": "past perfect continuous",
+        "target_phonemes": [
+          "DH",
+          "AH",
+          "EY",
+          "AE",
+          "HH",
+          "IH",
+          "NG",
+          "AA",
+          "AY",
+          "JH",
+          "IY",
+          "AO",
+          "ER",
+          "EH",
+          "OW",
+          "UW",
+          "UH",
+          "CH",
+          "AW"
+        ]
+      },
+      {
+        "id": "scale_adv_004",
+        "sentence": "No sooner had the teacher asked us to draw the construction than I discovered that my scale had a chip at the zero-centimetre mark, making accurate measurement impossible.",
+        "grammar_focus": "no sooner...than",
+        "target_phonemes": [
+          "OW",
+          "UW",
+          "ER",
+          "HH",
+          "AE",
+          "DH",
+          "AH",
+          "IY",
+          "CH",
+          "AO",
+          "SH",
+          "AY",
+          "IH",
+          "EY",
+          "EH",
+          "AA",
+          "NG",
+          "ZH"
+        ]
+      },
+      {
+        "id": "scale_adv_005",
+        "sentence": "Regardless of whether students eventually move on to computer-aided design tools, the foundational skill of using a scale to draw and measure by hand remains an essential part of early education.",
+        "grammar_focus": "regardless of whether",
+        "target_phonemes": [
+          "AH",
+          "AA",
+          "EH",
+          "DH",
+          "ER",
+          "UW",
+          "IH",
+          "CH",
+          "IY",
+          "AY",
+          "AW",
+          "EY",
+          "SH",
+          "NG",
+          "AO",
+          "ZH",
+          "HH",
+          "AE",
+          "JH"
+        ]
+      }
+    ]
+  }
+}

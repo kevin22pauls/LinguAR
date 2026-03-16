@@ -1,0 +1,29 @@
+{
+    "_source": "Brown (1988/1991) functional load values for English consonant/vowel contrasts",
+    "_note": "Higher value = more communicatively important contrast. Scale 0-1 normalized.",
+    "consonant_pairs": {
+        "P-B": 0.45, "T-D": 0.72, "K-G": 0.38,
+        "F-V": 0.31, "TH-DH": 0.15, "S-Z": 0.65,
+        "SH-ZH": 0.08, "CH-JH": 0.12,
+        "P-F": 0.28, "B-V": 0.25,
+        "T-S": 0.55, "D-Z": 0.42,
+        "T-TH": 0.35, "D-DH": 0.30,
+        "S-SH": 0.48, "S-TH": 0.40,
+        "N-NG": 0.22, "M-N": 0.58,
+        "L-R": 0.82, "R-W": 0.35, "L-W": 0.28,
+        "W-V": 0.20, "Y-JH": 0.15,
+        "P-T": 0.60, "T-K": 0.55, "P-K": 0.48,
+        "B-D": 0.52, "D-G": 0.45, "B-G": 0.40,
+        "F-TH": 0.25, "V-DH": 0.20,
+        "N-L": 0.35, "M-NG": 0.18
+    },
+    "vowel_pairs": {
+        "IY-IH": 0.75, "EH-AE": 0.60, "AH-AA": 0.55,
+        "UW-UH": 0.50, "AO-OW": 0.45,
+        "IY-EY": 0.40, "EY-EH": 0.52,
+        "IH-EH": 0.65, "AE-AH": 0.48,
+        "UW-OW": 0.42, "AA-AO": 0.50,
+        "AH-ER": 0.30, "IY-UW": 0.35,
+        "AE-EH": 0.58, "IH-AH": 0.45
+    }
+}

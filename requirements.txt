@@ -1,0 +1,51 @@
+# Core
+fastapi[standard]
+uvicorn[standard]
+gunicorn
+sqlalchemy
+psycopg2-binary
+pyjwt
+jinja2
+python-multipart
+aiofiles
+httpx
+pydantic-settings
+alembic
+
+# ML — ASR (use nyrahealth fork for CrisperWhisper in production)
+torch
+torchaudio
+transformers
+
+# ML — Pronunciation
+jiwer
+g2p-en
+nltk
+
+# ML — Prosody
+praat-parselmouth
+crepe
+praatio
+soundfile
+
+# ML — Audio
+numpy
+scipy
+librosa
+av
+noisereduce
+
+# ML — Nearest-neighbor search (MDD phoneme pool)
+faiss-cpu
+
+# TTS
+piper-tts
+
+# Task queue
+celery[redis]
+redis
+
+# YOLO export (dev only, not needed in server container)
+# ultralytics
+# onnx
+# onnxruntime

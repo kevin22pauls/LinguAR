@@ -1,0 +1,338 @@
+{
+  "spatial_relations": {
+    "horizontal": [
+      "next to",
+      "beside",
+      "to the left of",
+      "to the right of"
+    ],
+    "vertical": [
+      "above",
+      "below",
+      "on top of",
+      "under"
+    ],
+    "proximity": [
+      "near",
+      "close to",
+      "far from"
+    ],
+    "between": [
+      "between"
+    ]
+  },
+  "two_objects": {
+    "beginner": [
+      {
+        "id": "scene_2_beg_001",
+        "template": "I see {a_obj1} and {a_obj2}.",
+        "grammar_focus": "listing, articles"
+      },
+      {
+        "id": "scene_2_beg_002",
+        "template": "There is {a_obj1} and {a_obj2}.",
+        "grammar_focus": "there is"
+      },
+      {
+        "id": "scene_2_beg_003",
+        "template": "The {obj1} is {relation} the {obj2}.",
+        "grammar_focus": "prepositions"
+      },
+      {
+        "id": "scene_2_beg_004",
+        "template": "I can see {a_obj1} and {a_obj2} here.",
+        "grammar_focus": "can + see"
+      },
+      {
+        "id": "scene_2_beg_005",
+        "template": "Look at the {obj1} and the {obj2}.",
+        "grammar_focus": "imperatives"
+      },
+      {
+        "id": "scene_2_beg_006",
+        "template": "{A_obj1} is {relation} {a_obj2}.",
+        "grammar_focus": "articles, prepositions"
+      },
+      {
+        "id": "scene_2_beg_007",
+        "template": "The {obj1} and the {obj2} are on the table.",
+        "grammar_focus": "plural subject"
+      },
+      {
+        "id": "scene_2_beg_008",
+        "template": "Here is {a_obj1} and here is {a_obj2}.",
+        "grammar_focus": "here is"
+      },
+      {
+        "id": "scene_2_beg_009",
+        "template": "I have {a_obj1} and {a_obj2}.",
+        "grammar_focus": "have"
+      },
+      {
+        "id": "scene_2_beg_010",
+        "template": "This is {a_obj1} and that is {a_obj2}.",
+        "grammar_focus": "this/that"
+      }
+    ],
+    "elementary": [
+      {
+        "id": "scene_2_ele_001",
+        "template": "The {obj1} is {relation} the {obj2} on the desk.",
+        "grammar_focus": "compound prepositions"
+      },
+      {
+        "id": "scene_2_ele_002",
+        "template": "Can you see the {obj1} {relation} the {obj2}?",
+        "grammar_focus": "questions"
+      },
+      {
+        "id": "scene_2_ele_003",
+        "template": "I put the {obj1} {relation} the {obj2} this morning.",
+        "grammar_focus": "past simple"
+      },
+      {
+        "id": "scene_2_ele_004",
+        "template": "The {obj1} is bigger than the {obj2}.",
+        "grammar_focus": "comparatives"
+      },
+      {
+        "id": "scene_2_ele_005",
+        "template": "Please move the {obj1} away from the {obj2}.",
+        "grammar_focus": "polite imperatives"
+      },
+      {
+        "id": "scene_2_ele_006",
+        "template": "Someone left {a_obj1} {relation} the {obj2}.",
+        "grammar_focus": "indefinite pronouns"
+      },
+      {
+        "id": "scene_2_ele_007",
+        "template": "I need the {obj1} that is {relation} the {obj2}.",
+        "grammar_focus": "relative clauses"
+      },
+      {
+        "id": "scene_2_ele_008",
+        "template": "The {obj1} and the {obj2} both belong to me.",
+        "grammar_focus": "both, possession"
+      },
+      {
+        "id": "scene_2_ele_009",
+        "template": "I found {a_obj1} and {a_obj2} in the classroom.",
+        "grammar_focus": "past simple"
+      },
+      {
+        "id": "scene_2_ele_010",
+        "template": "Which one do you prefer, the {obj1} or the {obj2}?",
+        "grammar_focus": "preferences"
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "scene_2_int_001",
+        "template": "Could you move the {obj1} that is {relation} the {obj2}, please?",
+        "grammar_focus": "modals, relative clauses"
+      },
+      {
+        "id": "scene_2_int_002",
+        "template": "I noticed that the {obj1} has been placed {relation} the {obj2}.",
+        "grammar_focus": "present perfect passive"
+      },
+      {
+        "id": "scene_2_int_003",
+        "template": "The {obj1} should not be kept so close to the {obj2}.",
+        "grammar_focus": "should, negation"
+      },
+      {
+        "id": "scene_2_int_004",
+        "template": "Have you seen the {obj1} that was {relation} the {obj2} earlier?",
+        "grammar_focus": "present perfect"
+      },
+      {
+        "id": "scene_2_int_005",
+        "template": "If you look carefully, you will find the {obj1} {relation} the {obj2}.",
+        "grammar_focus": "first conditional"
+      },
+      {
+        "id": "scene_2_int_006",
+        "template": "The {obj1} seems to have been moved away from the {obj2}.",
+        "grammar_focus": "seem + perfect infinitive"
+      },
+      {
+        "id": "scene_2_int_007",
+        "template": "I always keep my {obj1} {relation} my {obj2} so I can find them easily.",
+        "grammar_focus": "adverbs of frequency"
+      },
+      {
+        "id": "scene_2_int_008",
+        "template": "Do you think the {obj1} looks better {relation} the {obj2} or somewhere else?",
+        "grammar_focus": "opinion questions"
+      },
+      {
+        "id": "scene_2_int_009",
+        "template": "The {obj1} was supposed to be {relation} the {obj2}, but someone moved it.",
+        "grammar_focus": "was supposed to"
+      },
+      {
+        "id": "scene_2_int_010",
+        "template": "I remember putting the {obj1} {relation} the {obj2} before I left.",
+        "grammar_focus": "remember + gerund"
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "scene_2_upi_001",
+        "template": "The {obj1}, which I had placed {relation} the {obj2}, appears to have been moved.",
+        "grammar_focus": "non-defining relative, perfect"
+      },
+      {
+        "id": "scene_2_upi_002",
+        "template": "Had the {obj1} not been {relation} the {obj2}, I might not have noticed it.",
+        "grammar_focus": "third conditional inverted"
+      },
+      {
+        "id": "scene_2_upi_003",
+        "template": "It occurred to me that the {obj1} and the {obj2} would look better side by side.",
+        "grammar_focus": "it occurred to me"
+      },
+      {
+        "id": "scene_2_upi_004",
+        "template": "Whoever arranged the {obj1} {relation} the {obj2} clearly has a good eye for design.",
+        "grammar_focus": "whoever"
+      },
+      {
+        "id": "scene_2_upi_005",
+        "template": "Not only was the {obj1} {relation} the {obj2}, but it was also blocking the view.",
+        "grammar_focus": "not only...but also"
+      }
+    ],
+    "advanced": [
+      {
+        "id": "scene_2_adv_001",
+        "template": "The juxtaposition of the {obj1} and the {obj2} creates an unexpectedly harmonious visual effect.",
+        "grammar_focus": "abstract nouns"
+      },
+      {
+        "id": "scene_2_adv_002",
+        "template": "One cannot help but notice that the {obj1} placed {relation} the {obj2} serves both a functional and an aesthetic purpose.",
+        "grammar_focus": "one cannot help but"
+      },
+      {
+        "id": "scene_2_adv_003",
+        "template": "Were the {obj1} to be repositioned away from the {obj2}, the entire arrangement would lose its balance.",
+        "grammar_focus": "subjunctive"
+      }
+    ]
+  },
+  "three_objects": {
+    "beginner": [
+      {
+        "id": "scene_3_beg_001",
+        "template": "I see {a_obj1}, {a_obj2}, and {a_obj3}.",
+        "grammar_focus": "listing"
+      },
+      {
+        "id": "scene_3_beg_002",
+        "template": "There is {a_obj1}, {a_obj2}, and {a_obj3} here.",
+        "grammar_focus": "there is"
+      },
+      {
+        "id": "scene_3_beg_003",
+        "template": "The {obj1}, the {obj2}, and the {obj3} are all on the table.",
+        "grammar_focus": "plural subjects"
+      },
+      {
+        "id": "scene_3_beg_004",
+        "template": "I can count three things: {a_obj1}, {a_obj2}, and {a_obj3}.",
+        "grammar_focus": "counting"
+      },
+      {
+        "id": "scene_3_beg_005",
+        "template": "Look at the {obj1}, the {obj2}, and the {obj3}.",
+        "grammar_focus": "imperatives"
+      }
+    ],
+    "elementary": [
+      {
+        "id": "scene_3_ele_001",
+        "template": "The {obj1} is between the {obj2} and the {obj3}.",
+        "grammar_focus": "between"
+      },
+      {
+        "id": "scene_3_ele_002",
+        "template": "Can you find the {obj1}, the {obj2}, and the {obj3}?",
+        "grammar_focus": "questions"
+      },
+      {
+        "id": "scene_3_ele_003",
+        "template": "I need to move the {obj1}, the {obj2}, and the {obj3} before lunch.",
+        "grammar_focus": "need to"
+      },
+      {
+        "id": "scene_3_ele_004",
+        "template": "The {obj2} is {relation} the {obj1} and the {obj3}.",
+        "grammar_focus": "complex prepositions"
+      },
+      {
+        "id": "scene_3_ele_005",
+        "template": "Please bring me the {obj1}, the {obj2}, and the {obj3}.",
+        "grammar_focus": "imperatives with lists"
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "scene_3_int_001",
+        "template": "Could you arrange the {obj1}, the {obj2}, and the {obj3} neatly on the shelf?",
+        "grammar_focus": "polite requests"
+      },
+      {
+        "id": "scene_3_int_002",
+        "template": "I noticed that the {obj1} has been placed between the {obj2} and the {obj3}.",
+        "grammar_focus": "present perfect passive"
+      },
+      {
+        "id": "scene_3_int_003",
+        "template": "If you move the {obj1} next to the {obj2}, there will be room for the {obj3}.",
+        "grammar_focus": "first conditional"
+      },
+      {
+        "id": "scene_3_int_004",
+        "template": "The {obj1}, the {obj2}, and the {obj3} all need to be put away before we leave.",
+        "grammar_focus": "need to + passive"
+      },
+      {
+        "id": "scene_3_int_005",
+        "template": "Have you ever seen {a_obj1}, {a_obj2}, and {a_obj3} arranged together like that?",
+        "grammar_focus": "present perfect"
+      }
+    ],
+    "upper_intermediate": [
+      {
+        "id": "scene_3_upi_001",
+        "template": "The arrangement of the {obj1}, the {obj2}, and the {obj3} suggests that someone organised them deliberately.",
+        "grammar_focus": "suggests that"
+      },
+      {
+        "id": "scene_3_upi_002",
+        "template": "Had the {obj1} not been between the {obj2} and the {obj3}, the display would have looked quite different.",
+        "grammar_focus": "third conditional inverted"
+      },
+      {
+        "id": "scene_3_upi_003",
+        "template": "Not only are the {obj1} and the {obj2} next to each other, but the {obj3} is also nearby.",
+        "grammar_focus": "not only...but also"
+      }
+    ],
+    "advanced": [
+      {
+        "id": "scene_3_adv_001",
+        "template": "The spatial relationship between the {obj1}, the {obj2}, and the {obj3} reveals an underlying organisational principle.",
+        "grammar_focus": "abstract language"
+      },
+      {
+        "id": "scene_3_adv_002",
+        "template": "One might argue that the positioning of the {obj1} relative to the {obj2} and the {obj3} is neither accidental nor arbitrary.",
+        "grammar_focus": "neither...nor"
+      }
+    ]
+  }
+}

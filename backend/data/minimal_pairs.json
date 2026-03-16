@@ -1,0 +1,27 @@
+{
+    "_source": "Common English minimal pairs indexed by ARPAbet phoneme contrast",
+    "pairs": {
+        "R-L": ["right/light", "red/led", "road/load", "rest/lest", "rain/lane", "rock/lock", "rip/lip", "row/low"],
+        "TH-S": ["think/sink", "thick/sick", "thin/sin", "thought/sought", "theme/seem", "path/pass", "math/mass"],
+        "TH-T": ["three/tree", "thin/tin", "think/tink", "through/true", "thank/tank", "both/boat", "math/mat"],
+        "DH-D": ["they/day", "than/Dan", "there/dare", "those/doze", "bathe/bade", "breathe/breed"],
+        "V-W": ["vine/wine", "vest/west", "vet/wet", "veil/wail", "very/wary", "vow/wow"],
+        "V-B": ["vote/boat", "vase/base", "van/ban", "vest/best", "vine/bine", "vet/bet"],
+        "V-F": ["vine/fine", "van/fan", "veil/fail", "vast/fast", "view/few", "vat/fat"],
+        "P-B": ["pat/bat", "pie/buy", "pear/bear", "pack/back", "pin/bin", "pet/bet", "pull/bull"],
+        "T-D": ["time/dime", "ten/den", "two/do", "tip/dip", "tear/dear", "tie/die", "town/down"],
+        "K-G": ["came/game", "cap/gap", "cold/gold", "coat/goat", "curl/girl", "cave/gave"],
+        "S-Z": ["sip/zip", "seal/zeal", "sink/zinc", "sue/zoo", "rice/rise", "ice/eyes", "place/plays"],
+        "SH-S": ["ship/sip", "she/see", "shore/sore", "shin/sin", "shoe/sue", "sheet/seat"],
+        "SH-CH": ["ship/chip", "share/chair", "shop/chop", "shin/chin", "sheep/cheap", "wash/watch"],
+        "IY-IH": ["sheep/ship", "seat/sit", "beat/bit", "feet/fit", "feel/fill", "deep/dip", "heat/hit"],
+        "EH-AE": ["bed/bad", "men/man", "pen/pan", "set/sat", "ten/tan", "bet/bat", "net/gnat"],
+        "AA-AE": ["hot/hat", "cop/cap", "top/tap", "shop/shap", "lock/lack", "pot/pat"],
+        "UW-UH": ["pool/pull", "fool/full", "Luke/look", "suit/soot", "stewed/stood"],
+        "AH-AA": ["cup/cop", "but/bot", "hut/hot", "luck/lock", "run/Ron", "fun/fawn"],
+        "F-P": ["fan/pan", "fat/pat", "feet/peat", "four/pour", "fast/past", "fit/pit"],
+        "N-NG": ["sin/sing", "thin/thing", "ban/bang", "run/rung", "sun/sung", "win/wing"],
+        "M-N": ["some/sun", "sum/son", "warm/warn", "seem/seen", "came/cane", "mime/mine"],
+        "JH-Y": ["jet/yet", "jam/yam", "Jell/yell", "jeer/year", "joke/yoke"]
+    }
+}

@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}Student Progress — LinguAR{% endblock %}
+
+{% block head %}
+<style>
+    .back-link { display: inline-block; margin-bottom: 1rem; color: var(--primary); text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { text-decoration: underline; }
+
+    .student-header { margin-bottom: 1.5rem; }
+    .student-header h1 { margin: 0 0 0.25rem 0; font-size: 1.6rem; font-weight: 800; }
+    .student-meta { color: var(--text-muted); font-size: 0.95rem; font-weight: 500; }
+
+    .compare-cards { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.85rem; margin-bottom: 1.5rem; }
+    .compare-card { background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb); border-radius: 10px; padding: 0.75rem 1rem; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .compare-card .cc-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-muted); display: block; margin-bottom: 0.35rem; font-weight: 700; }
+    .compare-card .cc-student { font-size: 2.2rem; font-weight: 800; display: block; line-height: 1.1; }
+    .compare-card .cc-class { font-size: 0.92rem; color: #64748b; display: block; margin-top: 0.3rem; font-weight: 600; }
+    .compare-card .cc-diff { font-size: 0.88rem; font-weight: 800; display: block; margin-top: 0.2rem; }
+    .cc-diff.above { color: #009b6a; }
+    .cc-diff.below { color: #dc2626; }
+    .cc-diff.same { color: #96b1ac; }
+
+    .rank-badge { display: inline-block; padding: 0.4rem 1rem; border-radius: 20px; font-weight: 800; font-size: 1.1rem; margin-top: 0.2rem; }
+    .rank-top { background: #e6fbf3; color: #005c40; }
+    .rank-mid { background: #fef9c3; color: #854d0e; }
+    .rank-low { background: #fee2e2; color: #991b1b; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <a href="/teacher" class="back-link">&larr; Back to Class</a>
+
+    <div id="loading-state" style="text-align:center; padding:3rem; color:var(--text-muted);">Loading student data...</div>
+
+    <div id="student-content" style="display:none;">
+        <!-- Header -->
+        <div class="student-header">
+            <h1 id="student-name">Student</h1>
+            <span class="student-meta" id="student-meta"></span>
+        </div>
+
+        <!-- Comparison cards: student vs class -->
+        <div class="compare-cards" id="compare-cards"></div>
+
+        <!-- Skill Bars -->
+        <div class="card" id="sd-skill-bars-card" style="display:none;">
+            <h2>Skills</h2>
+            <p class="card-subtitle">Latest recording compared to average</p>
+            <div class="skill-bars-grid" id="sd-skill-bars">
+                <div class="skill-row"><span class="skill-label">Speed</span><div class="skill-track"><div class="skill-fill" id="sd-bar-speed"></div></div><span class="skill-stars" id="sd-stars-speed"></span></div>
+                <div class="skill-row"><span class="skill-label">Smoothness</span><div class="skill-track"><div class="skill-fill" id="sd-bar-smoothness"></div></div><span class="skill-stars" id="sd-stars-smoothness"></span></div>
+                <div class="skill-row"><span class="skill-label">Sounds</span><div class="skill-track"><div class="skill-fill" id="sd-bar-sounds"></div></div><span class="skill-stars" id="sd-stars-sounds"></span></div>
+                <div class="skill-row"><span class="skill-label">Sounding Natural</span><div class="skill-track"><div class="skill-fill" id="sd-bar-natural"></div></div><span class="skill-stars" id="sd-stars-natural"></span></div>
+                <div class="skill-row"><span class="skill-label">Confidence</span><div class="skill-track"><div class="skill-fill" id="sd-bar-confidence"></div></div><span class="skill-stars" id="sd-stars-confidence"></span></div>
+                <div class="skill-row"><span class="skill-label">Completeness</span><div class="skill-track"><div class="skill-fill" id="sd-bar-completeness"></div></div><span class="skill-stars" id="sd-stars-completeness"></span></div>
+            </div>
+        </div>
+
+        <!-- Insights -->
+        <div class="card" id="sd-insights-card" style="display:none;">
+            <h2>Progress Summary</h2>
+            <div id="sd-insights-student"></div>
+            <h3 style="margin-top:1rem;">Teacher Notes</h3>
+            <div id="sd-insights-teacher"></div>
+        </div>
+
+        <!-- Score Trend + Radar side by side -->
+        <div class="dash-grid">
+            <div class="card">
+                <h2>Performance Overview</h2>
+                <p class="card-subtitle">Student (solid) vs Class Average (dashed)</p>
+                <div class="chart-container-sq">
+                    <canvas id="sd-radar-chart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Score Trend</h2>
+                <div class="chart-container-sq">
+                    <canvas id="sd-score-trend"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sounds to Practice -->
+        <div class="card">
+            <h2>Sounds to Practice</h2>
+            <div class="chart-container">
+                <canvas id="sd-phoneme-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- Vocabulary -->
+        <div class="card">
+            <h2>Vocabulary Mastery</h2>
+            <div id="sd-vocab-grid" class="vocab-grid">
+                <p class="card-subtitle">No vocabulary data yet.</p>
+            </div>
+        </div>
+
+        <!-- Sessions Table -->
+        <div class="card">
+            <h2>Recent Sessions</h2>
+            <div class="table-scroll">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Object</th>
+                            <th>Acc</th>
+                            <th>Flu</th>
+                            <th>Pro</th>
+                            <th>Comp</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sd-sessions-tbody">
+                        <tr><td colspan="7" class="empty-msg">No sessions yet.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var STUDENT_LEARNER_ID = "{{ learner_id }}";
+</script>
+<script src="/static/js/student_detail.js?v=3"></script>
+{% endblock %}

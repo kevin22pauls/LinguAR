@@ -1,0 +1,111 @@
+version: "3.8"
+
+services:
+  # ── FastAPI application ────────────────────────────────────────────────
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.production
+    environment:
+      - DB_URL=postgresql://${POSTGRES_USER:-linguar}:${POSTGRES_PASSWORD:-linguar}@postgres:5432/${POSTGRES_DB:-linguar}
+      - REDIS_URL=redis://redis:6379/0
+      - DEPLOYMENT_MODE=server
+      - LAZY_MODELS=false
+    volumes:
+      - model-cache:/app/backend/models/cache
+      - phoneme-pool:/app/backend/data/phoneme_pool
+      - audio-uploads:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+    restart: unless-stopped
+
+  # ── Celery worker (ML processing) ─────────────────────────────────────
+  worker:
+    build: .
+    command: celery -A backend.services.tasks worker --loglevel=info --concurrency=1
+    env_file:
+      - .env.production
+    environment:
+      - DB_URL=postgresql://${POSTGRES_USER:-linguar}:${POSTGRES_PASSWORD:-linguar}@postgres:5432/${POSTGRES_DB:-linguar}
+      - REDIS_URL=redis://redis:6379/0
+      - DEPLOYMENT_MODE=server
+      - LAZY_MODELS=false
+    volumes:
+      - model-cache:/app/backend/models/cache
+      - phoneme-pool:/app/backend/data/phoneme_pool
+      - audio-uploads:/app/uploads
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    depends_on:
+      - redis
+      - postgres
+    restart: unless-stopped
+
+  # ── Redis (task queue + result backend) ────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # ── PostgreSQL ─────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-linguar}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-linguar}
+      POSTGRES_DB: ${POSTGRES_DB:-linguar}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-linguar}"]
+      interval: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # ── Nginx (reverse proxy) ─────────────────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certbot/conf:/etc/letsencrypt:ro
+      - ./certbot/www:/var/www/certbot:ro
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  # ── Certbot (SSL certificate renewal) ─────────────────────────────────
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done'"
+
+volumes:
+  pgdata:
+  model-cache:
+  phoneme-pool:
+  audio-uploads:
+  redis-data:

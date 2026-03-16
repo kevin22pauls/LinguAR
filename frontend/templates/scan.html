@@ -1,0 +1,320 @@
+{% extends "base.html" %}
+{% block title %}LinguAR — Scan & Learn{% endblock %}
+
+{% block head %}
+<style>
+    /* Fullscreen AR overrides */
+    nav { display: none; }
+    main { max-width: 100%; padding: 0; margin: 0; }
+    body { background: #000; }
+
+    .ar-fullscreen {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ar-fullscreen video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ar-fullscreen canvas {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    /* Top bar: back + status */
+    .ar-topbar {
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        z-index: 20;
+        background: linear-gradient(rgba(0,0,0,0.6), transparent);
+    }
+
+    .ar-back {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.15rem;
+        padding: 0.55rem 1rem;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.18);
+        backdrop-filter: blur(4px);
+    }
+
+    .ar-topbar-status {
+        color: white;
+        font-size: 0.95rem;
+        font-weight: 600;
+        opacity: 0.85;
+    }
+
+    /* Bottom panel */
+    .ar-bottom {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+        background: linear-gradient(transparent, rgba(0,0,0,0.85) 40%);
+    }
+
+    .ar-detected-label {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: rgba(255,255,255,0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.35rem;
+        min-height: 1.4em;
+    }
+
+    .ar-sentence-display {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+        padding: 0.3rem 0.6rem;
+        max-width: 92%;
+        text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+        min-height: 2em;
+    }
+
+    .ar-controls {
+        display: flex;
+        gap: 0.85rem;
+        margin-top: 0.85rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ar-btn {
+        padding: 0.7rem 1.4rem;
+        border: none;
+        border-radius: 24px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.1s, opacity 0.15s;
+        min-width: 90px;
+        text-align: center;
+    }
+    .ar-btn:active { transform: scale(0.95); }
+    .ar-btn:disabled { opacity: 0.4; cursor: default; }
+
+    .ar-btn-detect {
+        background: var(--primary, #4f46e5);
+        color: white;
+    }
+    .ar-btn-detect.detecting {
+        background: #22c55e;
+        animation: pulse-detect 1.2s infinite;
+    }
+
+    .ar-btn-generate {
+        background: rgba(255,255,255,0.2);
+        color: white;
+        backdrop-filter: blur(4px);
+    }
+
+    .ar-btn-listen {
+        background: rgba(255,255,255,0.2);
+        color: white;
+        backdrop-filter: blur(4px);
+    }
+
+    .ar-btn-record {
+        background: #ef4444;
+        color: white;
+        min-width: 110px;
+    }
+    .ar-btn-record.ar-recording {
+        background: #b91c1c;
+        animation: pulse-record 1s infinite;
+    }
+
+    .ar-btn-next {
+        background: rgba(255,255,255,0.2);
+        color: white;
+        backdrop-filter: blur(4px);
+    }
+
+    @keyframes pulse-detect {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
+        50% { box-shadow: 0 0 0 8px rgba(34,197,94,0); }
+    }
+    @keyframes pulse-record {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.5); }
+        50% { box-shadow: 0 0 0 8px rgba(239,68,68,0); }
+    }
+
+    .ar-status-text {
+        color: rgba(255,255,255,0.9);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        min-height: 1.4em;
+    }
+
+    #loading-msg {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 25;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    /* Results overlay (slides up from bottom) */
+    .ar-results-panel {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        z-index: 30;
+        background: var(--surface, #fff);
+        border-radius: 16px 16px 0 0;
+        max-height: 75vh;
+        overflow-y: auto;
+        padding: 1.25rem;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        color: var(--text, #1e293b);
+    }
+    .ar-results-panel.visible {
+        transform: translateY(0);
+    }
+    .ar-results-close {
+        position: absolute;
+        top: 0.75rem; right: 0.75rem;
+        background: none; border: none;
+        font-size: 1.5rem; cursor: pointer;
+        color: var(--text-muted, #64748b);
+        line-height: 1;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="ar-fullscreen" id="ar-root">
+    <video id="camera" autoplay playsinline muted></video>
+    <canvas id="overlay"></canvas>
+
+    <div id="loading-msg">Loading detection model...</div>
+
+    <!-- Top bar -->
+    <div class="ar-topbar">
+        <a href="/" class="ar-back">Back</a>
+        <span class="ar-topbar-status" id="ar-topbar-status"></span>
+    </div>
+
+    <!-- Bottom panel -->
+    <div class="ar-bottom">
+        <div class="ar-detected-label" id="ar-detected-label"></div>
+        <div class="ar-sentence-display" id="ar-sentence"></div>
+
+        <div class="ar-controls">
+            <button class="ar-btn ar-btn-detect" id="ar-detect-btn">Detect</button>
+            <button class="ar-btn ar-btn-generate" id="ar-generate-btn" disabled>Generate</button>
+            <button class="ar-btn ar-btn-listen" id="ar-listen-btn" disabled>Listen</button>
+            <button class="ar-btn ar-btn-record" id="ar-record-btn" disabled>Record</button>
+            <button class="ar-btn ar-btn-next" id="ar-next-btn" disabled>Next</button>
+        </div>
+
+        <div class="ar-status-text" id="ar-status"></div>
+    </div>
+
+    <!-- Results panel (slides up) -->
+    <div class="ar-results-panel" id="ar-results">
+        <button class="ar-results-close" id="ar-results-close">&times;</button>
+
+        <!-- XP earned -->
+        <div id="ar-xp-banner" style="display:none; text-align:center; margin-bottom:0.75rem; font-size:1rem; font-weight:700; color:var(--primary, #00c385);">
+            <span id="ar-xp-text"></span>
+        </div>
+
+        <!-- Verdict -->
+        <div class="verdict-banner" id="ar-verdict-banner" style="margin-bottom:1rem;">
+            <span class="verdict-score" id="ar-verdict-score">--</span>
+            <span class="verdict-label" id="ar-verdict-label">Overall Score</span>
+        </div>
+
+        <!-- 4D Scores -->
+        <div class="scores-grid" style="margin-bottom:1rem;">
+            <div class="score-item">
+                <div class="score-value" id="ar-s-accuracy">--</div>
+                <div class="score-label">Accuracy</div>
+            </div>
+            <div class="score-item">
+                <div class="score-value" id="ar-s-fluency">--</div>
+                <div class="score-label">Fluency</div>
+            </div>
+            <div class="score-item">
+                <div class="score-value" id="ar-s-prosody">--</div>
+                <div class="score-label">Prosody</div>
+            </div>
+            <div class="score-item">
+                <div class="score-value" id="ar-s-completeness">--</div>
+                <div class="score-label">Completeness</div>
+            </div>
+        </div>
+
+        <!-- Skill Bars -->
+        <div id="ar-skill-bars-card" style="display:none; margin-bottom:1rem;">
+            <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.6rem;">Your Skills</h3>
+            <div class="skill-bars-grid" id="ar-skill-bars">
+                <div class="skill-row"><span class="skill-label">Speed</span><div class="skill-track"><div class="skill-fill" id="ar-bar-speed"></div></div><span class="skill-stars" id="ar-stars-speed"></span></div>
+                <div class="skill-row"><span class="skill-label">Smoothness</span><div class="skill-track"><div class="skill-fill" id="ar-bar-smoothness"></div></div><span class="skill-stars" id="ar-stars-smoothness"></span></div>
+                <div class="skill-row"><span class="skill-label">Sounds</span><div class="skill-track"><div class="skill-fill" id="ar-bar-sounds"></div></div><span class="skill-stars" id="ar-stars-sounds"></span></div>
+                <div class="skill-row"><span class="skill-label">Sounding Natural</span><div class="skill-track"><div class="skill-fill" id="ar-bar-natural"></div></div><span class="skill-stars" id="ar-stars-natural"></span></div>
+                <div class="skill-row"><span class="skill-label">Confidence</span><div class="skill-track"><div class="skill-fill" id="ar-bar-confidence"></div></div><span class="skill-stars" id="ar-stars-confidence"></span></div>
+                <div class="skill-row"><span class="skill-label">Completeness</span><div class="skill-track"><div class="skill-fill" id="ar-bar-completeness"></div></div><span class="skill-stars" id="ar-stars-completeness"></span></div>
+            </div>
+        </div>
+
+        <!-- Word Feedback -->
+        <div style="margin-bottom:1rem;">
+            <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.5rem;">Reading</h3>
+            <div id="ar-word-feedback" style="line-height:2; font-size:1.05rem;"></div>
+            <div id="ar-transcript" style="display:none; margin-top:0.5rem; color:var(--text-muted); font-size:0.9rem;"></div>
+        </div>
+
+        <!-- Phoneme Analysis -->
+        <div id="ar-phoneme-card" style="display:none; margin-bottom:1rem;">
+            <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.5rem;">Phoneme Analysis</h3>
+            <div id="ar-phoneme-summary" class="phoneme-summary"></div>
+            <div id="ar-phoneme-grid" class="phoneme-analysis-grid"></div>
+        </div>
+
+        <!-- Details -->
+        <div>
+            <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.5rem;">Details</h3>
+            <div class="detail-grid" id="ar-details-grid"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/ort.min.js" crossorigin="anonymous"></script>
+<script src="/static/js/scan.js?v=4"></script>
+{% endblock %}
