@@ -47,6 +47,8 @@ test_audio.wav
 # YOLO weights (large binary files — download separately)
 *.pt
 *.onnx
+# But keep the fine-tuned school objects model
+!frontend/static/models/school_objects.onnx
 
 # Dataset files (download separately on server)
 data/

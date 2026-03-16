@@ -76,7 +76,7 @@ async function startCamera() {
 async function loadModel() {
     try {
         ort.env.wasm.wasmPaths = "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/";
-        yoloSession = await ort.InferenceSession.create("/static/models/yolo11s.onnx", {
+        yoloSession = await ort.InferenceSession.create("/static/models/school_objects.onnx", {
             executionProviders: ["wasm"],
         });
         loadingMsg.style.display = "none";
