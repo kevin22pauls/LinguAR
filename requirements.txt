@@ -28,7 +28,7 @@ nltk
 
 # ML — Prosody
 praat-parselmouth
-crepe
+# crepe — installed separately in start_runpod.sh (needs --no-build-isolation)
 praatio
 soundfile
 
