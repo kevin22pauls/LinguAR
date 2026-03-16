@@ -61,42 +61,51 @@ python -c "import nltk; nltk.download('cmudict', quiet=True); nltk.download('ave
 
 echo "  -> Dependencies installed."
 
-# ── 3. PostgreSQL container ───────────────────────────────────────────────
+# ── 3. PostgreSQL (install + run natively) ──────────────────────────────
 echo "[3/8] Starting PostgreSQL..."
-if docker ps -a --format '{{.Names}}' | grep -q '^linguar-pg$'; then
-    docker start linguar-pg 2>/dev/null || true
-else
-    docker run -d \
-        --name linguar-pg \
-        --restart unless-stopped \
-        -e POSTGRES_USER=linguar \
-        -e POSTGRES_PASSWORD=linguar \
-        -e POSTGRES_DB=linguar \
-        -p 5432:5432 \
-        -v /workspace/pgdata:/var/lib/postgresql/data \
-        postgres:16
+if ! command -v pg_isready &>/dev/null; then
+    echo "  -> Installing PostgreSQL..."
+    apt-get update -qq && apt-get install -y -qq postgresql postgresql-client >/dev/null 2>&1
 fi
 
-# Wait for PG to be ready
+PG_DATA="/workspace/pgdata"
+mkdir -p "$PG_DATA"
+chown postgres:postgres "$PG_DATA"
+
+# Initialize DB cluster if needed
+if [ ! -f "$PG_DATA/PG_VERSION" ]; then
+    su - postgres -c "initdb -D $PG_DATA" 2>/dev/null || \
+        su - postgres -c "/usr/lib/postgresql/*/bin/initdb -D $PG_DATA" 2>/dev/null
+fi
+
+# Start PostgreSQL
+su - postgres -c "pg_ctl -D $PG_DATA -l $LOG_DIR/postgresql.log start" 2>/dev/null || true
+sleep 2
+
+# Create user and database if they don't exist
+su - postgres -c "psql -tc \"SELECT 1 FROM pg_roles WHERE rolname='linguar'\" | grep -q 1" 2>/dev/null || \
+    su - postgres -c "psql -c \"CREATE USER linguar WITH PASSWORD 'linguar';\"" 2>/dev/null
+su - postgres -c "psql -tc \"SELECT 1 FROM pg_database WHERE datname='linguar'\" | grep -q 1" 2>/dev/null || \
+    su - postgres -c "psql -c \"CREATE DATABASE linguar OWNER linguar;\"" 2>/dev/null
+
 echo "  -> Waiting for PostgreSQL..."
-for i in $(seq 1 30); do
-    if docker exec linguar-pg pg_isready -U linguar -q 2>/dev/null; then
+for i in $(seq 1 15); do
+    if pg_isready -U linguar -q 2>/dev/null; then
         echo "  -> PostgreSQL ready."
         break
     fi
     sleep 1
 done
 
-# ── 4. Redis container ───────────────────────────────────────────────────
+# ── 4. Redis (install + run natively) ──────────────────────────────────
 echo "[4/8] Starting Redis..."
-if docker ps -a --format '{{.Names}}' | grep -q '^linguar-redis$'; then
-    docker start linguar-redis 2>/dev/null || true
-else
-    docker run -d \
-        --name linguar-redis \
-        --restart unless-stopped \
-        -p 6379:6379 \
-        redis:7-alpine
+if ! command -v redis-server &>/dev/null; then
+    echo "  -> Installing Redis..."
+    apt-get install -y -qq redis-server >/dev/null 2>&1
+fi
+
+if ! redis-cli ping &>/dev/null 2>&1; then
+    redis-server --daemonize yes --logfile "$LOG_DIR/redis.log"
 fi
 echo "  -> Redis ready."
 
