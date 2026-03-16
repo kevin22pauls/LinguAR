@@ -174,7 +174,7 @@ echo "  -> Celery PID: $!"
 echo "  -> Starting Gunicorn (4 workers)..."
 nohup gunicorn backend.main:app \
     --worker-class uvicorn.workers.UvicornWorker \
-    --workers 4 \
+    --workers 1 \
     --bind 0.0.0.0:8000 \
     --timeout 120 \
     --graceful-timeout 30 \
