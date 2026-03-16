@@ -48,5 +48,8 @@ test_audio.wav
 *.pt
 *.onnx
 
+# Dataset files (download separately on server)
+data/
+
 # Launcher PID
 .launcher.pid
