@@ -45,7 +45,7 @@ fi
 source "$VENV_DIR/bin/activate"
 
 echo "[2/8] Installing Python dependencies..."
-pip install --upgrade pip -q
+pip install --upgrade pip setuptools wheel -q
 pip install -r requirements.txt -q
 
 # Install nyrahealth's CrisperWhisper fork for accurate timestamps
