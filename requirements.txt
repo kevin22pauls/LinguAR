@@ -1,3 +1,7 @@
+# Build dependencies (must be first — crepe needs pkg_resources at build time)
+setuptools
+wheel
+
 # Core
 fastapi[standard]
 uvicorn[standard]
