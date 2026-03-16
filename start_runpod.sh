@@ -46,7 +46,10 @@ source "$VENV_DIR/bin/activate"
 
 echo "[2/8] Installing Python dependencies..."
 pip install --upgrade pip setuptools wheel -q
-pip install crepe --no-build-isolation -q
+# crepe uses legacy setup.py that imports pkg_resources at build time.
+# Force pip to use the venv's setuptools instead of an isolated build env.
+SETUPTOOLS_USE_DISTUTILS=stdlib pip install --no-build-isolation crepe -q 2>/dev/null || \
+    echo "  WARNING: crepe install failed — parselmouth still handles F0 extraction"
 pip install -r requirements.txt -q
 
 # Install nyrahealth's CrisperWhisper fork for accurate timestamps
