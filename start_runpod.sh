@@ -46,6 +46,14 @@ source "$VENV_DIR/bin/activate"
 
 echo "[2/8] Installing Python dependencies..."
 pip install --upgrade pip setuptools wheel -q
+
+# Preserve CUDA-enabled PyTorch from the RunPod base image.
+# Only install torch if it's missing (e.g. fresh venv without system packages).
+python -c "import torch; assert torch.cuda.is_available(); print(f'  -> PyTorch {torch.__version__} (CUDA) already available, skipping torch install')" 2>/dev/null || {
+    echo "  -> Installing PyTorch with CUDA 12.4 support..."
+    pip install torch==2.4.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124 -q
+}
+
 # crepe uses legacy setup.py that imports pkg_resources at build time.
 # Force pip to use the venv's setuptools instead of an isolated build env.
 SETUPTOOLS_USE_DISTUTILS=stdlib pip install --no-build-isolation crepe -q 2>/dev/null || \
@@ -154,8 +162,26 @@ else
     echo "     python scripts/build_phoneme_pool.py --dataset-dir /workspace/l2arctic --mode ctc"
 fi
 
-# ── 8. Start services ────────────────────────────────────────────────────
-echo "[8/8] Starting LinguAR services..."
+# ── 8. YOLO11s ONNX model (export if missing) ────────────────────────────
+YOLO_MODEL="$APP_DIR/frontend/static/models/yolo11s.onnx"
+if [ -f "$YOLO_MODEL" ]; then
+    echo "[8/9] YOLO11s ONNX model already exists, skipping."
+else
+    echo "[8/9] Exporting YOLO11s ONNX model..."
+    pip install ultralytics -q 2>/dev/null
+    mkdir -p "$APP_DIR/frontend/static/models"
+    python -c "
+from ultralytics import YOLO
+model = YOLO('yolo11s.pt')
+model.export(format='onnx', imgsz=640, simplify=True)
+import shutil
+shutil.move('yolo11s.onnx', '$APP_DIR/frontend/static/models/yolo11s.onnx')
+print('  -> YOLO11s ONNX exported successfully.')
+" 2>/dev/null || echo "  WARNING: YOLO export failed. Place yolo11s.onnx in frontend/static/models/ manually."
+fi
+
+# ── 9. Start services ────────────────────────────────────────────────────
+echo "[9/9] Starting LinguAR services..."
 
 # Kill any existing processes
 pkill -f "gunicorn backend.main" 2>/dev/null || true

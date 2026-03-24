@@ -17,8 +17,12 @@ pydantic-settings
 alembic
 
 # ML — ASR (use nyrahealth fork for CrisperWhisper in production)
-torch
-torchaudio
+# NOTE: torch/torchaudio are NOT listed here to avoid overwriting
+# the CUDA-enabled versions pre-installed on RunPod GPU pods.
+# On RunPod: the image already has torch+CUDA. On local dev: install manually:
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+# Or for CPU-only dev:
+#   pip install torch torchaudio
 transformers
 
 # ML — Pronunciation
