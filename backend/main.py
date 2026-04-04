@@ -115,47 +115,49 @@ async def vad_worklet():
 
 @app.get("/")
 async def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 
 @app.get("/login")
 async def login_page(request: Request):
-    return templates.TemplateResponse("login.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="login.html")
 
 
 @app.get("/scan")
 async def scan(request: Request):
-    return templates.TemplateResponse("scan.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="scan.html")
 
 
 @app.get("/practice")
 async def practice(request: Request):
-    return templates.TemplateResponse("practice.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="practice.html")
 
 
 @app.get("/dashboard")
 async def dashboard(request: Request):
-    return templates.TemplateResponse("dashboard.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="dashboard.html")
 
 
 @app.get("/teacher")
 async def teacher(request: Request):
-    return templates.TemplateResponse("teacher.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="teacher.html")
 
 
 @app.get("/teacher/student/{learner_id}")
 async def teacher_student_detail(request: Request, learner_id: str):
     return templates.TemplateResponse(
-        "student_detail.html",
-        {"request": request, "learner_id": learner_id},
+        request=request,
+        name="student_detail.html",
+        context={"learner_id": learner_id},
     )
 
 
 @app.get("/exercise/{recording_id}")
 async def exercise_detail(request: Request, recording_id: int):
     return templates.TemplateResponse(
-        "exercise.html",
-        {"request": request, "recording_id": recording_id},
+        request=request,
+        name="exercise.html",
+        context={"recording_id": recording_id},
     )
 
 
